@@ -2,7 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: default
+layout: home
 ---
 
 [Inria](https://www.inria.fr/en) researcher   
@@ -10,6 +10,7 @@ layout: default
 
 
 **Address:**
+
 > Laboratoire Jean Kuntzmann  
 > 700 avenue centrale   
 > 38400 Saint Martin d'Hères, France  
