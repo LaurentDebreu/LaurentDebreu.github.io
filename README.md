@@ -1,3 +1,8 @@
+---
+layout: page
+title: Laurent Debreu's website
+---
+
 <style>
 * {
   box-sizing: border-box;
@@ -17,8 +22,6 @@
   clear: both;
 }
 </style>
-
-# Laurent Debreu
 
 <div class="row">
   <div class="column">
