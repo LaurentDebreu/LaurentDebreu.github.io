@@ -3,11 +3,9 @@ layout: page
 title: Responsibilities
 ---
 
-## Current responsibilities
-
 ### Scientific head of the [AIRSEA](https://team.inria.fr/airsea/en/) Inria team
 
-A joint team between Inria and Laboratoire Jean Kuntzmann
+A joint team between Inria and Laboratoire Jean Kuntzmann  
 Mathematics and computing applied to oceanic and atmospheric flows
 
 ### Chair of the [LEFE MANU](https://programmes.insu.cnrs.fr/lefe/cs_actions/manu/) program
