@@ -12,7 +12,7 @@ title: Research
 Developing numerical schemes is a special challenge that has to take into account the underlying physical properties of the governing equations. My main interests are in developing numerical schemes in the context of ocean and atmosphere modeling. I have been working on (i) the rotation of diffusion tensors along isopycnal directions in order to limit artificial diapycnal diffusion (ii) the numerical representation of internal-gravity waves propagation.
 </td>
 <td style="vertical-align: middle; width:30%">
-<p><img src="patrick_noumea.png" alt="" height="200px" width="200px" /></p>
+<p><img src="patrick_noumea.png" alt="" height="auto" width="200px" /></p>
 </td>
 </tr>
 </table>
@@ -21,7 +21,7 @@ Developing numerical schemes is a special challenge that has to take into accoun
 <table>
 <tr>
 <td style="vertical-align: middle; width:30%">
-<p><img src="nature.jpg" alt="" height="200px" width="160px" /></p>
+<p><img src="nature.jpg" alt="" height="auto" width="160px" /></p>
 </td>
 <td style="vertical-align: baseline; width:70%">
 <h3>Structured mesh refinement methods</h3>  
@@ -37,7 +37,7 @@ Increasing mesh resolution remains a key point in the improvement of the realism
 Multigrid methods can be used to accelerate the minimization of the cost function arising from optimal control techniques. I am particularly interested in their application to variational data assimilation problems in the frame of ocean atmosphere applications. Robutness of the use of multigrid methods is linked with the quality of the coarse grid approximation property that can be limited. For such an application, we derived very efficient hybrid multigrid preconditioners.
 </td>
 <td style="vertical-align: middle; width:30%">
-<p><img src="multigrid.jpg" alt="" height="200px" width="200px" /></p>
+<p><img src="multigrid.jpg" alt="" height="auto" width="200px" /></p>
 </td>
 </tr>
 </table>
@@ -45,7 +45,7 @@ Multigrid methods can be used to accelerate the minimization of the cost functio
 <table>
 <tr>
 <td style="vertical-align: middle; width:30%">
-<p><img src="schwarz.PNG" alt="" height="120px" width="160px" /></p>
+<p><img src="schwarz.PNG" alt="" height="auto" width="190px" /></p>
 </td>
 <td style="vertical-align: baseline; width:70%">
 <h3>Coupling algorithms</h3>  
