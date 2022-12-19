@@ -154,6 +154,20 @@ table td { border: 1px solid #e8e8e8; }
 
 @media screen and (max-width: 800px) { .post-content h4 { font-size: 18px; } }
 
+.bibliography { margin-bottom: 30px; }
+
+.bibliography h2 { font-size: 32px; color: #c46308 !important; }
+
+@media screen and (max-width: 800px) { .bibliography h2 { font-size: 28px; } }
+
+.bibliography h3 { font-size: 26px; background-color: lightblue; padding-left: 30px; }
+
+@media screen and (max-width: 800px) { .bibliography h3 { font-size: 22px; } }
+
+.bibliography h4 { font-size: 20px; }
+
+@media screen and (max-width: 800px) { .bibliography h4 { font-size: 18px; } }
+
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
 
