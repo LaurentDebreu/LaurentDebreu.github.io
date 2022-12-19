@@ -40,3 +40,26 @@ kramdown:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+scholar:
+  style: apa
+  locale: en
+
+  sort_by: year, month
+  order: descending
+
+  group_by: year
+  group_order: descending
+
+  source: ./_bibliography
+  bibliography: debreu_references.bib
+  bibliography_template: ""
+
+  replace_strings: true
+  join_strings:    true
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"

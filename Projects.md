@@ -30,3 +30,10 @@ Keywords: Time stepping schemes. Hydrostatic-Nonhydrosatic coupling
 
 (ANR, PI: R. Fablet (IMT, Brest))  
 Keywords: AI for gesophysical models
+
+---
+
+### ADOM
+
+(ANR, PI: F. Magoules (Centrale Supelec))  
+Keywords: Asynchronous Domain Decomposition Methods
