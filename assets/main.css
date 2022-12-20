@@ -142,11 +142,11 @@ table td { border: 1px solid #e8e8e8; }
 
 .post-content { margin-bottom: 30px; }
 
-.post-content h2 { font-size: 32px; }
+.post-content h2 { font-size: 32px; color: #c46308; }
 
 @media screen and (max-width: 800px) { .post-content h2 { font-size: 28px; } }
 
-.post-content h3 { font-size: 26px; color: #c46308; }
+.post-content h3 { font-size: 26px; }
 
 @media screen and (max-width: 800px) { .post-content h3 { font-size: 22px; } }
 
@@ -160,7 +160,7 @@ table td { border: 1px solid #e8e8e8; }
 
 @media screen and (max-width: 800px) { .bibliography h2 { font-size: 28px; } }
 
-.bibliography h3 { font-size: 26px; background-color: lightblue; padding-left: 30px; }
+.bibliography h3 { font-size: 26px; border-radius: 15px; border: 2px solid #73AD21; padding-left: 15px; }
 
 @media screen and (max-width: 800px) { .bibliography h3 { font-size: 22px; } }
 
