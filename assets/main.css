@@ -131,7 +131,7 @@ table td { border: 1px solid #e8e8e8; }
 .post-link { display: block; font-size: 24px; }
 
 /** Posts margin-bottom: $spacing-unit; */
-.post-header { background-color: #265077; padding: 70px 0; text-align: center; margin-bottom: 30px; }
+.post-header { /*background-color: rgb(137, 168, 197);*/ background-image: url("grenoble.jpg"); background-size: 800px 240px; padding: 70px 0; text-align: center; margin-bottom: 30px; }
 
 /* line after post header */
 .line-postheader { margin: auto; height: 10px; width: 20%; background: #d7801f; }
