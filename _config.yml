@@ -26,8 +26,10 @@ markdown: kramdown
 theme: minima
 kramdown:
   parse_block_html: true
-#plugins:
-#  - jekyll-feed
+  math_engine: mathjax
+plugins:
+  - jekyll-feed
+  - jekyll-scholar
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -42,18 +44,18 @@ kramdown:
 #   - vendor/ruby/
 
 scholar:
-  style: apa
+  style:  _bibliography/debreu.csl
   locale: en
 
   sort_by: year, month
   order: descending
 
-  group_by: year
+  group_by: type,year
   group_order: descending
 
   source: ./_bibliography
   bibliography: debreu_references.bib
-  bibliography_template: ""
+  bibliography_template: bib
 
   replace_strings: true
   join_strings:    true
