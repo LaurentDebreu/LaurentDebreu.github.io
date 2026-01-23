@@ -11,6 +11,7 @@
   DOI = {10.1016/j.ecolmodel.2026.111491},
   KEYWORDS = {Multi-objective simplification ; Sensitivity analysis ; Marine biogeochemical model ; Performance criteria ; Model mechanism},
   PDF = {https://amu.hal.science/hal-05460893v1/file/1-s2.0-S0304380026000190-main.pdf},
+  ABSTRACT = {Marine biogeochemical models are being increasingly used to support scenario-based analyses of climate change and ecosystem dynamics. However, their high structural complexity and large parameter space often limit computational efficiency, interpretability, and adaptability in applications requiring the exploration of many scenarios. To address these issues, we propose a Semi-Automated Iterative Simplification (SAIS) approach that integrates local sensitivity analysis with model mechanistic guidance and Kling-Gupta Efficiency (KGE) metrics to evaluate each simplification step. Using the marine biogeochemical model Eco3M-MED as an example, we specified three objectives for model simplification: (1) fidelity of state variables, (2) fidelity of marine ecosystem indicators, and (3) applicability for coupling with higher trophic level models. For each objective, we assessed model sensitivity to parameters and applied the SAIS approach to simplify the model, and obtained three simplified models. KGE-based fidelity evaluations are used to validate each final simplified model against the reference model. The results show that computational time can be reduced by up to approximately 30% without compromising the model's mechanistic foundation. Overall, this method offers a flexible and scalable approach for generating simplified versions of complex biogeochemical models, suitable for applications in regional marine ecosystem assessments, climate scenario explorations, and model coupling frameworks.},
   HAL_ID = {hal-05460893},
   HAL_VERSION = {v1},
 }
@@ -42,6 +43,7 @@
   DOI = {10.1029/2024MS004528},
   KEYWORDS = {Ensemble simulation ; Uncertainty quantification ; Quasi-Geostrophic equations ; Stochastic parametrization ; Grid perturbation ; Ocean modeling ; Modeling under location uncertainty},
   PDF = {https://inria.hal.science/hal-04629335v3/file/Clement%20et%20al%202025.pdf},
+  ABSTRACT = {This paper investigates the relationship between a Stochastic Grid Perturbation (SGP) and Location Uncertainty (LU) in the context of ocean modeling. The LU formulation, which introduces random velocity fluctuations, has shown efficacy in organizing large-scale flow and replicating long-term statistical characteristics. SGP was created as a simpler approach which perturbs the computational grid for ensemble members, aiming to simulate small uncertainties in high-resolution predictability studies. We aim to clarify the link between SGP and LU. After introducing the LU formalism, we derive the SGP method and discuss its connection to LU. Correlated noise in time is introduced in the SGP method to preserve the structure of the original grid. A compensating advection term is shown to preserve LU properties despite the latter correlated noise. Numerical experiments on a 3-layer Quasi-Geostrophic model compare various SGP implementations with an explicit LU implementation, highlighting the importance of the compensating advection term to achieve strict equivalence.},
   HAL_ID = {hal-04629335},
   HAL_VERSION = {v3},
 }
@@ -60,6 +62,7 @@
   DOI = {10.1137/24M1651903},
   KEYWORDS = {Krylov Subspace Methods ; Numerical Analysis ; High Performance Computing ; Variational Data Assimilation ; Parareal ; Optimisation},
   PDF = {https://inria.hal.science/hal-03540480v3/file/preprint_sisc.pdf},
+  ABSTRACT = {Four dimensional variational data assimilation (4DVAR), in its incremental formulation, is based on optimisation algorithms which require the integration of the forward and adjoint versions of the original model in order to compute the gradient. For their use on parallel computers, these models are classically parallelised only in spatial dimension and this is a limiting factor on the maximum number of cores that can be utilised. We present here a novel approach of introducing additional time parallelisation using the Parareal algorithm. This approach is used here for integration of the forward model. We use a modified version of the inexact conjugate gradient method where the matrix-vector multiplication is supplied through Parareal. The use of this inexact conjugate gradient and the associated convergence conditions allows to precisely determine the stopping criterion of the Parareal iterations. The results are demonstrated by considering a one dimensional shallow water model. They are presented in terms of the accuracy (in comparison with the original exact conjugate gradient) and in terms of the number of required iterations of the Parareal algorithm.},
   HAL_ID = {hal-03540480},
   HAL_VERSION = {v3},
 }
@@ -72,6 +75,7 @@
   YEAR = {2025},
   KEYWORDS = {Language uplifting ; source-to-source compilation ; deep kernel fusion ; loop fusion ; model-driven performance optimization},
   PDF = {https://hal.science/hal-05061001v1/file/paper%20%281%29.pdf},
+  ABSTRACT = {Achieving peak performance for ocean models on modern High-Performance Computing (HPC) architectures requires extensive, costly code rewrites that are not only time-consuming and errorprone but also highly architecture-specific and require numerics experts to be proficient in parallel programming models or Domain-Specific Languages (DSLs).<p>In this paper we introduce Poseidon, a source-to-source code optimization tool that employs numerics &amp; HPC co-design. We developed an uplifting approach to a hypergraph for the data flow and to our own Poseidon Intermediate Representation (PosIR) for the computations, which recovers for the first time high-level information and semantics about the computations and memory management that are typically lost during the conversion of numerical algorithms to source code. This representation is then employed for model-driven optimizations. In the backend, we inject source code back into the original code supporting different target HPC architectures, reusing the existing model as the runtime.</p><p>Our evaluation investigates OpenMP and OpenACC parallel programming models on CPUs and GPUs. We demonstrate Poseidon's capability of automatic parallelization and optimization of existing Fortran code, with comparisons to state-of-the-art parallelized code with performance improvements of up to ×2.60 and automatically reducing the required memory footprint by up to ×2.29.</p>},
   HAL_ID = {hal-05061001},
   HAL_VERSION = {v1},
 }
@@ -85,6 +89,7 @@
   PAGES = {1-8},
   YEAR = {2025},
   DOI = {10.1109/TPAMI.2025.3599629},
+  ABSTRACT = {Neural Ordinary Differential Equations (NODEs) serve as continuous-time analogs of residual networks. They provide a system-theoretic perspective on neural network architecture design and offer natural solutions for time series modeling, forecasting, and applications where invertible neural networks are essential. However, these models suffer from slow performance due to heavy numerical solver overhead. For instance, a popular solution for training and inference of NODEs consists in using adaptive step size solvers such as the popular Dormand–Prince 5(4) (DOPRI). These solvers dynamically adjust the Number of Function Evaluations (NFE) as the equation fits the training data and becomes more complex. However, this comes at the cost of an increased number of function evaluations, which reduces computational efficiency. In this work, we propose a novel approach: making the parameters of the numerical integration scheme trainable. By doing so, the numerical scheme dynamically adapts to the dynamics of the NODE, resulting in a model that operates with a fixed NFE. We compare the proposed trainable solvers with state-of-the-art approaches, including DOPRI, for different benchmarks, including classification, density estimation, and dynamical system modeling. Overall, we report a state-of-the-art performance for all benchmarks in terms of accuracy metrics, while enhancing the computational efficiency through trainable fixed-step-size solvers. This work opens up new possibilities for practical and efficient modeling applications with NODEs.},
   HAL_ID = {hal-05232101},
   HAL_VERSION = {v1},
 }
@@ -101,6 +106,7 @@
   DOI = {10.5281/zenodo.11190458},
   KEYWORDS = {HPC High-Performance Computing ; Ocean Models ; Source optimization ; Fortran ; Transpiler ; HPC Calcul Haute Performance ; Mod{\`e}les Oc{\'e}aniques ; Optimisation de Code ; Compilateur source-{\`a}-source},
   PDF = {https://hal.science/hal-04811677v1/file/poster_final.pdf},
+  ABSTRACT = {Ocean simulation models often underperform on modern high-performance computing (HPC) architectures, necessitating costly and time-consuming code rewrites. We introduce Poseidon, an HPC-oriented source-to-source translator for Fortran-based fluid dynamics solvers used in ocean and weather models with regular grid structures. Poseidon aims to recover high-level information and semantics lost during the process of converting numerics to source code. We demonstrate Poseidon's approach using a research code implementing the 2D fast barotropic solver of full 3D ocean simulation models, which involves over 20 stencil-like kernels. Kernel fusion-based code optimization can already lead to a high combinatorial complexity. Preliminary results include various performance studies with and without data flow graph-based modifications based on an exhaustive search for kernel fusion. Measurements show that Poseidon can generate optimized Fortran code. In future work, Poseidon automatic code rewrite should help to: port existing code to GPU, hide process communications latency and apply automatic differentiation.},
   HAL_ID = {hal-04811677},
   HAL_VERSION = {v1},
 }
@@ -117,6 +123,7 @@
   MONTH = Jun,
   DOI = {10.1016/j.ocemod.2024.102371},
   KEYWORDS = {Acoustic-gravity waves ; Free surface ocean ; Sediment bottom},
+  ABSTRACT = {Auclair et al. (2021) analyzed the propagation of acoustic-gravity waves (AGWaves) in the ocean and showed that AGWaves dispersion can be described based on the inner and boundary dispersion relations. A major limitation to their two-dispersion-relation model is the assumption of a rigid bottom boundary since acoustic waves can cross the ocean bottom and propagate in the sediment. An extension of their AGWaves dispersion model is consequently proposed toward a more realistic two-layers fluid model. This improvement enables the evaluation of the perspectives opened by the new generation of compressible ocean models for ocean-acoustics applications. The acoustic regimes in this resulting model are shown to be in agreement with underwater acoustics literature. In addition, the free-surface boundary condition is in turn compared to the pressure release boundary condition to establish a bridge with classical acoustic dispersion models.},
   HAL_ID = {hal-04781671},
   HAL_VERSION = {v1},
 }
@@ -148,6 +155,7 @@
   DOI = {10.1029/2022ms003594},
   KEYWORDS = {Bathymetry ; Boundary Condition ; Coastal Ocean Modeling ; Oceanography ; Topography Effect},
   PDF = {https://inria.hal.science/hal-03951704v1/file/Nasser_2022.pdf},
+  ABSTRACT = {Coastlines in most ocean general circulation models are piecewise constant. Accurate representation of boundary currents along staircase-like coastlines is a long-standing issue in ocean modelling. Pioneering work by Adcroft and Marshall (1998) revealed that artificial indentation of model coastlines, obtained by rotating the numerical mesh within an idealized square basin, generates a \textitspurious form drag that slows down the circulation. Here, we revisit this problem and show how this spurious drag may be eliminated. First, we find that \textitphysical convergence (i.e. the main characteristics of the flow are insensitive to the increase of the mesh resolution) allows simulations to become independent of the mesh orientation. An advection scheme with a wider stencil also reduces sensitivity to mesh orientation from coarser resolution. Second, we show that indented coastlines behave as straight and slippery shores when a true mirror boundary condition on the flow is imposed. This finding applies to both symmetric and rotational-divergence formulations of the stress tensor, and to both flux and vector-invariant forms of the equations. Finally, we demonstrate that the detachment of a vortex flowing past an outgoing corner of the coastline is faithfully simulated with exclusive implementation of impermeability conditions. These results provide guidance for a better numerical treatment of coastlines (and isobaths) in ocean general circulation models.},
   HAL_ID = {hal-03951704},
   HAL_VERSION = {v1},
 }
@@ -165,6 +173,7 @@
   MONTH = Feb,
   DOI = {10.5194/gmd-16-1191-2023},
   PDF = {https://hal.science/hal-04203826v2/file/gmd-16-1191-2023.pdf},
+  ABSTRACT = {In the ocean, meso / submesoscale structures and coastal processes are associated with fine scales. The simulation of such features thus requires the hydrodynamic equations to be solved at high-resolution (from a few hundred meters down to a few tens of meters). Therefore, local mesh refinement is a primary issue for regional and coastal modelling. As over structured grids, AGRIF (Adaptive Grid Refinement In Fortran) library is committed to tackle this challenge. It has been implemented in MARS3D, which is a numerical model developed by Ifremer (the French research institute for the exploitation of the sea) for coastal environmental researches and studies. The present paper describes how the dedicated implementation preserves some essential principles (mass conservation, constant preserving…) along with the induced constraints. The use and the performance of this new tool are detailed over two configurations that illustrate the wide range of scales and resolutions typically targeted by coastal applications. The first one is based on multiple high-resolution (500 m) grids that pave the coastal ocean over thousands of kilometres, allowing a continuum between the regional and coastal scales. The second application is more local and has a finer resolution (50 m). It targets a recurrent question for semi-enclosed bays: the renewal time indicator. Throughout these configurations, the paper intends at comparing the two-way nesting method with the traditional one-way approach and highlights how MARS3D-AGRIF tool proves to be an efficient way significantly improve the physical hydrodynamics and bring it biological issues.},
   HAL_ID = {hal-04203826},
   HAL_VERSION = {v2},
 }
@@ -182,6 +191,7 @@
   DOI = {10.1016/j.ocemod.2022.102127},
   KEYWORDS = {nearshore ; sandbar migration ; wave-resolving model ; wave asymmetry ; sediment transport},
   PDF = {https://hal.science/hal-03345439v2/file/Wave_resolving_SANDBAR_R1.pdf},
+  ABSTRACT = {The problem of sandbar migration on the storm timescale is revisited with a 3D waveresolving hydro-sedimentary model. The model accurately simulates the successive offshore and onshore bar migration observed in a large-scale flume experiment (LIP11D) in response to wave forcing representing storm and post-storm (recovery) conditions. The diagnosis of sand transport and the analysis of a composite asymmetric wave cycle reveal the migration mechanisms in each phase. In all cases, sediment resuspension is dominated by breakinginduced turbulence, while net sediment transport and bed profile evolution are primarily the result of undertow distribution across the sandbar, rather than a trade-off between onshore and offshore fluxes. In the erosion phase, a strong undertow carries the mobilized sediment seaward of the bar crest. In the accretion phase, the sandbar becomes the breaking point to more moderate waves and the undertow is limited to the lee-side of the bar, causing an counterflow migration of the bar crest. The contribution of wave-related onshore fluxes is significant in this case-although secondary in magnitude-and coincide with higher mobilization and currents during the wave crest period. We conclude that computationally efficient 3D wave-resolving models (including morphological acceleration) can be used to improve our understanding of nearshore morphodynamic problems in realistic applications.},
   HAL_ID = {hal-03345439},
   HAL_VERSION = {v2},
 }
@@ -199,6 +209,7 @@
   DOI = {10.1016/j.ocemod.2022.102121},
   KEYWORDS = {algorithms ; penalization ; bathymetry ; Gulf Stream ; ocean modeling},
   PDF = {https://inria.hal.science/hal-03593222v1/file/Debreu_Kevlahan_Marchesiello_GS_Penalization.pdf},
+  ABSTRACT = {The advantage of a smooth representation of bathymetry in terrain-following σ-coordinate ocean models is compromised by the need to avoid numerical errors on steep slopes associated with pressure gradient discretization or spurious diapycnal diffusion. Geopotential z-coordinate models avoid these errors, but greatly underrepresent the interaction of flow with a topographic slope, especially when the bathymetry is underresolved. Hybrid coordinate models are also deficient because it is difficult to find a satisfactory compromise between z and σ coordinates. With volume penalization, we do not seek a compromise, but rather a correction to the usual coordinate systems that realistically recovers continuous and steep bathymetry. The Brinkman volume penalization method studied here is a modified version of the one introduced in Debreu et al. (2020) that simplifies the numerical implementation of the penalization, increases robustness and improves its computational performance for realistic long-term simulations, while preserving accuracy. We apply this penalization method to the Gulf Stream separation problem that has puzzled modelers for decades. The method improves the representation of the flow-topography interaction and achieves realistic separation of the Gulf Stream at resolutions as coarse as 1/8◦. In addition, it provides a tool to separate the effect of eddy activity and topographic slope when changing grid resolution. This has never before been possible because at coarse resolution none of the usual coordinate systems can properly represent a steep continental slope. Our results show that realistic bathymetry is more important than eddy activity in ensuring realistic Gulf Stream separation, even though many recent studies tend to focus on the eddy activity. A steep slope can exert a stabilizing influence that promotes a strong mean slope current with strong inertia that helps it separate from the coast at the topographic curvature of Cape Hatteras. We anticipate that a successful topographic slope correction will be very valuable to climate models, as their current resolution is far from sufficient to represent western boundary currents (WBCs) using traditional coordinate systems. Our results suggest that a climate model with a 1/4◦resolution using volume penalization — and perhaps also some parameterization of the eddy-mean flow interaction to energize the WBCs — would represent ocean circulation much more realistically.},
   HAL_ID = {hal-03593222},
   HAL_VERSION = {v1},
 }
@@ -216,6 +227,7 @@
   DOI = {10.1016/j.apnum.2022.05.006},
   KEYWORDS = {Shallow water equations ; Time stepping ; Exponential integrators ; Finite differences ; Krylov methods},
   PDF = {https://hal.science/hal-02479047v3/file/BrachetDebreuEldred_lswe_16may2022.pdf},
+  ABSTRACT = {The time integration scheme is probably one of the most fundamental choice in the development of an ocean model. In this paper, we investigate several time integration schemes when applied to the shallow water equations. These set of equations is accurate enough when modelling a small depth ocean and is also relevant to study as it is the one solved for the barotropic (i.e. vertically averaged) component of a three dimensional ocean model. We analysed different schemes for the shallow water equations linearised around (h, 0). This simplified model give a good idea of difficulties occurring when applying a time integrator. Explicit schemes are accurate but the time step is constraint by the Courant-Friedrichs-Lewy stability condition. Implicit schemes can be unconditionally stable but not very accurate. In this article we propose a detailed comparison of such classical schemes with exponential integrators. The accuracy and the computational costs are analysed in different configurations..},
   HAL_ID = {hal-02479047},
   HAL_VERSION = {v3},
 }
@@ -229,6 +241,7 @@
   YEAR = {2022},
   MONTH = May,
   PDF = {https://hal.science/hal-03681091v1/file/Poster_journ_es_CIROQUO.pdf},
+  ABSTRACT = {How to calibrate a numerical model so that it performs reasonably well for different random operating conditions ? Objectives: ▶ Define the notion of regret in a calibration context ▶ Develop efficient methods and algorithms in order to estimate those parameters},
   HAL_ID = {hal-03681091},
   HAL_VERSION = {v1},
 }
@@ -243,6 +256,7 @@
   YEAR = {2022},
   MONTH = May,
   PDF = {https://inria.hal.science/hal-03769267v1/file/Talk_EGU_Lemarie.pdf},
+  ABSTRACT = {Because of the Boussinesq assumption employed in the vast majority of oceanic models, the acoustic waves are filtered and the fast dynamics corresponds to the external gravity-wave propagation which is much faster than other (internal) processes. The fast and slow dynamics are traditionally split into separate subproblems where the fast motions are nearly independent of depth. It is thus natural to model these motions with a two-dimensional (barotropic) system of equations while the slow processes are modeled with a three-dimensional (baroclinic) system. However such splitting is inexact, the barotropic mode is not strictly depth-independent meaning that the separation of slow and fast modes is non-orthogonal, even in the linear case. A consequence is that there are some fast components contained in the slow motions which induce instabilities controlled by time filtering of the fast mode. In this talk we present an analysis of the stability and accuracy of the barotropic–baroclinic mode splitting in the case where the baroclinic mode is integrated using a Runge-Kutta scheme and the barotropic mode is integrated explicitly (i.e. the so-called split-explicit approach). By referring to the theoretical framework developed by Demange et al. (2019), the analysis is based on an eigenvector decomposition using the true (depth-dependent) barotropic mode. We investigate several strategies to achieve stable integrations whose performance is assessed first on a theoretical ground and then by idealized linear and nonlinear numerical experiments.},
   HAL_ID = {hal-03769267},
   HAL_VERSION = {v1},
 }
@@ -259,6 +273,7 @@
   MONTH = Dec,
   DOI = {10.1016/j.ocemod.2021.101900},
   PDF = {https://inria.hal.science/hal-02958158v2/file/AGwaves.pdf},
+  ABSTRACT = {Waves propagate in a free-surface ocean due to compressibility and gravity (and surface tension at much smaller scale). Analytical solutions have long been derived independently for acoustic and gravity waves, i.e., acoustic waves or internal-gravity rays in an unbounded ocean, surface-gravity waves in a free-surface-ocean, and acoustic or internal modes in a bounded ocean. In the present study, capillarity waves and earth-rotation are neglected and a simple, unified model based on inner and boundary dispersion relations is derived for waves propagating in a compressible, stratified, free-surface ocean. Wave solutions are identified and visually analyzed in phase-space. Taylor developments are then carried out with respect to small parameters describing stratification and compressibility and are compared with numerical approximations of the intersection of inner and boundary dispersion surfaces. Finally, the model recovers the known approximations for swell, long-surface waves, internal-gravity rays, internal modes, acoustic waves or acoustic modes, and also provides modification of these solutions due to stratification and compressibility.},
   HAL_ID = {hal-02958158},
   HAL_VERSION = {v2},
 }
@@ -276,6 +291,7 @@
   DOI = {10.1016/j.ocemod.2021.101816},
   KEYWORDS = {Wave-resolving LES model ; Turbulent cascade ; Rip currents ; Surfzone ; wave-resolving model ; nonhydrostatic ; surfzone ; transient rip ; 3D instability},
   PDF = {https://inria.hal.science/hal-02883697v3/file/Wave_resolving_CROCO.pdf},
+  ABSTRACT = {Flash rips and surf eddies are transient horizontal structures of the order of 10 to 100 m, which can be generated in the surfzone in the absence of bathymetric irregularities. They are traditionally evaluated in a depth averaged setting which involves intrinsic horizontal shear instabilities and the direct generation of vorticity by short-crested waves. In this article, we revisit the processes of surf eddy generation with a new three-dimensional wave resolution model (CROCO) and provide a plausible demonstration of new 3D non-hydrostatic instability and turbulent cascade. We first present a quick overview of a compressible free surface approach suitable for nearshore dynamics. Its ability to simulate the propagation of surface gravity waves and nearshore wave-driven circulation is validated by two laboratory experiments. Next, we present a real world application from Grand Popo Beach, Benin, forced by waves with frequency and directional spreading. The generation of surf eddies by the 3D model differs from depth-averaged models, due to the vertical shear associated with shallow breaking waves. In this case, the generation of eddies from both horizontal shear instability and the breaking of short-crested waves is hampered, the former by stretching the along shore current and the latter by inhibiting the inverse energy cascade. Instead, the vertical shear flow is subjected to forced wave group variability and Kelvin-Helmholtz type instability at an inflection point. Primary and secondary instabilities generate spanwise and streamwise vorticity connecting small-scale eddies to larger horizontal surfzone structures. Streamwise filaments, appearing as 5 m wide ribs or mini-rips, can extend beyond the surfzone but with moderate energy. These results appear consistent with the velocity spectra and observed patterns of tracers and suspended sediments at Grand Popo Beach. The timescale associated with the mean shear-induced turbulence is several times the wave period and suggests an intermediate range between breaker-induced turbulence and large-scale surf eddies.},
   HAL_ID = {hal-02883697},
   HAL_VERSION = {v3},
 }
@@ -296,6 +312,7 @@
   DOI = {10.46298/arima.6767},
   KEYWORDS = {Green query processing ; DBMS audit ; NonLinear Regression technique ; Random Forest Technique},
   PDF = {https://hal.science/hal-02931309v3/file/ARIMA_final.pdf},
+  ABSTRACT = {Computers and electronic machines in businesses consume a significant amount of electricity, releasing carbon dioxide (CO2), which contributes to greenhouse gas emissions. Energy efficiency is a pressing concern in IT systems, ranging from mobile devices to large servers in data centers, in order to be more environmentally responsible. In order to meet the growing demands in the awareness of excessive energy consumption, many initiatives have been launched on energy efficiency for big data processing covering electronic components, software and applications. Query optimizers are one of the most power consuming components of a DBMS. They can be modified to take into account the energetical cost of query plans by using energy-based cost models with the aim of reducing the power consumption of computer systems. In this paper, we study, describe and evaluate the design of three energy cost models whose values of energy sensitive parameters are determined using the Nonlinear Regression and the Random Forests techniques. To this end, we study in depth the operating principle of the selected DBMS and present an analysis comparing the performance time and energy consumption of typical queries in the TPC benchmark. We perform extensive experiments on a physical testbed based on PostreSQL, MontetDB and Hyrise systems using workloads generated using our chosen benchmark to validate our proposal.},
   HAL_ID = {hal-02931309},
   HAL_VERSION = {v3},
 }
@@ -313,6 +330,7 @@
   DOI = {10.1016/j.jcp.2020.109952},
   KEYWORDS = {Shallow-water equations ; Relative-regret ; Robust optimisation ; Calibration},
   PDF = {https://hal.science/hal-02464780v3/file/article.pdf},
+  ABSTRACT = {Classical methods of calibration usually imply the minimisation of an objective function with respect to some control parameters. This function measures the error between some observations and the results obtained by a numerical model. In the presence of uncontrollable additional parameters that we model as random inputs, the objective function becomes a random variable, and notions of robustness have to be introduced for such an optimisation problem.In this paper, we are going to present how to take into account those uncertainties by defining the relative-regret. This quantity allow us to compare the value of the objective function to its best performance achievable given a realisation of the random additional parameters. By controlling this relative-regret using a probabilistic constraint, we can then define a new family of estimators, whose robustness with respect to the random inputs can be adjusted.},
   HAL_ID = {hal-02464780},
   HAL_VERSION = {v3},
 }
@@ -330,6 +348,7 @@
   DOI = {10.1016/j.ocemod.2020.101642},
   KEYWORDS = {Strait of Gibraltar ; Internal Solitary Waves ; Nonhydrostatic processes ; Large Eddy Simulation},
   PDF = {https://inria.hal.science/hal-02418114v1/file/Hilt2020.pdf},
+  ABSTRACT = {A two-dimensional, vertical section of the Strait of Gibraltar is simulated numerically with the nonhydrostatic / non-Boussinesq three-dimensional CROCO model to investigate details of small-scale dynamics. The proposed configuration is simple, computationally efficient and incorporates the configuration of sills characteristic of this region. Despite the shortcomings of a 2D representation, this configuration provides a realistic depiction of small-scale mechanisms in the strait during a typical tidal cycle: internal solitary waves generation and propagation, occurrence of hydraulic controls and hydraulic jumps at the sills and appearance of active turbulent patches. In particular, the well-known eastward propagation of large amplitude internal waves is assessed using the Korteweg de Vries (KdV) propagation model for solitary waves. As a step towards establishing a realistic Large Eddy Simulation (LES), the sensitivity of the configuration to various choices is investigated, e.g., resolution, amplitude of tidal forcing or numerical schemes. In such conditions, our analyses indicate that the representation of the small-scale dynamics of the Strait of Gibraltar can be much improved by increasing the resolution and relaxing the hydrostatic assumption. Further studies are necessary to grasp the mechanisms of mixing and/or stirring induced by this fine scale processes.},
   HAL_ID = {hal-02418114},
   HAL_VERSION = {v1},
 }
@@ -372,6 +391,7 @@
   DOI = {10.1287/opre.2019.1963},
   KEYWORDS = {Debreu-Farrell efficiency measure ; F{\"a}re-Lovell efficiency measure ; multiplicative F{\"a}re-Lovell efficiency measure ; asymmetric F{\"a}re efficiency measure ; input efficiency},
   PDF = {https://hal.science/hal-02496082v1/file/generalized%20fare-lovell%20-%20version%20Oct2013%20-%20text.pdf},
+  ABSTRACT = {This contribution defines a new generalized input efficiency measure which encompasses and thus links four well-known input efficiency measures: the Debreu-Farrell measure, the Färe-Lovell measure, the asymmetric Färe measure, and the multiplicative Färe-Lovell measure. The axiomatic properties of this new measure are studied. The generalized input efficiency measure naturally leads to the definition of new measures as special cases. It also provides a general framework for testing the choice of efficiency measures. Examples of mathematical programming models in specific cases are established to illustrate this new measure.},
   HAL_ID = {hal-02496082},
   HAL_VERSION = {v1},
 }
@@ -389,6 +409,7 @@
   DOI = {10.1016/j.ocemod.2019.101530},
   KEYWORDS = {computation ; algorithms ; penalization ; bottom topography ; bathymetry ; ocean modelling},
   PDF = {https://inria.hal.science/hal-02416084v1/file/PREPRINT.pdf},
+  ABSTRACT = {Accurate and stable implementation of bathymetry boundary conditions remains a challenging problem. The dynamics of ocean flow often depend sensitively on satisfying bathymetry boundary conditions and correctly representing their complex geometry. Generalized (e.g. \$\sigma\$) terrain-following coordinates are often used in ocean models, but they require smoothing the bathymetry to reduce pressure gradient errors (Mellor et al., 1994). Geopotential \$z\$-coordinates are a common alternative that avoid pressure gradient and numerical diapycnal diffusion errors, but they generate spurious flow due to their “staircase” geometry. We introduce a new Brinkman volume penalization to approximate the no-slip boundary condition and complex geometry of bathymetry in ocean models. This approach corrects the staircase effect of \$z\$-coordinates, does not introduce any new stability constraints on the geometry of the bathymetry and is easy to implement in an existing ocean model. The porosity parameter allows modelling subgrid scale details of the geometry. We illustrate the penalization and confirm its accuracy by applying it to three standard test flows: upwelling over a sloping bottom, resting state over a seamount and internal tides over highly peaked bathymetry features. In future work we will explore applying the penalization to more realistic bathymetry configurations, and moving boundaries such as melting/freezing ice shelves.},
   HAL_ID = {hal-02416084},
   HAL_VERSION = {v1},
 }
@@ -407,6 +428,7 @@
   DOI = {10.1016/j.jcp.2019.108875},
   KEYWORDS = {Ocean models ; Barotropic mode ; Mode splitting ; Stability analysis},
   PDF = {https://inria.hal.science/hal-01947706v2/file/PREPRINT.pdf},
+  ABSTRACT = {The evolution of the oceanic free-surface is responsible for the propagation of fast surface gravity waves, which approximatively propagate at speed \$\sqrtgH\$ (with \$g\$ the gravity and \$H\$ the local water depth). In the deep ocean, this phase speed is roughly two orders of magnitude faster than the fastest internal gravity waves. The very strong stability constraint imposed by those fast surface waves on the time-step of numerical models is handled using a mode splitting between slow (internal/baroclinic) and fast (external/barotropic) motions to allow the possibility to adopt specific numerical treatments in each component. The barotropic mode is traditionally approximated by the vertically integrated flow because it has only slight vertical variations. However the implications of this assumption on the stability of the splitting are not well documented. In this paper, we describe a stability analysis of the mode splitting technique based on an eigenvector decomposition using the true (depth-dependent) barotropic mode. This allows us to quantify the amount of dissipation required to stabilize the approximative splitting. We show that, to achieve stable integrations, the dissipation usually applied through averaging filters can be drastically reduced when incorporated at the level of the barotropic time stepping. The benefits are illustrated by numerical experiments. In addition, the formulation of a new mode splitting algorithm using the depth-dependent barotropic mode is introduced.},
   HAL_ID = {hal-01947706},
   HAL_VERSION = {v2},
 }
@@ -420,6 +442,7 @@
   YEAR = {2019},
   MONTH = Apr,
   PDF = {https://inria.hal.science/hal-02418199v1/file/Poster_Commodore.pdf},
+  ABSTRACT = {This poster outlines an initiative to bring together the world-wide leading researchers actively contributing to the development of oceanic model dynamical cores irrespective of target applications (regional, coastal, or global). The first community for the numerical modeling ofthe global, regional and coastal ocean (COMMODORE) workshop (https://commodore2018.sciencesconf.org/) has been organized in Paris in September 2018 [1]. In total, the participants represented 15 oceanic dynamical cores among the most widely used by the research and operational community. The present poster summarizes the challenges and prospects for oceanic numerical cores across all scales discussed during the workshop. In particular, identified challenges to be addressed include strategies for multi-resolution, energy consistency and resolved/unresolved scales coupling, the design of vertical coordinates and their link with spurious numerical mixing, the inclusion of non-hydrostatic pressure contribution within existing primitive equations models, and the proper treatment of wetting and drying.},
   HAL_ID = {hal-02418199},
   HAL_VERSION = {v1},
 }
@@ -432,6 +455,7 @@
   YEAR = {2019},
   MONTH = Jan,
   PDF = {https://inria.hal.science/hal-01968678v1/file/igw.pdf},
+  ABSTRACT = {Variational data assimilation technique is applied to a simple bidi-mensional wave equation that simulates propagation of internal gravity waves in the ocean in order to control grids and numerical schemes. Grid steps of the vertical grid, Brunt-Vaisala frequency and approximation of the horizontal derivative were used as control parameters either separately or in the joint control. Obtained results show that optimized parameters may partially compensate errors committed by numerical scheme due to insufficient grid resolution.},
   HAL_ID = {hal-01968678},
   HAL_VERSION = {v1},
 }
@@ -447,6 +471,7 @@
   YEAR = {2019},
   DOI = {10.1175/BAMS-D-18-0303.1},
   PDF = {https://inria.hal.science/hal-01939057v1/file/commodore_bams.pdf},
+  ABSTRACT = {Oceanic numerical models are used to understand and predict a wide range of processes from global paleoclimate scales to short-term prediction in estuaries and shallow coastal areas. One of the overarching challenges, and the main topic of the COMMODORE workshop,is the appropriate design of the dynamical cores given the wide variety of scales of interest and their interactions with atmosphere, sea-ice, biogeochemistry, and even societal processes. The construction of a dynamical core is a very long effort which takes years and decades of research and development and which requires a collaborative mixture of scientific disciplines. This work involves a significant number of fundamental choices, such as which equations to solve, which horizontal and vertical grid arrangement is adequate, which discrete algorithms allows jointly computational efficiency and sufficient accuracy, etc. Nowadays, a broad range of numerical methods are implemented in models used for realistic ocean simulations, and, owed to the advances in computational power, a meeting point has been reached between global circulation models and regional local models such that there can be mutual benefits of a cross-fertilization between communities. This report outlines an initiative to bring together the world-wide leading researchers actively contributing to the development of oceanic model dynamical cores, such that participants could network together and focus on next challenges irrespective of target applications (regional, coastal, or global). The first community for the numerical modeling of the global, regional and coastal ocean (COMMODORE) workshop (https://commodore2018.sciencesconf.org/) has been organized in Paris in September 2018. In total, the participants represented 15 oceanic dynamical cores among the most widely used by the research and operational community. The motivations, topics of discussion sessions, and outcomes of the workshop are summarized below.},
   HAL_ID = {hal-01939057},
   HAL_VERSION = {v1},
 }
@@ -476,6 +501,7 @@
   DOI = {10.1016/j.ocemod.2018.01.007},
   KEYWORDS = {hydrostatic models ; mode-splitting ; mode splitting ; wetting and drying ; adaptive coordinates ; coastal ocean models ; drying \& flooding ; two-way nesting},
   PDF = {https://inria.hal.science/hal-01443357v3/file/coastal_review_omod_2018.pdf},
+  ABSTRACT = {The state of the art of the numerics of hydrodynamic non-hydrostatic structured-grid coastal ocean models is reviewed here. First, some fundamental differences in the hydrodynamics of the coastal ocean, such as the large surface elevation variation compared to the mean water depth, are contrasted against large scale ocean dynamics. Then the hydrodynamic equations as they are used in coastal ocean models as well as in large scale ocean models are presented, including parameterisations for turbulent transports. As steps towards discretisation, coordinate transformations and vertical and horizontal discretisations based on a finite-volume approach are discussed with focus on the specific requirements for coastal ocean models. As in large scale ocean models, splitting of internal and external modes is essential also for coastal ocean models, but specific care is needed when wetting an drying of inter-tidal flats is included. As one obvious characteristics of coastal ocean models, open boundaries occur and need to be treated in a way that correct model forcing from outside is transmitted to the model domain without reflecting waves from the inside. Here, also new developments in two-way nesting are presented. Single processes such as internal inertia-gravity waves, advection and turbulence closure models are discussed with focus on the coastal scales. Some overview on existing hydrostatic structured-grid coastal ocean models is given, including their extensions towards non-hydrostatic models. Finally, an outlook on future perspectives is made.},
   HAL_ID = {hal-01443357},
   HAL_VERSION = {v3},
 }
@@ -502,6 +528,7 @@
   ADDRESS = {Montpellier, France},
   YEAR = {2017},
   MONTH = Dec,
+  ABSTRACT = {This talk will review the on-going developments of the CROCO model (http://www.croco-ocean.org) towards high resolution (coastal and littoral) 3D numerical simulations. In particular, it will address its multiresolution features based on block structured meshes and the treatment of non-hydrostatic processes using a pseudo-compressibility approach.},
   HAL_ID = {hal-01691252},
   HAL_VERSION = {v1},
 }
@@ -550,6 +577,7 @@
   ADDRESS = {San Francisco, United States},
   YEAR = {2016},
   MONTH = Dec,
+  ABSTRACT = {Due to the wide variety of choices that need to be made during the development of dynamical kernels of oceanic models, there is a strong need for an effective and objective assessment of the various methods and approaches that predominate in the community. We present here an idealized multi-scale scenario for coastal ocean models combining estuarine, coastal and shelf sea scales at midlatitude. The bathymetry, initial conditions and external forcings are defined analytically so that any model developer or user could reproduce the test case with its own numerical code. Thermally stratified conditions are prescribed and a tidal forcing is imposed as a propagating coastal Kelvin wave. The following physical processes can be assessed from the model results: estuarine process driven by tides and buoyancy gradients, the river plume dynamics, tidal fronts, and the interaction between tides and inertial oscillations. We show results obtained using the GETM (General Estuarine Transport Model) and the CROCO (Coastal and Regional Ocean Community model) models. Those two models are representative of the diversity of numerical methods in use in coastal models: GETM is based on a quasi-lagrangian vertical coordinate, a coupled space-time approach for advective terms, a TVD (Total Variation Diminishing) tracer advection scheme while CROCO is discretized with a quasi-eulerian vertical coordinate, a method of lines is used for advective terms, and tracer advection satisfies the TVB (Total Variation Bounded) property. The multiple scales are properly resolved thanks to nesting strategies, 1-way nesting for GETM and 2-way nesting for CROCO. Such test case can be an interesting experiment to continue research in numerical approaches as well as an efficient tool to allow intercomparison between structured-grid and unstructured-grid approaches. Reference : Klingbeil, K., Debreu, L., Lemarié, F., Burchard, H. : The numerics of hydrostatic structured-grid coastal ocean models: state of the art and future perspectives. Ocean Modell.},
   HAL_ID = {hal-01685264},
   HAL_VERSION = {v1},
 }
@@ -562,6 +590,7 @@
   ADDRESS = {San Francisco, United States},
   YEAR = {2016},
   MONTH = Dec,
+  ABSTRACT = {CROCO (Coastal and Regional Ocean Community model [1]) is a new oceanic modeling system built upon ROMS_AGRIFand the non-hydrostatic kernel of SNH, gradually including algorithms from MARS3D (sediments)and HYCOM (vertical coordinates).An important objective of CROCO is to provide the possibility of running truly multiresolution simulations.Our previous work on structured mesh refinement [2] allowed us to run two-way nesting with the following major features:conservation, spatial and temporal refinement, coupling at the barotropic level.In this presentation, we will expose the current developments in CROCO towards multiresolution simulations: connection between neighboring grids at the same level of resolution and load balancing on parallel computers.Results of preliminary experiments will be given both on an idealized test case and on a realistic simulation of the Bay of Biscay with high resolution along the coast.Refs:[1] : CROCO : http://www.croco-ocean.org[2] : Debreu, L., P. Marchesiello, P. Penven, and G. Cambon, 2012: Two-way nesting in split-explicit ocean models: algorithms,implementation and validation. Ocean Modelling, 49-50, 1-21.},
   HAL_ID = {hal-01691265},
   HAL_VERSION = {v1},
 }
@@ -574,6 +603,7 @@
   ADDRESS = {Oslo, Norway},
   YEAR = {2016},
   MONTH = May,
+  ABSTRACT = {Recent papers by Shchepetkin (2015) and Lemarié et al. (2015) have emphasized that the time-step of an oceanic model with an Eulerian vertical coordinate and an explicit time-stepping scheme is very often restricted by vertical advection in a few hot spots (i.e. most of the grid points are integrated with small Courant numbers except just few spots). The consequence is that the numerics for vertical advection must have good stability properties while being robust to changes in Courant number in terms of accuracy. An other constraint is the strict control of numerical mixing imposed by the highly adiabatic nature of the oceanic interior. The same applies for remapping schemes when ALE coordinates are used. We propose to examine in this talk the possibility of mitigating vertical CFL restriction, while avoiding numerical inaccuracies associated with standard implicit schemes (i.e. large sensitivity of the solution on Courant number, large phase delay, and possibly excess of numerical damping). Several regional oceanic models have been successfully using fourth order compact spatial discretizations for vertical advection. In this talk we present a space-time generalization of compact schemes. In particular, we derive a generic expression for a fourth-order (one-step) coupled time and space compact scheme (see Daru & Tenaud (2004) for a thorough description of coupled time and space schemes). Among other properties, we show that this scheme is non dissipative, unconditionally stable, and has very good accuracy properties especially for Courant numbers smaller than 1 while having a very small computational cost. Furthermore, we show how this scheme can be made monotonic without compromising its stability properties. We emphasize that the scheme can be successfully used in number of different situations: <ul> <li> as an unconditionally stable vertical advection scheme in an oceanic model with quasi-Eulerian vertical coordinate (provided a degradation of time accuracy for large Courant numbers) <li> as a scheme to compute the so-called ”fractional flux” in a flux-form semi-Lagrangian scheme à la Lin & Rood (1996) to provide a stable scheme even for large Courant numbers <li> as a remapping scheme in an ALE framework following Dukowicz & Baumgardner (2000) We illustrate the properties of the scheme and compare it to existing fourth-order accurate in time and space schemes using linear and nonlinear numerical experiments. </ul>},
   HAL_ID = {hal-01406629},
   HAL_VERSION = {v1},
 }
@@ -602,6 +632,7 @@
   MONTH = Feb,
   DOI = {10.1016/j.ocemod.2015.12.004},
   KEYWORDS = {baroclinic jet ; spectral budget ; Effective resolution ; numerical dissipation},
+  ABSTRACT = {The increase of model resolution naturally leads to the representation of a wider energy spectrum. As a result, in recent years, the understanding of oceanic submesoscale dynamics has significantly improved. However, dissipation in submesoscale models remains dominated by numerical constraints rather than physical ones. Effective resolution is limited by the numerical dissipation range, which is a function of the model numerical filters (assuming that dispersive numerical modes are efficiently removed). We present a Baroclinic Jet test case set in a zonally reentrant channel that provides a controllable test of a model capacity at resolving submesoscale dynamics. We compare simulations from two models, ROMS and NEMO, at different mesh sizes (from 20 to 2 km). Through a spectral decomposition of kinetic energy and its budget terms, we identify the characteristics of numerical dissipation and effective resolution. It shows that numerical dissipation appears in different parts of a model, especially in spatial advection-diffusion schemes for momentum equations (KE dissipation) and tracer equations (APE dissipation) and in the time stepping algorithms. Effective resolution, defined by scale-selective dissipation, is inadequate to qualify traditional ocean models with low-order spatial and temporal filters, even at high grid resolution. High-order methods are better suited to the concept and probably unavoidable. Fourth-order filters are suited only for grid resolutions less than a few kilometers and momentum advection schemes of even higher-order may be justified. The upgrade of time stepping algorithms (from filtered Leapfrog), a cumbersome task in a model, appears critical from our results, not just as a matter of model solution quality but also of computational efficiency (extended stability range of predictor-corrector schemes). Effective resolution is also shaken by the need for non scale-selective barotropic mode filters and requires carefully addressing the issue of mode splitting errors. Possibly the most surprising result is that submesoscale energy production is largely affected by spurious diapycnal mixing (APE dissipation). This result justifies renewed efforts in reducing tracer mixing errors and poses again the question of how much vertical diffusion is at work in the real ocean.},
   HAL_ID = {hal-01250231},
   HAL_VERSION = {v1},
 }
@@ -619,6 +650,7 @@
   MONTH = Jan,
   DOI = {10.1002/qj.2676},
   PDF = {https://inria.hal.science/hal-00874643v1/file/multigrid_debreu_qjrms.pdf},
+  ABSTRACT = {In order to lower the computational cost of the variational data assimilation process, we investigate the use of multigrid methods to solve the associated optimal control system. On a linear advection equation, we study the impact of the regularization term of the optimal control and the impact of discretization errors on the efficiency of the coarse grid correction step. We show that even if the optimal control problem leads to the solution of an elliptic system, numerical errors introduced by the discretization can alter the success of the multigrid methods. The view of the multigrid iteration as a preconditioner for a Krylov optimization method leads to a more robust algorithm. A scale dependent weighting of the multigrid preconditioner and the usual background error covariance matrix based preconditioner is proposed and brings significant improvements.},
   HAL_ID = {hal-00874643},
   HAL_VERSION = {v1},
 }
@@ -646,6 +678,7 @@
   ORGANIZATION = {{KOREA Institute of Atmospheric Prediction Systems (KIAPS)}},
   YEAR = {2015},
   MONTH = Oct,
+  ABSTRACT = {Recent papers by Shchepetkin (2015) and Lemarié et al. (2015) have emphasized that the time-step of an oceanic model with an Eulerian vertical coordinate and an explicit time-stepping scheme is very often restricted by vertical advection in a few hot spots (i.e. most of the grid points are integrated with small Courant numbers, compared to the Courant-Friedrichs-Lewy (CFL) condition, except just few spots where numerical instability of the explicit scheme occurs first). The consequence is that the numerics for vertical advection must have good stability properties while being robust to changes in Courant number in terms of accuracy. An other constraint for oceanic models is the strict control of numerical mixing imposed by the highly adiabatic nature of the oceanic interior (i.e. mixing must be very small in the vertical direction below the boundary layer). We examine in this talk the possibility of mitigating vertical Courant-Friedrichs-Lewy (CFL) restriction, while avoiding numerical inaccuracies associated with standard implicit advection schemes (i.e. large sensitivity of the solution on Courant number, large phase delay, and possibly excess of numerical damping with unphysical orientation), see Baldauf & Skamarock (2009) or Shchepetkin (2015). Most regional oceanic models have been successfully using fourth order compact schemes (e.g. Lele, 1992) for vertical advection. In this talk we present a general framework to derive generic expressions for (one-step) coupled time and space high order compact schemes (see Daru & Tenaud (2004) for a thorough description of coupled time and space schemes). Among other properties, we show that those schemes are unconditionally stable and have very good accuracy properties even for large Courant numbers while having a very reasonable computational cost. We illustrate the properties of those schemes and compare them to existing schemes using linear and nonlinear numerical experiments.},
   HAL_ID = {hal-01250645},
   HAL_VERSION = {v1},
 }
@@ -663,23 +696,9 @@
   YEAR = {2015},
   MONTH = Jun,
   DOI = {10.1016/j.procs.2015.05.473},
+  ABSTRACT = {This paper is focused on the numerical and computational issues associated to ocean-atmosphere coupling. It is shown that usual coupling methods do not provide the solution to the correct problem, but to an approaching one since they are equivalent to performing one single iteration of an iterative coupling method. The stability analysis of these ad-hoc methods is presented, and we motivate and propose the adaptation of a Schwarz domain decomposition method to ocean-atmosphere coupling to obtain a stable and consistent coupling method.},
   HAL_ID = {hal-01659459},
   HAL_VERSION = {v1},
-}
-
-@article{lemarie:hal-01065979,
-  TITLE = {{Stability constraints for oceanic numerical models: implications for the formulation of time and space discretizations}},
-  AUTHOR = {Lemari{\'e}, Florian and Debreu, Laurent and Madec, Gurvan and Demange, J{\'e}r{\'e}mie and Molines, Jean-Marc and Honnorat, Marc},
-  URL = {https://inria.hal.science/hal-01065979},
-  JOURNAL = {{Ocean Modelling}},
-  PUBLISHER = {{Elsevier}},
-  VOLUME = {92},
-  PAGES = {124--148},
-  YEAR = {2015},
-  DOI = {10.1016/j.ocemod.2015.06.006},
-  PDF = {https://inria.hal.science/hal-01065979v2/file/stab2014_R1.pdf},
-  HAL_ID = {hal-01065979},
-  HAL_VERSION = {v2},
 }
 
 @article{lemarie:hal-01174132,
@@ -695,8 +714,25 @@
   DOI = {10.1016/j.procs.2015.05.473},
   KEYWORDS = {Schwarz domain decomposition method ; Ocean-atmosphere coupling ; air-sea interface},
   PDF = {https://inria.hal.science/hal-01174132v1/file/lemarie-etal.pdf},
+  ABSTRACT = {This paper is focused on the numerical and computational issues associated to ocean-atmosphere coupling. It is shown that usual coupling methods do not provide the solution to the correct problem, but to an approaching one since they are equivalent to performing one single iteration of an iterative coupling method. The stability analysis of these ad-hoc methods is presented, and we motivate and propose the adaptation of a Schwarz domain decomposition method to ocean-atmosphere coupling to obtain a stable and consistent coupling method.},
   HAL_ID = {hal-01174132},
   HAL_VERSION = {v1},
+}
+
+@article{lemarie:hal-01065979,
+  TITLE = {{Stability constraints for oceanic numerical models: implications for the formulation of time and space discretizations}},
+  AUTHOR = {Lemari{\'e}, Florian and Debreu, Laurent and Madec, Gurvan and Demange, J{\'e}r{\'e}mie and Molines, Jean-Marc and Honnorat, Marc},
+  URL = {https://inria.hal.science/hal-01065979},
+  JOURNAL = {{Ocean Modelling}},
+  PUBLISHER = {{Elsevier}},
+  VOLUME = {92},
+  PAGES = {124--148},
+  YEAR = {2015},
+  DOI = {10.1016/j.ocemod.2015.06.006},
+  PDF = {https://inria.hal.science/hal-01065979v2/file/stab2014_R1.pdf},
+  ABSTRACT = {Except for vertical diffusion (and possibly the external mode and bottom drag), oceanic models usually rely on explicit time-stepping algorithms subject to Courant-Friedrichs-Lewy (CFL) stability criteria. Implicit methods could be unconditionally stable, but an algebraic system must be solved at each time step and other considerations such as accuracy and efficiency are less straightforward to achieve. Depending on the target application, the process limiting the maximum allowed time-step is generally different. In this paper, we introduce offline diagnostics to predict stability limits associated with internal gravity waves, advection, diffusion, and rotation. This suite of diagnostics is applied to a set of global, regional and coastal numerical simulations with several horizontal/vertical resolutions and different numerical models. We show that, for resolutions finer that 1/2◦, models with an eulerian vertical coordinate are generally constrained by vertical advection in a few hot spots and that numerics must be extremely robust to changes in Courant number. Based on those results, we review the stability and accuracy of existing numerical kernels in vogue in primitive equations oceanic models with a focus on advective processes and the dynamics of internal waves. We emphasize the additional value of studying the numerical kernel of oceanic models in the light of coupled space-time approaches instead of studying the time schemes independently from spatial discretizations. From this study, we suggest some guidelines for the development of temporal schemes in future generation multi-purpose oceanic models.},
+  HAL_ID = {hal-01065979},
+  HAL_VERSION = {v2},
 }
 
 @techreport{lemarie:hal-00872496,
@@ -711,6 +747,7 @@
   MONTH = Dec,
   KEYWORDS = {Schwarz algorithms ; air-sea interface ; domain decomposition methods ; ocean-atmosphere coupling},
   PDF = {https://inria.hal.science/hal-00872496v6/file/RR-8651.pdf},
+  ABSTRACT = {In this paper, the sensitivity of Atmospheric and Oceanic Coupled Models (AOCMs) to the coupling method is investigated. We propose the adaptation of a Schwarz-like domain decomposition method to AOCMs. We show that the iterative process of the method ensures consistency of the coupled solution across the air-sea interface, contrarily to usual \textitad-hoc algorithmic approaches. The latter are equivalent to only one iteration of a Schwarz-like iterative method, which does not provide a converged state. It is generally assumed that this lack of consistency does not affect significantly the physical properties of the solution. The relevancy of this statement is first assessed in a simplified problem, then in the realistic application of a mesoscale atmospheric model (WRF) coupled with a regional oceanic model (ROMS) to simulate the genesis and propagation of tropical cyclone Erica. Sensitivity tests to the coupling method are carried out in an ensemble approach.We show that with a mathematically consistent coupling the spread of the ensemble is reduced,suggesting that there is room for further improvements in the formulation of AOCMs at a mathematicaland numerical level.},
   HAL_ID = {hal-00872496},
   HAL_VERSION = {v6},
 }
@@ -737,6 +774,7 @@
   YEAR = {2014},
   MONTH = Sep,
   PDF = {https://inria.hal.science/hal-01063417v1/file/RR-8590.pdf},
+  ABSTRACT = {Similar to surface waves propagating at the interface of two fluid of different densities (like air and water), internal waves in the oceanic interior travel along surfaces separating waters of different densities (e.g. at the thermocline). Due to their key role in the global distribution of (physical) diapycnal mixing and mass transport, proper representation of internal wave dynamics in numerical models should be considered a priority since global climate models are now configured with increasingly higher horizontal/vertical resolution. However, in most state-of-the-art oceanic models, important terms involved in the propagation of internal waves (namely the horizontal pressure gradient and horizontal divergence in the continuity equation) are generally discretized using very basic numerics (i.e. second-order approximations) in space and time. In this paper, we investigate the benefits of higher-order approximations in terms of the discrete dispersion relation (in the linear theory) on staggered and nonstaggered computational grids. A fourth-order scheme discretized on a C-grid to approximate both pressure gradient and horizontal divergence terms provides clear improvements but, unlike nonstaggered grids, prevents the use of monotonic or non-oscillatory schemes. Since our study suggests that better numerics is required, second and fourth order direct space-time algorithms are designed, thus paving the way toward the use of efficient high-order discretizations of internal gravity waves in oceanic models, while maintaining good stability properties (those schemes are stable for Courant numbers smaller than 1). Finally, important results obtained at a theoretical level are illustrated at a discrete level using two-dimensional (x,z) idealized experiments.},
   HAL_ID = {hal-01063417},
   HAL_VERSION = {v1},
 }
@@ -751,6 +789,7 @@
   YEAR = {2014},
   MONTH = Sep,
   PDF = {https://inria.hal.science/hal-01063414v1/file/RR-8589.pdf},
+  ABSTRACT = {Evolution of the oceanic free-surfaceﰒis responsible for the propagation of fast surface gravity waves which roughly propagates at speed gH (with g the gravity and H the local water depth). In the deep ocean, this phase speed is roughly two orders of magnitude faster than the fastest internal gravity waves. The steep stability constraint imposed by those fast surface waves on the time-step of numerical models is handled using a splitting between slow (internal / baroclinic) and fast (external / barotropic) motions to allow the possibility to adopt specific numerical treatments in each component. The barotropic mode is traditionally approximated by the vertically integrated flow because it has only slight vertical variations. However, the implications of this assumption on the stability of the splitting are not well documented. In this paper, we describe a stability analysis of the mode-splitting technique based on an eigenvector decomposition using the true (depth-dependent) barotropic mode. We show that the use of such a depth-dependent barotropic mode allows a much stable integration of the mode-split equations. As a consequence, the amount of dissipation required to achieve stable integrations, usually applied through averaging filters, can be drastically reduced. It results in a much improved effective resolution even for complex flows. In addition, the formulation of a new mode splitting algorithm using the depth-dependent barotropic mode is introduced. The benefits of this new formulation are illustrated by idealized numerical experiments.},
   HAL_ID = {hal-01063414},
   HAL_VERSION = {v1},
 }
@@ -763,6 +802,7 @@
   ADDRESS = {Boulder, United States},
   YEAR = {2014},
   MONTH = Apr,
+  ABSTRACT = {Ocean models usually rely on a tracer mixing operator which diffuses along isoneutral directions. This requirement is imposed by the highly adiabatic nature of the oceanic interior, and a numerical simulation needs to respect these small levels of dianeutral mixing to maintain physically realistic results. This is a key issue nowadays in oceanic numerical models (e.g., Hansen et al., 2011 "Earth's energy imbalance and implications"). For non-isopycnic models, rotated mixing operators must therefore be used. In continuation of the pioneering work of Griffies et al. (1998) and Beckers et al. (2000) in this field, we, first, exhaustively present the performance of various space-time discretizations in terms of stability, accuracy, tracer variance dissipation and min-max violations for the harmonic and biharmonic rotated operators. From this study, we can anticipate the flaws of the different schemes in practical situations. Because global climate models are now targeting increasingly higher horizontal resolution, the question of the viability of an isoneutral biharmonic operator is not only relevant for the regional modeling community but also for the ocean climate community. A new way of handling the temporal discretization of this type of operator is thus introduced. This scheme requires only the resolution of a simple one-dimensional tridiagonal system in the vertical direction to provide the same stability limit of the non-rotated operator. The results are illustrated by idealized numerical experiments of the diffusion of a passive tracer along isoneutral directions as well as fully realistic eddy-resolving and eddy-permitting configurations. Those numerical results show that rotated operators must be used with care and can sometimes lead to an accumulation of dispersive errors which can be seen in T/S diagrams. Furthermore, we will offer a discussion on some possible alternatives to the use of rotated operators.},
   HAL_ID = {hal-01062955},
   HAL_VERSION = {v1},
 }
@@ -775,6 +815,7 @@
   ADDRESS = {Honolulu, United States},
   YEAR = {2014},
   MONTH = Feb,
+  ABSTRACT = {Thanks to advances in computational power, global climate models are now configured with increasingly higher horizontal/vertical resolution. The extension of the range of application of this type of model, originally developed for low-resolution large-scale configurations, raises some new challenges of numerical nature. Indeed, depending on the target application, the numerics must be adapted based on accuracy, stability and efficiency considerations. To help rationalizing the appropriate choices for a given horizontal/vertical resolution, we developed offline diagnostics to predict stability limits associated with internal gravity waves, advection, diffusion, Coriolis, and bottom drag. This suite of diagnostics is applied to a set of numerical simulations with several horizontal/vertical resolutions and different numerical models including the global NEMO ORCA 1/2◦, 1/4◦ and 1/12◦, and the regional North-East Atlantic 1/36◦ MARS3D and NEMO configurations. Based on those results, we review the stability and accuracy of existing numerical kernels in vogue in the ocean community for advective processes and the dynamics of internal waves. We emphasize the additional value of studying the numerical kernel of ocean models in the light of coupled space-time approaches (e.g.; Daru & Tenaud 2004) instead of studying the time schemes independently from spatial discretizations, as usually done (e.g.; Shchepetkin & McWilliams, 2005), to get a more accurate measure of the stability and numerical diffusion of a given model.},
   HAL_ID = {hal-00957238},
   HAL_VERSION = {v1},
 }
@@ -791,6 +832,7 @@
   MONTH = Jan,
   DOI = {10.1016/j.ocemod.2013.12.007},
   KEYWORDS = {Atlantic Meridional Overturning Circulation ; Deep Western Boundary Current ; North Atlantic Current ; Gulf Stream ; Subpolar gyre},
+  ABSTRACT = {Previous studies have shown that low horizontal resolution (of the order of 1°) ocean models, hence climate models, are not able to adequately represent boundary currents nor mesoscale processes which affect the dynamics and thermohaline circulation of the ocean. While the effect of mesoscale eddies can be parameterized in low resolution models, boundary currents require relatively high horizontal resolution. We clarify the impact of increasing the resolution on the North Atlantic circulation, with emphasis on the Atlantic Meridional Overturning Circulation (AMOC), by embedding a 1/8° nest covering the North Atlantic into a global 1/2° model. Increasing the resolution in the nest leads to regional improvements of the circulation and thermohaline properties in the Gulf Stream area, for the North Atlantic Current, in the subpolar gyre and the Nordic Seas, consistent with those of previous studies. In addition, we show that the Deep Western Boundary Current dense water transport increases with the nest, from the overflows down to Flemish Cap, due to an increase in the Denmark Strait overflow as well as dense water formation in the subpolar gyre. This increases the Atlantic Meridional Overturning Circulation in density space by about 8 Sv in the subpolar gyre in the nested configuration. When exiting the Labrador Sea around 53°N we illustrate that the Deep Western Boundary Current successively interacts with the upper ocean circulation composed with the North Atlantic Current in the intergyre region, the Northern Recirculation Gyre, and the Gulf Stream near Cape Hatteras. This surface/deep current interaction seems to induce an increase of the AMOC intensity in depth-space, giving rise to an AMOC maximum near 35°N. This process is missing in the configuration without nesting. At 26.5°N, the AMOC is 4 Sv larger in the nested configuration and is in good agreement with observations. Finally, beyond the nest imprint (i.e. in the low resolution area) in the South Atlantic the AMOC maximum at 40°S is 3 Sv larger at the end of the simulation meaning that information is able to propagate outside the nest without being fully damped. This underlines the benefit of using the nest for a reasonable computing time compared to a fully global higher resolution configuration},
   HAL_ID = {hal-00944219},
   HAL_VERSION = {v1},
 }
@@ -818,6 +860,7 @@
   PAGES = {34-46},
   YEAR = {2014},
   DOI = {10.1080/1755876X.2014.11020151},
+  ABSTRACT = {The implementation of a regional 1/36 degrees numerical model of a key sub region of the southwestern Pacific Ocean: the Solomon Sea is discussed.This model is two-way embedded into a 1/12 degrees resolution basin-scale model, itself one-way nested in a global 1/12 degrees resolution ocean model.The three main questions discussed in this study concern (i) the bathymetry, (ii) the setting up of adequate forcing functions, especially regarding the wind stress parameterization, and (iii) the strategy used to embed and conned the model configurations together Such a system, exemplified here for the Solomon Sea, represents a prototype of embedded model systems that are considered in operational oceanography.},
   HAL_ID = {hal-01095929},
   HAL_VERSION = {v1},
 }
@@ -834,6 +877,7 @@
   YEAR = {2014},
   DOI = {10.1093/acprof:oso/9780198723844.003.0017},
   KEYWORDS = {mesh refinement ; variational data ; data assimilation method ; background error covariance matrix ; multigrid methods},
+  ABSTRACT = {This chapter looks at the use of multigrid methods and local mesh refinement algorithms in the context of the variational data assimilation method. Firstly, the chapter looks back at basic properties of the traditional variational data assimilation method and considers on the role of the background error covariance matrix. The next section shows how multigrid algorithms can efficiently solve the resulting system. Then the chapter deals with local mesh refinements and the final part of the chapter gives some ideas on how to couple the two approaches in the view of local multigrid algorithms.},
   HAL_ID = {hal-01095939},
   HAL_VERSION = {v1},
 }
@@ -846,6 +890,7 @@
   ADDRESS = {College Park, United States},
   YEAR = {2013},
   MONTH = Oct,
+  ABSTRACT = {The convergence of variational data assimilation algorithms for high dimensional non-linear systems is an important issue. The approach currently in use in most of the operational applications is known as Multi-Incremental 4D-Var or Perturbed Gauss Newton (PGN) where the inner problem of the Gauss Newton algorithm is solved with a succession of reduced resolution /simplified physics approximations of increasing complexity of the original problem. However this algorithm is known to converge toward a minimum that is different from that of the original problem. As a result of this the number of iterations has to be limited in order to avoid the risk of divergence. By controlling the error made between successive approximations one can derive a more robust algorithm that will converge toward the original minimum provided the right conditions are fulfilled. These conditions can easily be verified and the additional cost is modest compared to PGN. Applying this algorithm to the outer iteration of the Gauss Newton algorithm instead can bring a further improvement by reducing the risk of getting stuck in a local minimum. These algorithms are part of recent developments of the NEMOVAR system, which is a state-of-the-art variational data assimilation system dedicated to NEMO the european ocean community model. NEMOVAR is used in two major operational centres in its 3D-Fgat configuration. The general NEMOVAR framework and the different algorithms will be presented, they will beapplied to realistic ocean configurations and their relative merits will be compared. Moreover difficulties related to the specificities of the ocean will be discussed since both algorithms requires the use of operators allowing to project system states from one resolution to another, which could be delicate for ocean applications due to complex boundaries.},
   HAL_ID = {hal-00877893},
   HAL_VERSION = {v1},
 }
@@ -858,6 +903,7 @@
   ADDRESS = {Lugano, Switzerland},
   YEAR = {2013},
   MONTH = Sep,
+  ABSTRACT = {This presentation deals with the numerical simulation of partial differential equations on highly heterogeneous computing platforms both in terms of computing power and speed of communication. These difficulties are even stronger when the initial problem is not easily decomposable into independent tasks, and when other issues such as fault tolerance come into play. We show that the Schwarz waveform relaxation methods may prove to be the right tool to address all these issues. After explaining the benefits of these methods on a simple 2D advection equation, we present preliminary results of running the weather research and forecasting (WRF) model on the Amazon EC2 computing platform. The main open problems are finally outlined.},
   HAL_ID = {hal-00932898},
   HAL_VERSION = {v1},
 }
@@ -870,6 +916,7 @@
   ADDRESS = {Vienne, Austria},
   YEAR = {2013},
   MONTH = Apr,
+  ABSTRACT = {The convergence of variational data assimilation algorithm for high dimensional non- linear system is an impor- tant issue. In this presentation we will focus on two multi scale approaches for solving the 4D variational data assimilation problem, the truncated Gauss Newton (TGN) and the Multi scale Gauss Newton (MsGN) algorithms. Both requires the use of operators allowing to project system states from one resolution to another, which could be delicate for ocean applications due to complex boundaries These algorithms are part of recent developments of the NEMOVAR system, which is a state-of-the-art variational data assimilation system for the NEMO European ocean community model. NEMOVAR is used in two major operational centres in its 3D-Fgat configuration. The general NEMOVAR framework and the TGN and MsGN algorithms will be presented, they will be applied to realistic ocean configurations and their relative merits will be compared, and difficulties related to the specificities of the ocean will be discussed},
   HAL_ID = {hal-00877890},
   HAL_VERSION = {v1},
 }
@@ -883,6 +930,7 @@
   ORGANIZATION = {{EGU}},
   YEAR = {2013},
   MONTH = Apr,
+  ABSTRACT = {Ocean models usually rely on a tracer mixing operator which diffuses along isoneutral directions. This requirement is imposed by the highly adiabatic nature of the oceanic interior, and a numerical simulation needs to respect these small levels of dianeutral mixing to maintain physically realistic results. This is a key issue nowadays in oceanic numerical models (e.g., Hansen et al., 2011 "Earth's energy imbalance and implications"). For non-isopycnic models, rotated mixing operators must therefore be used. In continuation of the pioneering work of Griffies et al. (1998) and Beckers et al. (2000) in this field, we, first, exhaustively present the performance of various space-time discretizations in terms of stability, accuracy, tracer variance dissipation and min-max violations for the harmonic and biharmonic rotated operators. From this study, we can anticipate the flaws of the different schemes in practical situations. Because global climate models are now targeting increasingly higher horizontal resolution, the question of the viability of an isoneutral biharmonic operator is not only relevant for the regional modeling community but also for the ocean climate community. A new way of handling the temporal discretization of this type of operator is thus introduced. This scheme requires only the resolution of a simple one-dimensional tridiagonal system in the vertical direction to provide the same stability limit of the non-rotated operator. The results are illustrated by idealized numerical experiments of the diffusion of a passive tracer along isoneutral directions as well as fully realistic eddy-resolving and eddy-permitting configurations. Those numerical results show that rotated operators must be used with care and can sometimes lead to an accumulation of dispersive errors which can be seen in T/S diagrams. Furthermore, we will offer a discussion on some possible alternatives to the use of rotated operators.},
   HAL_ID = {hal-00826006},
   HAL_VERSION = {v1},
 }
@@ -898,6 +946,7 @@
   YEAR = {2013},
   KEYWORDS = {optimized Schwarz methods ; waveform relaxation ; alternating and parallel Schwarz methods},
   PDF = {https://hal.science/hal-00661977v1/file/Lemarie_ETNA1_2011.pdf},
+  ABSTRACT = {In this paper we present a global-in-time non-overlapping Schwarz method applied to the one dimensional unsteady diffusion equation. We address specifically the problem with discontinuous diffusion coefficients, our approach is therefore especially designed for subdomains with heterogeneous properties. We derive efficient interface conditions by solving analytically the minmax problem associated with the search for optimized conditions in a Robin-Neumann case and in a two-sided Robin-Robin case. The performance of the proposed schemes are illustrated by numerical experiments},
   HAL_ID = {hal-00661977},
   HAL_VERSION = {v1},
 }
@@ -913,6 +962,7 @@
   YEAR = {2013},
   KEYWORDS = {Optimized Schwarz Methods ; Waveform Relaxation ; Alternating and Parallel Schwarz Methods},
   PDF = {https://hal.science/hal-00661978v1/file/Lemarie_ETNA2_2011.pdf},
+  ABSTRACT = {This paper is the second part of a study dealing with the application of a global-in-time Schwarz method to a one dimensional diffusion problem defined on two non-overlapping subdomains. In the first part, we considered that the diffusion coefficients were constant and possibly discontinuous. In the present study, we address the problem for spatially variable coefficients with a discontinuity at the interface between subdomains. For this particular case, we derive a new approach to determine analytically the convergence factor of the associated algorithm. The theoretical results are illustrated by numerical experiments with Dirichlet-Neumann and Robin-Robin interface conditions. In the Robin-Robin case, thanks to the convergence factor found at the analytical level, we can optimize the convergence speed of the Schwarz algorithm.},
   HAL_ID = {hal-00661978},
   HAL_VERSION = {v1},
 }
@@ -929,6 +979,7 @@
   YEAR = {2013},
   DOI = {10.1007/978-3-642-35275-1\_71},
   PDF = {https://hal.science/hal-00661979v2/file/dd20_preprint.pdf},
+  ABSTRACT = {In this study we present a global-in-time non-overlapping Schwarz method applied to the one dimensional unsteady diffusion equation. We derive efficient interface conditions using an optimal control approach once the problem is discretized. Those conditions are compared to the usual optimized conditions derived at the PDE level by solving a min-max problem. The performance of the proposed methodology is illustrated by numerical experiments.},
   HAL_ID = {hal-00661979},
   HAL_VERSION = {v2},
 }
@@ -946,6 +997,7 @@
   DOI = {10.1016/j.ocemod.2012.04.007},
   KEYWORDS = {Isoneutral Mixing ; Diffusion Equation ; Time Schemes ; Von-Neumann stability analysis ; Initial-Boundary Value Problems},
   PDF = {https://hal.science/hal-00665826v2/file/lemarie_OM2012b.pdf},
+  ABSTRACT = {Ocean models usually rely on a tracer mixing operator which diffuses along isoneutral directions. This requirement is imposed by the highly adiabatic nature of the oceanic interior, and a numerical simulation needs to respect these small levels of dianeutral mixing to maintain physically realistic results. For non-isopycnic models this is however non-trivial due to the non-alignment of the vertical coordinate isosurfaces with local isoneutral directions, rotated mixing operators must therefore be used. This paper considers the numerical solution of initial boundary value problems for the harmonic (Laplacian) and biharmonic rotated diffusion operators. We provide stability criteria associated with the conventional space-time discretizations of the isoneutral Laplacian operator currently in use in general circulation models. Furthermore, we propose and study possible alternatives to those schemes. A new way to handle the temporal discretization of the rotated biharmonic operator is also introduced. This scheme requires only the resolution of a simple one-dimensional tridiagonal system in the vertical direction to provide the same stability limit of the non-rotated operator. The performance of the various schemes in terms of stability and accuracy is illustrated by idealized numerical experiments of the diffusion of a passive tracer along isoneutral directions.},
   HAL_ID = {hal-00665826},
   HAL_VERSION = {v2},
 }
@@ -974,6 +1026,7 @@
   MONTH = Jun,
   DOI = {10.1016/j.ocemod.2012.03.003},
   KEYWORDS = {Two-way nesting ; Finite difference method ; Modeling ; Boundary conditions ; Coastal upwelling},
+  ABSTRACT = {A full two-way nesting approach for split-explicit, free surface ocean models is presented. It is novel in three main respects: the treatment of grid refinement at the fast mode (barotropic) level; the use of scale selective update schemes; the conservation of both volume and tracer contents via refluxing. An idealized application to vortex propagation on a β plane shows agreement between nested and high resolution solutions. A realistic application to the California Current System then confirm these results in a complex configuration. The selected algorithm is now part of ROMS_AGRIF. It is fully consistent with ROMS parallel capabilities on both shared and distributed memory architectures. The nesting implementation authorizes several nesting levels and several grids at any particular level. This operational capability, combined with the inner qualities of our two-way nesting algorithm and generally high-order accuracy of ROMS numerics, allow for realistic simulation of coastal and ocean dynamics at multiple, interacting scales.},
   HAL_ID = {hal-00690731},
   HAL_VERSION = {v1},
 }
@@ -991,6 +1044,7 @@
   DOI = {10.46298/arima.1944},
   KEYWORDS = {Variational data assimilation ;  optimal control. ;  multigrid methods ; contr{\^o}le optimal. ; m{\'e}thodes multigrilles ; Assimilation variationnelle de donn{\'e}es},
   PDF = {https://inria.hal.science/hal-01299425v1/file/Vol.14.pp.63-80.pdf},
+  ABSTRACT = {In order to limit the computational cost of the variational data assimilation process, we investigate the use of multigrid methods to solve the associated optimal control system. On a linear advection equation, we study the impact of the regularization term and the discretization errors on the efficiency of the coarse grid correction step introduced by the multigrid method. We show that even if for a perfect numerical model the optimal control problem leads to the solution of an elliptic system, discretization errors introduce implicit diffusion that can alter the success of the multigrid methods. Then we test the multigrids configuration and the influence of the algorithmic parameters on a non-linear Burgers equation to show that the algorithm is robust and converges much faster than the monogrid one.},
   HAL_ID = {hal-01299425},
   HAL_VERSION = {v1},
 }
@@ -1007,6 +1061,7 @@
   MONTH = Jul,
   KEYWORDS = {Variational data assimilation methods ; Local mesh refinement ; Shallow Water ; Ocean modelling},
   PDF = {https://inria.hal.science/inria-00607177v1/file/RR-7675.pdf},
+  ABSTRACT = {We address the problem of adapting the four dimensional variational data assimilation method to a numerical model which employs local mesh refine- ment to improve its solution. We are concerned with structured meshes where a high resolution grid is nested into a coarser resolution grid which covers the en- tire domain. The derivation of the adjoint of the resulting locally nested model is presented. Both continuous and discrete versions are given. The new algo- rithms are then successfully applied to a 1D shallow water model with control of the initial condition.},
   HAL_ID = {inria-00607177},
   HAL_VERSION = {v1},
 }
@@ -1024,6 +1079,7 @@
   MONTH = May,
   DOI = {10.1002/fld.2244},
   KEYWORDS = {variational data assimilation ; nesting ; shallow water ; structured grid},
+  ABSTRACT = {We consider the application of a four-dimensional variational data assimilation method to a numerical model, which employs local mesh refinement to improve its solution. We focus on structured meshes where a high-resolution grid is embedded in a coarser resolution one, which covers the entire domain. The formulation of the nested variational data assimilation algorithm was derived in a preliminary work (Int. J. Numer. Meth. Fluids 2008). We are interested here in complementary theoretical aspects. We present first a model for the multi-grid background error covariance matrix. Then, we propose a variant of our algorithms based on the addition of control variables in the inter-grid transfers in order to allow for a reduction of the errors linked to the interactions between the grids. These formulations are illustrated and discussed in the test case experiment of a 2D shallow water model.},
   HAL_ID = {hal-00658105},
   HAL_VERSION = {v1},
 }
@@ -1048,6 +1104,7 @@
   ADDRESS = {San Diego, United States},
   YEAR = {2011},
   MONTH = Feb,
+  ABSTRACT = {Many applications in coastal and operational oceanography require high resolution local models, for which ocean-atmosphere interactions must be properly taken into account. In order to address the ocean-atmosphere coupling problem in a mathematically consistent way we intend to design an adequate Global-in-Time Schwarz-like domain decomposition method. We rst show how the usual ad hoc ocean-atmosphere coupling methods can be described in the formalism of the Schwarz methods. Then we propose a rst real-case study (genesis and propagation of a tropical cyclone) with the WRF (Weather Research and Forecasting) and the ROMS (Regional Ocean Modeling System) numerical models. We introduce some numerical results obtained with a non-optimized method. However when one wants to optimize the convergence speed of the corresponding algorithm by looking for a good approximation of the absorbing boundary conditions we face some problem that have been relatively few studied so far : the in uence of the presence of turbulent boundary layers on both sides of the interface on the convergence speed. In order to illustrate this point we propose to study an idealized form of the problem: a coupling between two di usion equations modeling the turbulent mixing in the boundary layers. We consider rst the case of coe cients which are discontinuous at the air-sea interface but constant on each subdomain. In this case the optimized transmission conditions are determined analytically. In the more general case with discontinuous and spatially variable coe cients the convergence of the Schwarz algorithm is studied using an ad hoc expansion into eigenfunctions of an associated Sturm-Liouville problem. We nally discuss how to extend those results found on a simpli ed problem to the full ocean-atmosphere coupling problem.},
   HAL_ID = {hal-00749195},
   HAL_VERSION = {v1},
 }
@@ -1060,6 +1117,7 @@
   ADDRESS = {Grenoble, France},
   YEAR = {2010},
   MONTH = Dec,
+  ABSTRACT = {Depuis ces trente dernières années, les systèmes d'observation de la Terre et les modèles numériques se sont perfectionnés et complexifiés pour nous fournir toujours plus de données, réelles et numériques. Ces données, de nature très diverse, forment maintenant un ensemble conséquent d'informations précises mais hétérogènes sur les structures et la dynamique des fluides géophysiques. Dans les années 1980, des méthodes d'optimisation, capables de combiner les informations entre elles, ont permis d'estimer les paramètres des modèles numériques et d'obtenir une meilleure prévision des courants marins et atmosphériques. Ces méthodes puissantes, appelées assimilation variationnelle de données, peinent à tirer profit de la toujours plus grande complexité des informations de par le manque de puissance de calcul disponible. L'approche, que nous développons, s'intéresse à l'utilisation des méthodes multigrilles, jusque là réservées à la résolution de systèmes d'équations différentielle, pour résoudre l'assimilation haute résolution de données. Les méthodes multigrilles sont des méthodes de résolution itératives, améliorées par des corrections calculées sur des grilles de plus basses résolutions. Nous dérivons les algorithmes multigrilles sur un exemple d'assimilation d'une équation de Burgers, non linéaire. Nous montrons que les méthodes multigrilles convergent plus vite que les méthodes monogrilles, avec un coût moindre, et qu'elles reposent sur des bases théoriques solides, contrairement à la méthode multi-incrémentale qui ne permet pas de résoudre l'assimilation à haute résolution, mais qui est pourtant utilisée dans les centres de prévision opérationnelle.},
   HAL_ID = {hal-00788218},
   HAL_VERSION = {v1},
 }
@@ -1084,6 +1142,7 @@
   ADDRESS = {Vienna, Austria},
   YEAR = {2009},
   MONTH = Apr,
+  ABSTRACT = {A common way to develop regional ocean modeling systems consists in embedding a high resolution local model into a coarse resolution model covering a larger domain. The local model then takes its boundary conditions from its parent model (one-way interaction), while the parent model solution may additionally be periodically updated using the local fine resolution solution (two-way interaction). However, for data assimilation purposes, the multi-resolution structure of the modeling system is generally ignored. One assimilates data either in one of the two models only, or in both models separately, but without properly taking into account the interactions between the two numerical solutions. We address the problem of 4D variational data assimilation in such locally nested models, for the control of the initial conditions on both models. The adjoint system is derived in both cases of one-way and two-way interactions. It is shown that the adjoint formulation adds new interactions between the grids, in the opposite sense of the interactions existing in the direct formulation. In particular, in the one-way case, the adjoint formulation creates a retroaction term from the fine grid onto the coarse grid. The design of the multigrid background error covariance matrix is also discussed, as well as the addition of a new control variable corresponding to the errors in the interactions between the coarse resolution and fine resolution solutions. These formulations are illustrated and discussed in the idealized test case of a 2D shallow water model. In particular, it is shown that this multi-resolution approach leads to improved results with regard to the usual method consisting in the assimilation of data on the local fine resolution model only, with a control of its corresponding initial condition and of its boundary values.},
   HAL_ID = {hal-00795819},
   HAL_VERSION = {v1},
 }
@@ -1096,6 +1155,7 @@
   ADDRESS = {Toulouse, France},
   YEAR = {2009},
   MONTH = Jan,
+  ABSTRACT = {Nous envisageons ici l'adaptation d'un processus itératif du type algorithme de Schwarz au couplage océan-atmosphère. Nous proposons, dans un premier temps, de revisiter les méthodes usuelles de couplage dans le formalisme des algorithmes de Schwarz. Nous montrerons que ces méthodes correspondent en pratique à des algorithmes non convergés qui ne permettent donc pas d'assurer, de manière rigoureuse, la consistance requise à l'interface air-mer (i.e. l'égalité des flux). Nous mettrons en avant les avantages de poser le problème de couplage océan-atmosphère dans ce formalisme notamment pour pouvoir potentiellement proposer des critères théoriques de compatibilité entre les paramétrisations de couches limites atmosphériques et océaniques.},
   HAL_ID = {hal-00795814},
   HAL_VERSION = {v1},
 }
@@ -1112,6 +1172,7 @@
   YEAR = {2009},
   DOI = {10.1016/j.ocemod.2008.09.004},
   KEYWORDS = {Diapycnal mixing ; Advection schemes ; Terrain-following coordinates},
+  ABSTRACT = {In this paper, we identify a crucial numerical problem in sigma coordinate models, leading to unacceptable spurious diapycnal mixing. This error is a by-product of recent advances in numerical methods, namely the implementation of high-order diffusive advection schemes. In the case of ROMS, spurious mixing is produced by its third-order upwind advection scheme, but our analysis suggests that all diffusive advection schemes would behave similarly in all sigma models. We show that the common idea that spurious mixing decreases with resolution is generally false. In a coarse-resolution regime, spurious mixing increases as resolution is refined, and may reach its peak value when eddy-driven lateral mixing becomes explicitly resolved. At finer resolution, diffusivities are expected to decrease but with values that only become acceptable at resolutions finer than the kilometer. The solution to this problem requires a specifically designed advection scheme. We propose and validate the RSUP3 scheme, where diffusion is split from advection and is represented by a rotated biharmonic diffusion scheme with flow-dependent hyperdiffusivity satisfying the Peclet constraint. The rotated diffusion operator is designed for numerical stability, which includes improvements of linear stability limits and a clipping method adapted to the sigma-coordinate. Realistic model experiments in a southwest Pacific configuration show that RSUP3 is able to preserve low dispersion and diffusion capabilities of the original third-order upwind scheme, while preserving water mass characteristics. There are residual errors from the rotated diffusion operator, but they remain acceptable. The use of a constant diffusivity rather than the Peclet hyperdiffusivity tends to increase these residual errors which become unacceptable with Laplacian diffusion. Finally, we have left some options open concerning the use of time filters as an alternative to spatial diffusion. A temporal discretization approach to the present problem (including implicit discretization) will be reported in a following paper. (C) 2008 Elsevier Ltd. All rights reserved.},
   HAL_ID = {hal-00409317},
   HAL_VERSION = {v1},
 }
@@ -1124,6 +1185,7 @@
   ADDRESS = {Nice, France},
   YEAR = {2008},
   MONTH = Nov,
+  ABSTRACT = {A common way to develop regional ocean modeling systems consists in embedding a high resolution local model into a coarse resolution model covering a larger domain. The local model then takes its boundary conditions from its parent model (one-way interaction), while the parent model solution may additionally be periodically updated using the local fine resolution solution (two-way interaction). However, for data assimilation purposes, the multigrid structure of the modeling system is generally ignored. One assimilates data either in one of the two models only, or in both models separately, but without properly taking into account the interactions between the two numerical solutions. In this poster, we address the problem of 4D-variational data assimilation in such locally nested models, for the control of the initial conditions on both models. The adjoint system is derived in both cases of one-way and two-way interactions. It is shown that the adjoint formulation adds new interactions between the grids, in the opposite sense of the interactions existing in the direct formulation. In particular, in the one-way case, the adjoint formulation creates a retroaction term from the fine grid onto the coarse grid. The design of the multigrid background error covariance matrix is also discussed, as well as the addition of a new control variable corresponding to the errors in the interactions between the coarse resolution and fine resolution solutions. These formulations are illustrated and discussed in the idealized test case of a 2D shallow water model. In particular, it is shown that this multigrid approach leads to improved results with regard to the usual method consisting in the assimilation of data on the local fine resolution model only, with a control of its corresponding initial condition and of its boundary values.},
   HAL_ID = {inria-00344507},
   HAL_VERSION = {v1},
 }
@@ -1142,6 +1204,7 @@
   DOI = {10.1175/2008JPO3485.1},
   KEYWORDS = {Ocean circulation ; Ocean dynamics ; Boundary currents ; North Atlantic Ocean ; Eddies},
   PDF = {https://hal.science/hal-00266980v1/file/Chanut2008.pdf},
+  ABSTRACT = {The cycle of open ocean deep convection in the Labrador Sea is studied in a realistic, high-resolution (4 km) regional model, embedded in a coarser (1⁄3°) North Atlantic setup. This configuration allows the simultaneous generation and evolution of three different eddy types that are distinguished by their source region, generation mechanism, and dynamics. Very energetic Irminger Rings (IRs) are generated by barotropic instability of the West Greenland and Irminger Currents (WGC/IC) off Cape Desolation and are characterized by a warm, salty subsurface core. They densely populate the basin north of 58°N, where their eddy kinetic energy (EKE) matches the signal observed by satellite altimetry. Significant levels of EKE are also found offshore of the West Greenland and Labrador coasts, where boundary current eddies (BCEs) are spawned by weakly energetic instabilities all along the boundary current system (BCS). Baroclinic instability of the steep isopycnal slopes that result from a deep convective overturning event produces convective eddies (CEs) of 20-30 km in diameter, as observed and produced in more idealized models, with a distinct seasonal cycle of EKE peaking in April. Sensitivity experiments show that each of these eddy types plays a distinct role in the heat budget of the central Labrador Sea, hence in the convection cycle. As observed in nature, deep convective mixing is limited to areas where adequate preconditioning can occur, that is, to a small region in the southwestern quadrant of the central basin. To the east, west, and south, BCEs flux heat from the BCS at a rate sufficient to counteract air-sea buoyancy loss. To the north, this eddy flux alone is not enough, but when combined with the effects of Irminger Rings, preconditioning is effectively inhibited here too. Following a deep convective mixing event, the homogeneous convection patch reaches as deep as 2000 m and a horizontal scale on the order of 200 km, as has been observed. Both CEs and BCEs are found to play critical roles in the lateral mixing phase, when the patch restratifies and transforms into Labrador Sea Water (LSW). BCEs extract the necessary heat from the BCS and transport it to the deep convection site, where it fluxed into convective patches by CEs during the initial phase. Later in the phase, BCE heat flux maintains and strengthens the restratification throughout the column, while solar heating establishes a near-surface seasonal stratification. In contrast, IRs appear to rarely enter the deep convection region. However, by virtue of their control on the surface area preconditioned for deep convection and the interannual variability of the associated barotropic instability, they could have an important role in the variability of LSW.},
   HAL_ID = {hal-00266980},
   HAL_VERSION = {v1},
 }
@@ -1172,6 +1235,7 @@
   DOI = {10.1016/j.envsoft.2007.07.004},
   KEYWORDS = {Ocean models ; Numerical simulation ; Regional modeling ; Coastal oceanography ; Embedding},
   PDF = {https://hal.science/hal-00388202v1/file/penven_envmodelsoft_inpress.pdf},
+  ABSTRACT = {ROMSTOOLS, a collection of global data sets and a series of Matlab programs collected in an integrated toolbox, generates the grid, surface forcing, initial condition, open boundary conditions, and tides for climatological and inter-annual ROMS ocean simulations. ROMSTOOLS also generates embedded models, real-time coastal modeling systems, as well as experiments including biology. Tools for visualization, animations and diagnostics are also provided.},
   HAL_ID = {hal-00388202},
   HAL_VERSION = {v1},
 }
@@ -1187,6 +1251,7 @@
   YEAR = {2008},
   KEYWORDS = {domain decomposition ; waveform relaxation ; Schwarz methods},
   PDF = {https://inria.hal.science/inria-00324533v1/file/RR-6663.pdf},
+  ABSTRACT = {In this report we present a global-in-time non-overlapping Schwarz method applied to the one dimensional unsteady diffusion equation. We address specifically the problem with discontinuous diffusion coefficients, our approach is therefore especially designed for subdomains with heterogeneous properties. We derive efficient interface conditions by solving analytically the minmax problem associated to the search of optimized conditions in a Robin-Neumann case and in a two-sided Robin-Robin case with constant coefficients. We study the impact of the finiteness of the subdomains on the optimized conditions. Then we address the problem with spatially variable coefficients. We derive a new approach to determine the convergence factor of the algorithm, which enables to optimize the convergence speed. The theoretical results are illustrated by numerical experiments in the case of Robin-Robin and Dirichlet-Neumann interface conditions.},
   HAL_ID = {inria-00324533},
   HAL_VERSION = {v1},
 }
@@ -1204,6 +1269,7 @@
   MONTH = Jan,
   DOI = {10.1016/j.cageo.2007.01.009},
   KEYWORDS = {Adaptive mesh refinement ; Structured grids ; Fortran90 ; Pointers},
+  ABSTRACT = {Adaptive grid refinement in Fortran (AGRIF) is a Fortran90 package for the integration of adaptive mesh refinement (AMR) features within existing finite difference codes. The package first provides model-independent Fortran90 procedures containing the different operations in an AMR process: time integration of grid hierarchy, clustering, interpolations, updates, etc. The package then creates the Fortran90 model-dependent part of the code based on an entry file written by the user. The basic idea of AGRIF is to make use of Fortran90 pointers to successively address the variables of the different grids of an AMR process. As pointers can be used exactly like other (static) variables in Fortran, most of the original code will remain unchanged.},
   HAL_ID = {hal-00387435},
   HAL_VERSION = {v1},
 }
@@ -1220,6 +1286,7 @@
   YEAR = {2008},
   DOI = {10.1016/j.ocemod.2008.04.002},
   KEYWORDS = {Caribbean ; Ocean model ; Embedding ; Mesoscale eddies ; Instability},
+  ABSTRACT = {The variability in the Caribbean Sea is investigated using high resolution (1/15°) general circulation model experiments. For the first time in this region, simulations were carried out with a 2-way nested configuration of the NEMO primitive equation model. A coarse North Atlantic grid (1/3°) reproduces the main features of the North Atlantic and Equatorial circulation capable of influencing ocean dynamics in the Caribbean Sea. This numerical study highlights strong dynamical differences among basins and modifies the view that dynamics are homogeneous over the whole Caribbean Basin. The Caribbean mean flow is shown to organize in two intense jets flowing westward along the northern and southern boundaries of the Venezuela Basin, which merge in the center of the Colombia Basin. Diagnostics of model outputs show that width, depth and strength of baroclinic eddies increase westward from the Lesser Antilles to the Colombia Basin. The widening and strengthening to the west is consistent with altimetry data and drifter observations. Although influenced by the circulation in the Colombia Basin, the variability in the Cayman Basin (which also presents a westward growth from the Chibcha Channel) is deeper and less energetic than the variability in the Colombia/Venezuela Basins. Main frequency peaks for the mesoscale variability present a westward shift, from roughly 50 days near the Lesser Antilles to 100 days in the Cayman Basin, which is associated with growth and merging of eddies.},
   HAL_ID = {hal-00658107},
   HAL_VERSION = {v1},
 }
@@ -1237,6 +1304,7 @@
   DOI = {10.1007/s10236-008-0150-9},
   KEYWORDS = {Two-way embedding ; Mesh refinement ; Structured grids},
   PDF = {https://hal.science/hal-00387449v1/file/Debreu.pdf},
+  ABSTRACT = {Local mesh refinement features have now been added to a number of numerical ocean models. In its crudest form, a high-resolution grid is embedded (or nested) in a coarse-resolution grid, which covers the entire domain, and the two grids interact. The aim of this paper is to review existing two-way grid embedding algorithms. The basic algorithms and specificities related to ocean modelling are first described. Then, we address several important issues: conservation properties, design of interpolation/restriction operators, and noise control techniques.},
   HAL_ID = {hal-00387449},
   HAL_VERSION = {v1},
 }
@@ -1254,6 +1322,7 @@
   DOI = {10.1016/j.ocemod.2008.05.009},
   KEYWORDS = {Regional modelling ; Open boundary conditions ; Nesting ; Coupling ; Bay of Biscay},
   PDF = {https://hal.science/hal-00387446v1/file/Cailleau2008.pdf},
+  ABSTRACT = {Several methods for specifying boundary conditions at the limits of a regional model are compared. The methods investigated are those using clamped and radiation boundary conditions, one-way and two-way nesting in a model for a more extensive area, and "full" coupling based on domain decomposition techniques. These methods are compared in the realistic framework of interactions between a 1/15° model of the Bay of Biscay and a 1/3° model of the North Atlantic, over a 3-year simulation (1996-1998). The clamped and radiation boundary conditions systematically lead to energy accumulation and problematic recirculations along the boundary, and can disturb the internal dynamics of the regional domain. The one-way or two-way-nesting and the full-coupling methods result in far more satisfactory behaviour. For long periods of integration, the two-way mode improves both the fine and coarse-grid solutions. The full coupling method provides the most regular solution at the boundary, and also opens interesting new perspectives since it should enable the coupling of models with different physics. However it requires much more computation time.},
   HAL_ID = {hal-00387446},
   HAL_VERSION = {v1},
 }
@@ -1319,6 +1388,7 @@
   MONTH = Nov,
   DOI = {10.1515/156939606779329062},
   KEYWORDS = {Monte Carlo method ; covariance matrix ; Burgers equation ; Bayesian inference ; Hessian matrix},
+  ABSTRACT = {An efficient sampling method is proposed to solve the stochastic optimal control problem in the context of data assimilation for the estimation of a random parameter. It is based on Bayesian inference and the Markov Chain Monte Carlo technique, which exploits the relation between the inverse Hessian of the cost function and the error covariance matrix to accelerate convergence of the sampling method. The efficiency and accuracy of the method is demonstrated in the case of the optimal control problem governed by the nonlinear Burgers equation with a viscosity parameter that is a random field.},
   HAL_ID = {inria-00592665},
   HAL_VERSION = {v1},
 }
@@ -1394,6 +1464,7 @@
   DOI = {10.1007/1-4020-4028-8\_5},
   KEYWORDS = {Open boundary conditions ; regional models ; nesting},
   PDF = {https://inria.hal.science/inria-00187576v1/file/version-finale.pdf},
+  ABSTRACT = {This note is focused on the problem of providing boundary conditions for regional ocean models. It is shown that usual methods generally do not address the correct problem, but more or less approaching ones. A tentative classification of these methods is proposed. Then their theoretical foundations are discussed, and recommendations are given.},
   HAL_ID = {inria-00187576},
   HAL_VERSION = {v1},
 }
@@ -1409,6 +1480,7 @@
   YEAR = {2006},
   DOI = {10.1016/j.ocemod.2005.05.002},
   KEYWORDS = {Boundary conditions ; Ocean models ; Embedding ; Coastal upwelling ; Mesoscale eddies ; Eddy kinetic energy},
+  ABSTRACT = {What most clearly distinguishes near-shore and off-shore currents is their dominant spatial scale, O (1-30) km near-shore and O (30-1000) km off-shore. In practice, these phenomena are usually both measured and modeled with separate methods. In particular, it is infeasible for any regular computational grid to be large enough to simultaneously resolve well both types of currents. In order to obtain local solutions at high resolution while preserving the regional-scale circulation at an affordable computational cost, a 1-way grid embedding capability has been integrated into the Regional Oceanic Modeling System (ROMS). It takes advantage of the AGRIF (Adaptive Grid Refinement in Fortran) Fortran 90 package based on the use of pointers. After a first evaluation in a baroclinic vortex test case, the embedding procedure has been applied to a domain that covers the central upwelling region off California, around Monterey Bay, embedded in a domain that spans the continental U.S. Pacific Coast. Long-term simulations (10 years) have been conducted to obtain mean-seasonal statistical equilibria. The final solution shows few discontinuities at the parent-child domain boundary and a valid representation of the local upwelling structure, at a CPU cost only slightly greater than for the inner region alone. The solution is assessed by comparison with solutions for the whole US Pacific Coast at both low and high resolutions and to solutions for only the inner region at high resolution with mean-seasonal boundary conditions.},
   HAL_ID = {hal-00280334},
   HAL_VERSION = {v1},
 }
@@ -1424,6 +1496,7 @@
   PAGES = {303-313},
   YEAR = {2005},
   DOI = {10.1007/3-540-27039-6\_21},
+  ABSTRACT = {Following the work of [BD99], the present paper presents a general approach to adaptive mesh refinement for ocean models. The numerical procedure is briefly described, as well as a software package which easily allows for the actual implementation of multiresolution within any existing finite difference model. The effectiveness of this approach for ocean modelling, even at a basin-scale, is illustrated in the context of a primitive equation numerical model of the north Atlantic. Several experiments are presented, which demonstrate the potentialities of mesh refinement and emphasize the role of the refinement criterion.},
   HAL_ID = {hal-00184033},
   HAL_VERSION = {v1},
 }
@@ -1440,6 +1513,7 @@
   YEAR = {2005},
   DOI = {10.1016/j.ocemod.2004.07.001},
   PDF = {https://inria.hal.science/inria-00134856v1/file/obc2.pdf},
+  ABSTRACT = {This paper emphasizes the peculiar role of characteristic variables in the design of open boundary conditions (OBCs). It is shown that local OBCs leading to positive results in previous comparative studies do fulfil two requirements : they make use of incoming characteristic variables (\ie privilege the hyperbolic aspect of the equations), and satisfy a consistency relationship between the model solution and some external data. The classical OBCs used in atmosphere and ocean modeling are revisited from this point of view. It is shown that several usual boundary conditions should be avoided, while conditions satisfying the two preceding criteria are pointed out. Finally, the application of these criteria to the design of OBCs for primitive equations is discussed.},
   HAL_ID = {inria-00134856},
   HAL_VERSION = {v1},
 }
@@ -1455,6 +1529,7 @@
   YEAR = {2002},
   KEYWORDS = {ADAPTIVE MESH REFINEMENT ; FORTRAN 90 ; POINTERS},
   PDF = {https://inria.hal.science/inria-00069912v1/file/RT-0262.pdf},
+  ABSTRACT = {This report presents AGRIF a Fortran90 package for the integration of adaptive mesh refinement (AMR) features within a finite difference numerical model. The package mainly consists in two parts. It first provides model-indep- endent Fortran90 procedures containing the different parts of an AMR process: time integration algorithm of the grid hierarchy, clustering algorithm, refinement algorithm, interpolation procedures... In a second part, a Fortran90 model-dependent code is created via the analysis of an entry file written by the user. Both model-dependent and model-independent parts are then linked into a library. Since the work of Berger and Oliger , adaptive mesh refinement (AMR) for structured grids has become very popular. Its domains of application are numerous and its efficiency has been clearly demonstrated. However dealing with AMR is a difficult task, which often keeps people from investigating the power of the method. As a matter of fact, AMR is intrinsically a dynamic method which requires dynamic memory management and structured types.AMRCLAW is a Fortran77 AMR package for conservation laws that was developed upon the Berger's AMR algorithms and the CLAWPACK package of R. LeVeque, and which incorporates all the primary features of the method proposed by Berger. However, with the quite recent apparition of object oriented languages, programming AMR methods has become simpler, and several AMR packages have then been developped. Most of them are implemented in C++, which appeared before Fortran 90. We can cite for instance Overture a C++ package subtitled Object-Oriented Tools for Solving CFD and Combustion Problems in Complex Moving Geometry, and DAGH (Distributed Adaptive Grid Hierarchy ).Concerning similar tools in Fortran90, we can cite PARAMESH , a package actually doing cells refinement, and which differs quite a lot from the original idea of Berger. There exist also AMR packages which actually try to implement C++ features in Fortran 90.In this paper, we present a new idea for implementing AMR features in an existing numerical model written in Fortran (77 or 90). This package uses the full compatibility between Fortran77 and Fortran90, and thus eliminates all kind of interfaces.The paper is organized as follows. The main operations involved in an AMR process are briefly reminded in section 2. Then the basic ideas of the package are presented in section 3, and section 4 explains how to use the program which produces the model-dependent Fortran code. Finally, an example is treated in section 5.},
   HAL_ID = {inria-00069912},
   HAL_VERSION = {v1},
 }
@@ -1470,6 +1545,7 @@
   YEAR = {2000},
   KEYWORDS = {Parallel Computing ; Scheduling ; Ocean stream circulation ; Moldable Tasks},
   PDF = {https://hal.science/hal-00003946v1/file/bdmt00.pdf},
+  ABSTRACT = {This paper reports the parallel implementation of adaptive mesh refinement within finite difference ocean circulation models. The implementation is based on the model of Malleable Tasks with inefficiency factor which allows a simple expression of the different levels of parallelism with a good efficiency. Our goal within this work was to validate this approach on an actual application. For that, we have implemented a load-balancing strategy based on the well-known level-by-level mapping. Preliminary experiments are discussed at the end of the paper.},
   HAL_ID = {hal-00003946},
   HAL_VERSION = {v1},
 }
@@ -1490,6 +1566,7 @@
   DOI = {10.1007/3-540-48311-X\_39},
   KEYWORDS = {Moldable Tasks ; Scheduling ; Ocean stream circulation ; Parallel Computing},
   PDF = {https://hal.science/hal-00003948v1/file/europar99.pdf},
+  ABSTRACT = {This paper reports the parallel implementation of adaptive mesh refinement within finite difference ocean circulation models. The implementation is based on the model of <i>Malleable Tasks</i> with inefficiency factor which allows a simple expression of the different levels of parallelism with a good efficiency. Our goal within this work was to validate this approach on an actual application. For that, we have implemented a load-balancing strategy based on the well-known level-by-level mapping. Preliminary experiments are discussed at the end of the paper.},
   HAL_ID = {hal-00003948},
   HAL_VERSION = {v1},
 }
@@ -1506,6 +1583,7 @@
   YEAR = {1999},
   MONTH = Jun,
   DOI = {10.1175/1520-0485(1999)029<1239:AMRFFD>2.0.CO;2},
+  ABSTRACT = {The application of an adaptive mesh refinement (AMR) method for structured mesh is examined in the context of ocean modeling. This method can be used with existing finite-difference ocean models at little computational and programming cost. Some first experiments in academic cases are presented in order to give some insight to the two following questions: (i) Is the AMR method appropriate and efficient for integration of numerical ocean circulation models (and particularly for long-term integration)? (ii) Can the AMR method be an efficient alternative to the classical zoom techniques for local prediction? Numerical simulations are performed in the well-known case of the barotropic modon and in the case of a multilayered quasigeostrophic box model. They demonstrate that the use of the AMR method results in a very significant gain in CPU time (by a factor of 3) while conserving, within a 10%–20% range, the main statistical features of the solution obtained with a uniformly high resolution. For the problem of local prediction, it appears that only one simulation with the AMR method leads to better local predictions than classical nested grid techniques, wherever the region of interest is located, and for a comparable amount of computation. Further investigations are presently under way to generalize this application to basin-scale primitive equation models in realistic configurations and investigate whether or not these results are still valid.},
   HAL_ID = {hal-01096127},
   HAL_VERSION = {v1},
 }
