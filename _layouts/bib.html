@@ -1,0 +1,20 @@
+---
+---
+<div class="text-justify">
+    {{reference}}
+</div>
+
+{% if entry.note %}
+<div>
+    <em>{{ entry.note }}</em>
+</div>
+{% endif %}
+
+<div>
+    {% if entry.doi %}
+    <span><a href="{{ entry.doi | prepend: 'http://doi.org/' }}">DOI</a></span>
+    {% endif %}
+    {% if entry.hal_id %}
+    <span><a href="{{ entry.hal_id | prepend: 'http://hal.inria.fr/' }}">HAL</a></span>
+    {% endif %}
+</div>
