@@ -17,18 +17,19 @@ I am a researcher in applied mathematics at Inria (Grenoble Rhône-Alpes center)
 **Address:**
 
 > Laboratoire Jean Kuntzmann  
-> 700 avenue centrale   
-> 38400 Saint Martin d'Hères, France  
+> Batiment IMAG
+> 150 place du Torrent
+> 38401 Campus Universitaire de Saint Martin d'Hères, France  
 > Phone: (+33) 4 57 42 17 25
 
-**Responsabilities:**
+<!-- **Responsabilities:**
 
 > * Member of the [AIRSEA](https://team.inria.fr/airsea/en/) Inria team  
 > A joint team between Inria and Laboratoire Jean Kuntzmann  
 > Mathematics and computing applied to oceanic and atmospheric flows
 > * Chair of the [LEFE MANU](https://programmes.insu.cnrs.fr/lefe/cs_actions/manu/) program  
 > Mathematical and Numerical methods for the Ocean and the Atmosphere
-> * Member of the steering committee of the [CROCO](https://www.croco-ocean.org) ocean model
+> * Member of the steering committee of the [CROCO](https://www.croco-ocean.org) ocean model -->
 
 
 <!--

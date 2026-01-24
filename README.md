@@ -18,7 +18,7 @@ Le site utilise **GitHub Actions** pour compiler automatiquement Jekyll avec le 
 
 ### 1. Modifier le site localement
 ```bash
-jekyll serve --host 0.0.0.0
+bundle exec jekyll serve --host 0.0.0.0
 ```
 Le site sera accessible sur http://localhost:4000 pour prévisualiser vos changements.
 
