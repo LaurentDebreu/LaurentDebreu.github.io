@@ -1,3 +1,33 @@
+@article{derrida:hal-05514655,
+  TITLE = {{Propagation of internal gravity waves: optimal vertical discretisation and grid design based on numerical error analysis}},
+  AUTHOR = {Derrida, Gabriel and Debreu, Laurent and Lemari{\'e}, Florian and Chanut, J{\'e}rome},
+  URL = {https://inria.hal.science/hal-05514655},
+  JOURNAL = {{Quarterly Journal of the Royal Meteorological Society}},
+  PUBLISHER = {{Wiley}},
+  YEAR = {2026},
+  MONTH = Jul,
+  DOI = {10.1002/qj.70242},
+  KEYWORDS = {Lorenz ; Sturm-Liouville eigenmodes ; Charney-Phillips ; optimal grid ; eigenvalue error ; grid design ; vertical discretisation ; internal gravity waves},
+  PDF = {https://inria.hal.science/hal-05514655v2/file/main_template.pdf},
+  ABSTRACT = {<div><p>Focusing on the dynamics of internal gravity wave, we introduce a general framework for the vertical discretisation of the stratified linearised primitive equations. We derive a discrete formulation that preserves energy conservation and leads to a consistent discrete Sturm-Liouville problem. A \$\beta\$-indexed family of discretisations is introduced, and a perturbation analysis provides an explicit expression for the leading-order eigenvalue errors. We show that an appropriate choice of parameter \$\beta\$ significantly reduces the leading-order eigenvalue error, and for uniform grids makes it vanish, yielding fourth-order instead of second-order convergence. An explicit optimal vertical grid is also derived for a single eigenmode, and the extension to grids optimised for multiple modes is discussed.</p></div>},
+  HAL_ID = {hal-05514655},
+  HAL_VERSION = {v2},
+}
+
+@unpublished{ducousso:hal-05621129,
+  TITLE = {{Stability and accuracy of Runge-Kutta-based split-explicit time-stepping algorithms for free-surface, quasi-Eulerian vertical coordinates ocean models}},
+  AUTHOR = {Ducousso, Nicolas and Lemari{\'e}, Florian and Debreu, Laurent and Madec, Gurvan},
+  URL = {https://hal.science/hal-05621129},
+  NOTE = {working paper or preprint},
+  YEAR = {2026},
+  MONTH = May,
+  KEYWORDS = {free-surface ocean models ; mode-splitting ; Runge--Kutta methods},
+  PDF = {https://hal.science/hal-05621129v1/file/Stab_RK_split.pdf},
+  ABSTRACT = {Most ocean model time-integration algorithms rely on mode-splitting techniques to address the large disparity in timescales between fast barotropic gravity waves and the slower dynamics of the ocean interior. Using these techniques, a set of 2D equations approximating barotropic mode dynamics is integrated with a dedicated short time step and a time-stepping scheme distinct from that employed for the 3D interior dynamics. However, the splitting is inherently approximate, and instabilities can arise from the resulting errors, typically controlled through dissipation. We analyse the stability and accuracy of time integration algorithms based on three-stage and four-stage Runge--Kutta schemes for the 3D part and explicit integration for the 2D part (the split-explicit approach). We investigate how the viability of the algorithms, measured by the amount of dissipation required to stabilise them, varies with ways of articulating the 2D/3D coupling within the considered Runge--Kutta schemes. The analysis relies on the theoretical framework developed by Demange et al. (2019), which assumes quasi-Eulerian vertical coordinates, and where the different components of the 2D/3D coupling are formulated as projections onto vertical modes. Dissipation is introduced by a 2D time-stepping scheme with adjustable dissipation, allowing us to determine the minimum dissipation required to stabilise the algorithms. The stability of algorithms integrating the 2D part at every stage of the Runge--Kutta schemes is compared with that of algorithms in which it is integrated only once, either at the first or final stage. The analysis identifies promising algorithms, whose performance is verified with idealised linear and non-linear numerical experiments.},
+  HAL_ID = {hal-05621129},
+  HAL_VERSION = {v1},
+}
+
 @article{zhang:hal-05460893,
   TITLE = {{A semi-automated sensitivity-based approach for simplifying marine biogeochemical models for targeted applications: A case study with the Eco3M-MED model}},
   AUTHOR = {Zhang, Yutong and Baklouti, Melika and Brasseur, Pierre and Debreu, Laurent},
@@ -14,20 +44,6 @@
   ABSTRACT = {Marine biogeochemical models are being increasingly used to support scenario-based analyses of climate change and ecosystem dynamics. However, their high structural complexity and large parameter space often limit computational efficiency, interpretability, and adaptability in applications requiring the exploration of many scenarios. To address these issues, we propose a Semi-Automated Iterative Simplification (SAIS) approach that integrates local sensitivity analysis with model mechanistic guidance and Kling-Gupta Efficiency (KGE) metrics to evaluate each simplification step. Using the marine biogeochemical model Eco3M-MED as an example, we specified three objectives for model simplification: (1) fidelity of state variables, (2) fidelity of marine ecosystem indicators, and (3) applicability for coupling with higher trophic level models. For each objective, we assessed model sensitivity to parameters and applied the SAIS approach to simplify the model, and obtained three simplified models. KGE-based fidelity evaluations are used to validate each final simplified model against the reference model. The results show that computational time can be reduced by up to approximately 30% without compromising the model's mechanistic foundation. Overall, this method offers a flexible and scalable approach for generating simplified versions of complex biogeochemical models, suitable for applications in regional marine ecosystem assessments, climate scenario explorations, and model coupling frameworks.},
   HAL_ID = {hal-05460893},
   HAL_VERSION = {v1},
-}
-
-@unpublished{derrida:hal-05514655,
-  TITLE = {{Propagation of internal gravity waves: optimal vertical discretisation and grid design based on numerical error analysis}},
-  AUTHOR = {Derrida, Gabriel and Debreu, Laurent and Lemari{\'e}, Florian and Chanut, J{\'e}rome},
-  URL = {https://inria.hal.science/hal-05514655},
-  NOTE = {working paper or preprint},
-  YEAR = {2026},
-  MONTH = Feb,
-  KEYWORDS = {internal gravity waves ; vertical discretisation ; grid design ; eigenvalue error ; optimal grid ; Charney-Phillips ; Lorenz ; Sturm-Liouville eigenmodes},
-  PDF = {https://inria.hal.science/hal-05514655v2/file/main_template.pdf},
-  ABSTRACT = {<div><p>Focusing on the dynamics of internal gravity wave, we introduce a general framework for the vertical discretisation of the stratified linearised primitive equations. We derive a discrete formulation that preserves energy conservation and leads to a consistent discrete Sturm-Liouville problem. A \$\beta\$-indexed family of discretisations is introduced, and a perturbation analysis provides an explicit expression for the leading-order eigenvalue errors. We show that an appropriate choice of parameter \$\beta\$ significantly reduces the leading-order eigenvalue error, and for uniform grids makes it vanish, yielding fourth-order instead of second-order convergence. An explicit optimal vertical grid is also derived for a single eigenmode, and the extension to grids optimised for multiple modes is discussed.</p></div>},
-  HAL_ID = {hal-05514655},
-  HAL_VERSION = {v2},
 }
 
 @article{ouala:hal-05232101,
@@ -101,15 +117,16 @@
 
 @unpublished{remy:hal-05061001,
   TITLE = {{Numerics-driven uplifting, Automatic Parallelization, and Performance Optimizations with Deep Kernel Fusion for Ocean Models on Heterogeneous Architectures}},
-  AUTHOR = {Remy, Julien and Brunie, Hugo and Schreiber, Martin and Siso, Sergi and Porter, Andrew and Ford, Rupert and Debreu, Laurent and Lemari{\'e}, Florian},
+  AUTHOR = {Remy, Julien and Brunie, Hugo and Schreiber, Martin and Siso, Sergi and Porter, Andrew and Ford, Rupert and Debreu, Laurent and Lemari{\'e}, Florian and Vidard, Arthur},
   URL = {https://hal.science/hal-05061001},
   NOTE = {working paper or preprint},
   YEAR = {2025},
+  DOI = {10.1177/1094342026145634},
   KEYWORDS = {Language uplifting ; source-to-source compilation ; deep kernel fusion ; loop fusion ; model-driven performance optimization},
-  PDF = {https://hal.science/hal-05061001v1/file/paper%20%281%29.pdf},
-  ABSTRACT = {Achieving peak performance for ocean models on modern High-Performance Computing (HPC) architectures requires extensive, costly code rewrites that are not only time-consuming and errorprone but also highly architecture-specific and require numerics experts to be proficient in parallel programming models or Domain-Specific Languages (DSLs).<p>In this paper we introduce Poseidon, a source-to-source code optimization tool that employs numerics &amp; HPC co-design. We developed an uplifting approach to a hypergraph for the data flow and to our own Poseidon Intermediate Representation (PosIR) for the computations, which recovers for the first time high-level information and semantics about the computations and memory management that are typically lost during the conversion of numerical algorithms to source code. This representation is then employed for model-driven optimizations. In the backend, we inject source code back into the original code supporting different target HPC architectures, reusing the existing model as the runtime.</p><p>Our evaluation investigates OpenMP and OpenACC parallel programming models on CPUs and GPUs. We demonstrate Poseidon's capability of automatic parallelization and optimization of existing Fortran code, with comparisons to state-of-the-art parallelized code with performance improvements of up to ×2.60 and automatically reducing the required memory footprint by up to ×2.29.</p>},
+  PDF = {https://hal.science/hal-05061001v2/file/paper.pdf},
+  ABSTRACT = {Achieving peak performance for ocean models on modern High-Performance Computing (HPC) architectures requires extensive, costly code rewrites that are not only time-consuming and error-prone but also highly architecture-specific and require numerics experts to be proficient in parallel programming models or Domain-Specific Languages (DSLs). In this paper we introduce Poseidon, a source-to-source code optimization tool that employs numerics &amp; HPC co-design. We developed an uplifting approach to a hypergraph for the data flow and to our own Poseidon Intermediate Representation (PosIR) for the computations, which recovers for the first time high-level information and semantics about the computations and memory management that are typically lost during the conversion of numerical algorithms to source code. This representation is then employed for model-driven optimizations. In the backend, we inject source code back into the original code supporting different target HPC architectures, reusing the existing model as the runtime. Our evaluation investigates OpenMP and OpenACC parallel programming models on CPUs and GPUs. We demonstrate Poseidon's capability of automatic parallelization and optimization of existing Fortran code, with comparisons to state-of-the-art parallelized code with performance improvements of up to ×2.60 and automatically reducing the required memory footprint by up to ×2.29.},
   HAL_ID = {hal-05061001},
-  HAL_VERSION = {v1},
+  HAL_VERSION = {v2},
 }
 
 @misc{bremond:hal-04811677,
@@ -143,6 +160,23 @@
   KEYWORDS = {Acoustic-gravity waves ; Free surface ocean ; Sediment bottom},
   ABSTRACT = {Auclair et al. (2021) analyzed the propagation of acoustic-gravity waves (AGWaves) in the ocean and showed that AGWaves dispersion can be described based on the inner and boundary dispersion relations. A major limitation to their two-dispersion-relation model is the assumption of a rigid bottom boundary since acoustic waves can cross the ocean bottom and propagate in the sediment. An extension of their AGWaves dispersion model is consequently proposed toward a more realistic two-layers fluid model. This improvement enables the evaluation of the perspectives opened by the new generation of compressible ocean models for ocean-acoustics applications. The acoustic regimes in this resulting model are shown to be in agreement with underwater acoustics literature. In addition, the free-surface boundary condition is in turn compared to the pressure release boundary condition to establish a bridge with classical acoustic dispersion models.},
   HAL_ID = {hal-04781671},
+  HAL_VERSION = {v1},
+}
+
+@inproceedings{ouala:hal-05678116,
+  TITLE = {{Neural Ordinary Differential Equations with Trainable Solvers}},
+  AUTHOR = {Ouala, Said and Debreu, Laurent and Chapron, Bertrand and Collard, Fabrice and Gaultier, Lucile and Fablet, Ronan},
+  URL = {https://univ-brest.hal.science/hal-05678116},
+  BOOKTITLE = {{ICASSP, IEEE International Conference on Acoustics, Speech and Signal Processing - Proceedings}},
+  ADDRESS = {Seoul, South Korea},
+  PUBLISHER = {{IEEE}},
+  PAGES = {7675-7679},
+  YEAR = {2024},
+  MONTH = Apr,
+  DOI = {10.1109/icassp48485.2024.10446364},
+  KEYWORDS = {Numerical experiments ; Novel architecture ; Nonlinear differential equation ; Non-linear dynamics ; Neural ODE ; Learn+ ; Integration scheme ; Identification problem ; Data-driven model ; Data driven},
+  ABSTRACT = {When considering the data-driven identification of non-linear differential equations, the choice of the integration scheme to use is far from being trivial and may dramatically impact the identification problem. In this work, we discuss this aspect and propose a novel architecture that jointly learns Neural Ordinary Differential Equations (NODEs) as well as the corresponding integration schemes that would minimize the forecast of a given sequence of observations. We demonstrate its relevance with numerical experiments on non-linear dynamics, including chaotic systems},
+  HAL_ID = {hal-05678116},
   HAL_VERSION = {v1},
 }
 
@@ -250,20 +284,6 @@
   HAL_VERSION = {v3},
 }
 
-@misc{trappler:hal-03681091,
-  TITLE = {{Regret-based calibration using GPs}},
-  AUTHOR = {Trappler, Victor and Arnaud, {\'E}lise and Debreu, Laurent and Vidard, Arthur},
-  URL = {https://hal.science/hal-03681091},
-  NOTE = {Poster},
-  HOWPUBLISHED = {{Journ{\'e}es CIROQUO 2022}},
-  YEAR = {2022},
-  MONTH = May,
-  PDF = {https://hal.science/hal-03681091v1/file/Poster_journ_es_CIROQUO.pdf},
-  ABSTRACT = {How to calibrate a numerical model so that it performs reasonably well for different random operating conditions ? Objectives: ▶ Define the notion of regret in a calibration context ▶ Develop efficient methods and algorithms in order to estimate those parameters},
-  HAL_ID = {hal-03681091},
-  HAL_VERSION = {v1},
-}
-
 @inproceedings{lemarie:hal-03769267,
   TITLE = {{Stability and accuracy of Runge-Kutta based split-explicit time-stepping algorithms for free-surface ocean models}},
   AUTHOR = {Lemari{\'e}, Florian and Ducousso, Nicolas and Debreu, Laurent and Madec, Gurvan},
@@ -276,6 +296,20 @@
   PDF = {https://inria.hal.science/hal-03769267v1/file/Talk_EGU_Lemarie.pdf},
   ABSTRACT = {Because of the Boussinesq assumption employed in the vast majority of oceanic models, the acoustic waves are filtered and the fast dynamics corresponds to the external gravity-wave propagation which is much faster than other (internal) processes. The fast and slow dynamics are traditionally split into separate subproblems where the fast motions are nearly independent of depth. It is thus natural to model these motions with a two-dimensional (barotropic) system of equations while the slow processes are modeled with a three-dimensional (baroclinic) system. However such splitting is inexact, the barotropic mode is not strictly depth-independent meaning that the separation of slow and fast modes is non-orthogonal, even in the linear case. A consequence is that there are some fast components contained in the slow motions which induce instabilities controlled by time filtering of the fast mode. In this talk we present an analysis of the stability and accuracy of the barotropic–baroclinic mode splitting in the case where the baroclinic mode is integrated using a Runge-Kutta scheme and the barotropic mode is integrated explicitly (i.e. the so-called split-explicit approach). By referring to the theoretical framework developed by Demange et al. (2019), the analysis is based on an eigenvector decomposition using the true (depth-dependent) barotropic mode. We investigate several strategies to achieve stable integrations whose performance is assessed first on a theoretical ground and then by idealized linear and nonlinear numerical experiments.},
   HAL_ID = {hal-03769267},
+  HAL_VERSION = {v1},
+}
+
+@misc{trappler:hal-03681091,
+  TITLE = {{Regret-based calibration using GPs}},
+  AUTHOR = {Trappler, Victor and Arnaud, {\'E}lise and Debreu, Laurent and Vidard, Arthur},
+  URL = {https://hal.science/hal-03681091},
+  NOTE = {Poster},
+  HOWPUBLISHED = {{Journ{\'e}es CIROQUO 2022}},
+  YEAR = {2022},
+  MONTH = May,
+  PDF = {https://hal.science/hal-03681091v1/file/Poster_journ_es_CIROQUO.pdf},
+  ABSTRACT = {How to calibrate a numerical model so that it performs reasonably well for different random operating conditions ? Objectives: ▶ Define the notion of regret in a calibration context ▶ Develop efficient methods and algorithms in order to estimate those parameters},
+  HAL_ID = {hal-03681091},
   HAL_VERSION = {v1},
 }
 
@@ -785,18 +819,6 @@
   HAL_VERSION = {v6},
 }
 
-@inproceedings{debreu:hal-01062959,
-  TITLE = {{Schwarz waveform relaxation for heterogeneous cluster computing and applications}},
-  AUTHOR = {Debreu, Laurent and Lemari{\'e}, Florian and Blayo, Eric},
-  URL = {https://inria.hal.science/hal-01062959},
-  BOOKTITLE = {{43th SPEEDUP Workshop on High-Performance Computing}},
-  ADDRESS = {Geneva, Switzerland},
-  YEAR = {2014},
-  MONTH = Sep,
-  HAL_ID = {hal-01062959},
-  HAL_VERSION = {v1},
-}
-
 @techreport{demange:hal-01063417,
   TITLE = {{Numerical representation of internal waves propagation}},
   AUTHOR = {Demange, J{\'e}r{\'e}mie and Debreu, Laurent and Marchesiello, Patrick and Lemari{\'e}, Florian and Blayo, Eric},
@@ -809,6 +831,18 @@
   PDF = {https://inria.hal.science/hal-01063417v1/file/RR-8590.pdf},
   ABSTRACT = {Similar to surface waves propagating at the interface of two fluid of different densities (like air and water), internal waves in the oceanic interior travel along surfaces separating waters of different densities (e.g. at the thermocline). Due to their key role in the global distribution of (physical) diapycnal mixing and mass transport, proper representation of internal wave dynamics in numerical models should be considered a priority since global climate models are now configured with increasingly higher horizontal/vertical resolution. However, in most state-of-the-art oceanic models, important terms involved in the propagation of internal waves (namely the horizontal pressure gradient and horizontal divergence in the continuity equation) are generally discretized using very basic numerics (i.e. second-order approximations) in space and time. In this paper, we investigate the benefits of higher-order approximations in terms of the discrete dispersion relation (in the linear theory) on staggered and nonstaggered computational grids. A fourth-order scheme discretized on a C-grid to approximate both pressure gradient and horizontal divergence terms provides clear improvements but, unlike nonstaggered grids, prevents the use of monotonic or non-oscillatory schemes. Since our study suggests that better numerics is required, second and fourth order direct space-time algorithms are designed, thus paving the way toward the use of efficient high-order discretizations of internal gravity waves in oceanic models, while maintaining good stability properties (those schemes are stable for Courant numbers smaller than 1). Finally, important results obtained at a theoretical level are illustrated at a discrete level using two-dimensional (x,z) idealized experiments.},
   HAL_ID = {hal-01063417},
+  HAL_VERSION = {v1},
+}
+
+@inproceedings{debreu:hal-01062959,
+  TITLE = {{Schwarz waveform relaxation for heterogeneous cluster computing and applications}},
+  AUTHOR = {Debreu, Laurent and Lemari{\'e}, Florian and Blayo, Eric},
+  URL = {https://inria.hal.science/hal-01062959},
+  BOOKTITLE = {{43th SPEEDUP Workshop on High-Performance Computing}},
+  ADDRESS = {Geneva, Switzerland},
+  YEAR = {2014},
+  MONTH = Sep,
+  HAL_ID = {hal-01062959},
   HAL_VERSION = {v1},
 }
 
@@ -883,22 +917,6 @@
   HAL_VERSION = {v1},
 }
 
-@article{djath:hal-01095929,
-  TITLE = {{A 1/36 degrees model of the Solomon Sea embedded into a global ocean model: on the setting up of an interactive open boundary nested model system}},
-  AUTHOR = {Djath, Bughsin' and M{\'e}let, Ang{\'e}lique and Verron, Jacques and Molines, Jean-Marc and Barnier, Bernard and Gourdeau, Lionel and Debreu, Laurent},
-  URL = {https://inria.hal.science/hal-01095929},
-  JOURNAL = {{Journal of Operational Oceanography}},
-  PUBLISHER = {{Taylor \& Francis}},
-  VOLUME = {7},
-  NUMBER = {1},
-  PAGES = {34-46},
-  YEAR = {2014},
-  DOI = {10.1080/1755876X.2014.11020151},
-  ABSTRACT = {The implementation of a regional 1/36 degrees numerical model of a key sub region of the southwestern Pacific Ocean: the Solomon Sea is discussed.This model is two-way embedded into a 1/12 degrees resolution basin-scale model, itself one-way nested in a global 1/12 degrees resolution ocean model.The three main questions discussed in this study concern (i) the bathymetry, (ii) the setting up of adequate forcing functions, especially regarding the wind stress parameterization, and (iii) the strategy used to embed and conned the model configurations together Such a system, exemplified here for the Solomon Sea, represents a prototype of embedded model systems that are considered in operational oceanography.},
-  HAL_ID = {hal-01095929},
-  HAL_VERSION = {v1},
-}
-
 @incollection{debreu:hal-01095939,
   TITLE = {{Multigrid algorithms and local mesh refinement methods in the context of variational data assimilation}},
   AUTHOR = {Debreu, Laurent and Neveu, Emilie and Le Dimet, Fran{\c c}ois Xavier and Simon, Ehouarn},
@@ -913,6 +931,22 @@
   KEYWORDS = {mesh refinement ; variational data ; data assimilation method ; background error covariance matrix ; multigrid methods},
   ABSTRACT = {This chapter looks at the use of multigrid methods and local mesh refinement algorithms in the context of the variational data assimilation method. Firstly, the chapter looks back at basic properties of the traditional variational data assimilation method and considers on the role of the background error covariance matrix. The next section shows how multigrid algorithms can efficiently solve the resulting system. Then the chapter deals with local mesh refinements and the final part of the chapter gives some ideas on how to couple the two approaches in the view of local multigrid algorithms.},
   HAL_ID = {hal-01095939},
+  HAL_VERSION = {v1},
+}
+
+@article{djath:hal-01095929,
+  TITLE = {{A 1/36 degrees model of the Solomon Sea embedded into a global ocean model: on the setting up of an interactive open boundary nested model system}},
+  AUTHOR = {Djath, Bughsin' and M{\'e}let, Ang{\'e}lique and Verron, Jacques and Molines, Jean-Marc and Barnier, Bernard and Gourdeau, Lionel and Debreu, Laurent},
+  URL = {https://inria.hal.science/hal-01095929},
+  JOURNAL = {{Journal of Operational Oceanography}},
+  PUBLISHER = {{Taylor \& Francis}},
+  VOLUME = {7},
+  NUMBER = {1},
+  PAGES = {34-46},
+  YEAR = {2014},
+  DOI = {10.1080/1755876X.2014.11020151},
+  ABSTRACT = {The implementation of a regional 1/36 degrees numerical model of a key sub region of the southwestern Pacific Ocean: the Solomon Sea is discussed.This model is two-way embedded into a 1/12 degrees resolution basin-scale model, itself one-way nested in a global 1/12 degrees resolution ocean model.The three main questions discussed in this study concern (i) the bathymetry, (ii) the setting up of adequate forcing functions, especially regarding the wind stress parameterization, and (iii) the strategy used to embed and conned the model configurations together Such a system, exemplified here for the Solomon Sea, represents a prototype of embedded model systems that are considered in operational oceanography.},
+  HAL_ID = {hal-01095929},
   HAL_VERSION = {v1},
 }
 
@@ -969,22 +1003,6 @@
   HAL_VERSION = {v1},
 }
 
-@article{lemarie:hal-00661978,
-  TITLE = {{Toward an Optimized Global-in-Time Schwarz Algorithm for Diffusion Equations with Discontinuous and Spatially Variable Coefficients, Part 2: the Variable Coefficients Case}},
-  AUTHOR = {Lemari{\'e}, Florian and Debreu, Laurent and Blayo, Eric},
-  URL = {https://hal.science/hal-00661978},
-  JOURNAL = {{Electronic Transactions on Numerical Analysis}},
-  PUBLISHER = {{Kent State University Library}},
-  VOLUME = {40},
-  PAGES = {170-186},
-  YEAR = {2013},
-  KEYWORDS = {Optimized Schwarz Methods ; Waveform Relaxation ; Alternating and Parallel Schwarz Methods},
-  PDF = {https://hal.science/hal-00661978v1/file/Lemarie_ETNA2_2011.pdf},
-  ABSTRACT = {This paper is the second part of a study dealing with the application of a global-in-time Schwarz method to a one dimensional diffusion problem defined on two non-overlapping subdomains. In the first part, we considered that the diffusion coefficients were constant and possibly discontinuous. In the present study, we address the problem for spatially variable coefficients with a discontinuity at the interface between subdomains. For this particular case, we derive a new approach to determine analytically the convergence factor of the associated algorithm. The theoretical results are illustrated by numerical experiments with Dirichlet-Neumann and Robin-Robin interface conditions. In the Robin-Robin case, thanks to the convergence factor found at the analytical level, we can optimize the convergence speed of the Schwarz algorithm.},
-  HAL_ID = {hal-00661978},
-  HAL_VERSION = {v1},
-}
-
 @article{lemarie:hal-00661977,
   TITLE = {{Toward an Optimized Global-in-Time Schwarz Algorithm for Diffusion Equations with Discontinuous and Spatially Variable Coefficients, Part 1: The Constant Coefficients Case}},
   AUTHOR = {Lemari{\'e}, Florian and Debreu, Laurent and Blayo, Eric},
@@ -998,6 +1016,22 @@
   PDF = {https://hal.science/hal-00661977v1/file/Lemarie_ETNA1_2011.pdf},
   ABSTRACT = {In this paper we present a global-in-time non-overlapping Schwarz method applied to the one dimensional unsteady diffusion equation. We address specifically the problem with discontinuous diffusion coefficients, our approach is therefore especially designed for subdomains with heterogeneous properties. We derive efficient interface conditions by solving analytically the minmax problem associated with the search for optimized conditions in a Robin-Neumann case and in a two-sided Robin-Robin case. The performance of the proposed schemes are illustrated by numerical experiments},
   HAL_ID = {hal-00661977},
+  HAL_VERSION = {v1},
+}
+
+@article{lemarie:hal-00661978,
+  TITLE = {{Toward an Optimized Global-in-Time Schwarz Algorithm for Diffusion Equations with Discontinuous and Spatially Variable Coefficients, Part 2: the Variable Coefficients Case}},
+  AUTHOR = {Lemari{\'e}, Florian and Debreu, Laurent and Blayo, Eric},
+  URL = {https://hal.science/hal-00661978},
+  JOURNAL = {{Electronic Transactions on Numerical Analysis}},
+  PUBLISHER = {{Kent State University Library}},
+  VOLUME = {40},
+  PAGES = {170-186},
+  YEAR = {2013},
+  KEYWORDS = {Optimized Schwarz Methods ; Waveform Relaxation ; Alternating and Parallel Schwarz Methods},
+  PDF = {https://hal.science/hal-00661978v1/file/Lemarie_ETNA2_2011.pdf},
+  ABSTRACT = {This paper is the second part of a study dealing with the application of a global-in-time Schwarz method to a one dimensional diffusion problem defined on two non-overlapping subdomains. In the first part, we considered that the diffusion coefficients were constant and possibly discontinuous. In the present study, we address the problem for spatially variable coefficients with a discontinuity at the interface between subdomains. For this particular case, we derive a new approach to determine analytically the convergence factor of the associated algorithm. The theoretical results are illustrated by numerical experiments with Dirichlet-Neumann and Robin-Robin interface conditions. In the Robin-Robin case, thanks to the convergence factor found at the analytical level, we can optimize the convergence speed of the Schwarz algorithm.},
+  HAL_ID = {hal-00661978},
   HAL_VERSION = {v1},
 }
 
@@ -1130,6 +1164,19 @@
   HAL_VERSION = {v1},
 }
 
+@inproceedings{lemarie:hal-00749195,
+  TITLE = {{Optimized Schwarz Methods in the Context of Ocean-Atmosphere Coupling}},
+  AUTHOR = {Lemari{\'e}, Florian and Debreu, Laurent and Blayo, Eric},
+  URL = {https://hal.science/hal-00749195},
+  BOOKTITLE = {{DD 20 - 20th International Conference on Domain Decomposition Methods}},
+  ADDRESS = {San Diego, United States},
+  YEAR = {2011},
+  MONTH = Feb,
+  ABSTRACT = {Many applications in coastal and operational oceanography require high resolution local models, for which ocean-atmosphere interactions must be properly taken into account. In order to address the ocean-atmosphere coupling problem in a mathematically consistent way we intend to design an adequate Global-in-Time Schwarz-like domain decomposition method. We rst show how the usual ad hoc ocean-atmosphere coupling methods can be described in the formalism of the Schwarz methods. Then we propose a rst real-case study (genesis and propagation of a tropical cyclone) with the WRF (Weather Research and Forecasting) and the ROMS (Regional Ocean Modeling System) numerical models. We introduce some numerical results obtained with a non-optimized method. However when one wants to optimize the convergence speed of the corresponding algorithm by looking for a good approximation of the absorbing boundary conditions we face some problem that have been relatively few studied so far : the in uence of the presence of turbulent boundary layers on both sides of the interface on the convergence speed. In order to illustrate this point we propose to study an idealized form of the problem: a coupling between two di usion equations modeling the turbulent mixing in the boundary layers. We consider rst the case of coe cients which are discontinuous at the air-sea interface but constant on each subdomain. In this case the optimized transmission conditions are determined analytically. In the more general case with discontinuous and spatially variable coe cients the convergence of the Schwarz algorithm is studied using an ad hoc expansion into eigenfunctions of an associated Sturm-Liouville problem. We nally discuss how to extend those results found on a simpli ed problem to the full ocean-atmosphere coupling problem.},
+  HAL_ID = {hal-00749195},
+  HAL_VERSION = {v1},
+}
+
 @inproceedings{lemarie:hal-05489832,
   TITLE = {{Optimized Schwarz Methods in the context of ocean-atmosphere coupling}},
   AUTHOR = {Lemari{\'e}, Florian and Debreu, Laurent and Blayo, Eric},
@@ -1141,19 +1188,6 @@
   PDF = {https://inria.hal.science/hal-05489832v1/file/san_diego_2011.pdf},
   ABSTRACT = {Many applications in coastal and operational oceanography require high resolution local models, for which ocean-atmosphere interactions must be properly taken into account (e.g. tropical cyclones, climate studies...). In that case, connecting the two model solutions at the air-sea interface is a very difficult problem, which is presently often addressed in a quite crude and simplified way from a mathematical point of view. In this context we intend to adapt Global-in-Time Schwarz-like domain decomposition methods to this kind of problem in order to address it on an appropriate and consistent way. We first show how the usual ocean-atmosphere coupling methods can be described in the formalism of the Schwarz methods. Then we propose a first real-case study (genesis and propagation of a tropical cyclone) with the WRF (Weather Research and Forecasting) and the ROMS (Regional Ocean Modeling System) numerical models. We introduce some numerical results obtained with a non-optimized method. However when one wants to optimize the convergence speed of the corresponding algorithm by looking for a good approximation of the absorbing boundary conditions we face some problem that have been relatively few studied so far, namely the presence of turbulent boundary layers on both sides of the interface and the strong spatial variability of diffusion coefficients (in the vertical direction mainly). In order to illustrate this point we propose to study an idealized form of the problem: a coupling between two diffusion equations modeling the turbulent mixing in the boundary layers. We consider first the case of coefficients which are discontinuous at the air-sea interface but constant on each subdomain. In this case the optimized transmission conditions are determined analytically. In the more general case with discontinuous and spatially variable coefficients the convergence of the Schwarz algorithm is studied using an ad hoc expansion into eigenfunctions of an associated Sturm-Liouville problem. We finally discuss how to extend those results found on a simplified problem to the full ocean-atmosphere coupling problem.},
   HAL_ID = {hal-05489832},
-  HAL_VERSION = {v1},
-}
-
-@inproceedings{lemarie:hal-00749195,
-  TITLE = {{Optimized Schwarz Methods in the Context of Ocean-Atmosphere Coupling}},
-  AUTHOR = {Lemari{\'e}, Florian and Debreu, Laurent and Blayo, Eric},
-  URL = {https://hal.science/hal-00749195},
-  BOOKTITLE = {{DD 20 - 20th International Conference on Domain Decomposition Methods}},
-  ADDRESS = {San Diego, United States},
-  YEAR = {2011},
-  MONTH = Feb,
-  ABSTRACT = {Many applications in coastal and operational oceanography require high resolution local models, for which ocean-atmosphere interactions must be properly taken into account. In order to address the ocean-atmosphere coupling problem in a mathematically consistent way we intend to design an adequate Global-in-Time Schwarz-like domain decomposition method. We rst show how the usual ad hoc ocean-atmosphere coupling methods can be described in the formalism of the Schwarz methods. Then we propose a rst real-case study (genesis and propagation of a tropical cyclone) with the WRF (Weather Research and Forecasting) and the ROMS (Regional Ocean Modeling System) numerical models. We introduce some numerical results obtained with a non-optimized method. However when one wants to optimize the convergence speed of the corresponding algorithm by looking for a good approximation of the absorbing boundary conditions we face some problem that have been relatively few studied so far : the in uence of the presence of turbulent boundary layers on both sides of the interface on the convergence speed. In order to illustrate this point we propose to study an idealized form of the problem: a coupling between two di usion equations modeling the turbulent mixing in the boundary layers. We consider rst the case of coe cients which are discontinuous at the air-sea interface but constant on each subdomain. In this case the optimized transmission conditions are determined analytically. In the more general case with discontinuous and spatially variable coe cients the convergence of the Schwarz algorithm is studied using an ad hoc expansion into eigenfunctions of an associated Sturm-Liouville problem. We nally discuss how to extend those results found on a simpli ed problem to the full ocean-atmosphere coupling problem.},
-  HAL_ID = {hal-00749195},
   HAL_VERSION = {v1},
 }
 
@@ -1302,40 +1336,6 @@
   HAL_VERSION = {v1},
 }
 
-@techreport{lemarie:inria-00324533,
-  TITLE = {{Optimized global-in-time Schwarz algorithm for diffusion equations with discontinuous and spatially variable coefficients}},
-  AUTHOR = {Lemari{\'e}, Florian and Debreu, Laurent and Blayo, Eric},
-  URL = {https://inria.hal.science/inria-00324533},
-  TYPE = {Research Report},
-  NUMBER = {RR-6663},
-  PAGES = {45},
-  INSTITUTION = {{INRIA}},
-  YEAR = {2008},
-  KEYWORDS = {domain decomposition ; waveform relaxation ; Schwarz methods},
-  PDF = {https://inria.hal.science/inria-00324533v1/file/RR-6663.pdf},
-  ABSTRACT = {In this report we present a global-in-time non-overlapping Schwarz method applied to the one dimensional unsteady diffusion equation. We address specifically the problem with discontinuous diffusion coefficients, our approach is therefore especially designed for subdomains with heterogeneous properties. We derive efficient interface conditions by solving analytically the minmax problem associated to the search of optimized conditions in a Robin-Neumann case and in a two-sided Robin-Robin case with constant coefficients. We study the impact of the finiteness of the subdomains on the optimized conditions. Then we address the problem with spatially variable coefficients. We derive a new approach to determine the convergence factor of the algorithm, which enables to optimize the convergence speed. The theoretical results are illustrated by numerical experiments in the case of Robin-Robin and Dirichlet-Neumann interface conditions.},
-  HAL_ID = {inria-00324533},
-  HAL_VERSION = {v1},
-}
-
-@article{debreu:hal-00387449,
-  TITLE = {{Two-way embedding algorithms: a review}},
-  AUTHOR = {Debreu, Laurent and Blayo, Eric},
-  URL = {https://hal.science/hal-00387449},
-  JOURNAL = {{Ocean Dynamics}},
-  PUBLISHER = {{Springer Verlag}},
-  VOLUME = {58},
-  NUMBER = {5-6},
-  PAGES = {415-428},
-  YEAR = {2008},
-  DOI = {10.1007/s10236-008-0150-9},
-  KEYWORDS = {Two-way embedding ; Mesh refinement ; Structured grids},
-  PDF = {https://hal.science/hal-00387449v1/file/Debreu.pdf},
-  ABSTRACT = {Local mesh refinement features have now been added to a number of numerical ocean models. In its crudest form, a high-resolution grid is embedded (or nested) in a coarse-resolution grid, which covers the entire domain, and the two grids interact. The aim of this paper is to review existing two-way grid embedding algorithms. The basic algorithms and specificities related to ocean modelling are first described. Then, we address several important issues: conservation properties, design of interpolation/restriction operators, and noise control techniques.},
-  HAL_ID = {hal-00387449},
-  HAL_VERSION = {v1},
-}
-
 @article{jouanno:hal-00658107,
   TITLE = {{The mesoscale variability in the Caribbean Sea. Part I: Simulations and characteristics with an embedded model}},
   AUTHOR = {Jouanno, Julien and Sheinbaum, Julio and Barnier, Bernard and Molines, Jean-Marc and Debreu, Laurent and Lemari{\'e}, Florian},
@@ -1371,6 +1371,24 @@
   HAL_VERSION = {v1},
 }
 
+@article{debreu:hal-00387449,
+  TITLE = {{Two-way embedding algorithms: a review}},
+  AUTHOR = {Debreu, Laurent and Blayo, Eric},
+  URL = {https://hal.science/hal-00387449},
+  JOURNAL = {{Ocean Dynamics}},
+  PUBLISHER = {{Springer Verlag}},
+  VOLUME = {58},
+  NUMBER = {5-6},
+  PAGES = {415-428},
+  YEAR = {2008},
+  DOI = {10.1007/s10236-008-0150-9},
+  KEYWORDS = {Two-way embedding ; Mesh refinement ; Structured grids},
+  PDF = {https://hal.science/hal-00387449v1/file/Debreu.pdf},
+  ABSTRACT = {Local mesh refinement features have now been added to a number of numerical ocean models. In its crudest form, a high-resolution grid is embedded (or nested) in a coarse-resolution grid, which covers the entire domain, and the two grids interact. The aim of this paper is to review existing two-way grid embedding algorithms. The basic algorithms and specificities related to ocean modelling are first described. Then, we address several important issues: conservation properties, design of interpolation/restriction operators, and noise control techniques.},
+  HAL_ID = {hal-00387449},
+  HAL_VERSION = {v1},
+}
+
 @article{cailleau:hal-00387446,
   TITLE = {{Comparison of different numerical methods used to handle the open boundary of a regional ocean circulation model of the Bay of Biscay}},
   AUTHOR = {Cailleau, Sylvain and Fedorenko, Veronika and Barnier, Bernard and Blayo, Eric and Debreu, Laurent},
@@ -1386,6 +1404,22 @@
   PDF = {https://hal.science/hal-00387446v1/file/Cailleau2008.pdf},
   ABSTRACT = {Several methods for specifying boundary conditions at the limits of a regional model are compared. The methods investigated are those using clamped and radiation boundary conditions, one-way and two-way nesting in a model for a more extensive area, and "full" coupling based on domain decomposition techniques. These methods are compared in the realistic framework of interactions between a 1/15° model of the Bay of Biscay and a 1/3° model of the North Atlantic, over a 3-year simulation (1996-1998). The clamped and radiation boundary conditions systematically lead to energy accumulation and problematic recirculations along the boundary, and can disturb the internal dynamics of the regional domain. The one-way or two-way-nesting and the full-coupling methods result in far more satisfactory behaviour. For long periods of integration, the two-way mode improves both the fine and coarse-grid solutions. The full coupling method provides the most regular solution at the boundary, and also opens interesting new perspectives since it should enable the coupling of models with different physics. However it requires much more computation time.},
   HAL_ID = {hal-00387446},
+  HAL_VERSION = {v1},
+}
+
+@techreport{lemarie:inria-00324533,
+  TITLE = {{Optimized global-in-time Schwarz algorithm for diffusion equations with discontinuous and spatially variable coefficients}},
+  AUTHOR = {Lemari{\'e}, Florian and Debreu, Laurent and Blayo, Eric},
+  URL = {https://inria.hal.science/inria-00324533},
+  TYPE = {Research Report},
+  NUMBER = {RR-6663},
+  PAGES = {45},
+  INSTITUTION = {{INRIA}},
+  YEAR = {2008},
+  KEYWORDS = {domain decomposition ; waveform relaxation ; Schwarz methods},
+  PDF = {https://inria.hal.science/inria-00324533v1/file/RR-6663.pdf},
+  ABSTRACT = {In this report we present a global-in-time non-overlapping Schwarz method applied to the one dimensional unsteady diffusion equation. We address specifically the problem with discontinuous diffusion coefficients, our approach is therefore especially designed for subdomains with heterogeneous properties. We derive efficient interface conditions by solving analytically the minmax problem associated to the search of optimized conditions in a Robin-Neumann case and in a two-sided Robin-Robin case with constant coefficients. We study the impact of the finiteness of the subdomains on the optimized conditions. Then we address the problem with spatially variable coefficients. We derive a new approach to determine the convergence factor of the algorithm, which enables to optimize the convergence speed. The theoretical results are illustrated by numerical experiments in the case of Robin-Robin and Dirichlet-Neumann interface conditions.},
+  HAL_ID = {inria-00324533},
   HAL_VERSION = {v1},
 }
 
@@ -1467,18 +1501,6 @@
   HAL_VERSION = {v1},
 }
 
-@inproceedings{simon:hal-00171642,
-  TITLE = {{Assimilation de donn{\'e}es variationnelle pour des mod{\`e}les multi-{\'e}chelles}},
-  AUTHOR = {Simon, Ehouarn and Debreu, Laurent and Blayo, Eric},
-  URL = {https://hal.science/hal-00171642},
-  BOOKTITLE = {{Colloque national sur l'assimilation de donn{\'e}es}},
-  ADDRESS = {Toulouse, France},
-  YEAR = {2006},
-  MONTH = May,
-  HAL_ID = {hal-00171642},
-  HAL_VERSION = {v1},
-}
-
 @inproceedings{simon:hal-00171710,
   TITLE = {{Assimilation de donn{\'e}es variationnelle pour des mod{\`e}les multi-grilles}},
   AUTHOR = {Simon, Ehouarn and Debreu, Laurent and Blayo, Eric},
@@ -1488,6 +1510,18 @@
   YEAR = {2006},
   MONTH = May,
   HAL_ID = {hal-00171710},
+  HAL_VERSION = {v1},
+}
+
+@inproceedings{simon:hal-00171642,
+  TITLE = {{Assimilation de donn{\'e}es variationnelle pour des mod{\`e}les multi-{\'e}chelles}},
+  AUTHOR = {Simon, Ehouarn and Debreu, Laurent and Blayo, Eric},
+  URL = {https://hal.science/hal-00171642},
+  BOOKTITLE = {{Colloque national sur l'assimilation de donn{\'e}es}},
+  ADDRESS = {Toulouse, France},
+  YEAR = {2006},
+  MONTH = May,
+  HAL_ID = {hal-00171642},
   HAL_VERSION = {v1},
 }
 
@@ -1547,22 +1581,6 @@
   HAL_VERSION = {v1},
 }
 
-@incollection{debreu:hal-00184033,
-  TITLE = {{A general adaptive multi-resolution approach to ocean modelling: experiments in a primitive equation model of the North Atlantic}},
-  AUTHOR = {Debreu, Laurent and Blayo, Eric and Barnier, Bernard},
-  URL = {https://hal.science/hal-00184033},
-  BOOKTITLE = {{Adaptive Mesh Refinement - Theory and Applications}},
-  EDITOR = {Tomasz Plewa and Timur Linde and V. Gregory Weirs},
-  PUBLISHER = {{Springer}},
-  VOLUME = {41},
-  PAGES = {303-313},
-  YEAR = {2005},
-  DOI = {10.1007/3-540-27039-6\_21},
-  ABSTRACT = {Following the work of [BD99], the present paper presents a general approach to adaptive mesh refinement for ocean models. The numerical procedure is briefly described, as well as a software package which easily allows for the actual implementation of multiresolution within any existing finite difference model. The effectiveness of this approach for ocean modelling, even at a basin-scale, is illustrated in the context of a primitive equation numerical model of the north Atlantic. Several experiments are presented, which demonstrate the potentialities of mesh refinement and emphasize the role of the refinement criterion.},
-  HAL_ID = {hal-00184033},
-  HAL_VERSION = {v1},
-}
-
 @article{blayo:inria-00134856,
   TITLE = {{Revisiting open boundary conditions from the point of view of characteristic variables}},
   AUTHOR = {Blayo, Eric and Debreu, Laurent},
@@ -1577,6 +1595,22 @@
   PDF = {https://inria.hal.science/inria-00134856v1/file/obc2.pdf},
   ABSTRACT = {This paper emphasizes the peculiar role of characteristic variables in the design of open boundary conditions (OBCs). It is shown that local OBCs leading to positive results in previous comparative studies do fulfil two requirements : they make use of incoming characteristic variables (\ie privilege the hyperbolic aspect of the equations), and satisfy a consistency relationship between the model solution and some external data. The classical OBCs used in atmosphere and ocean modeling are revisited from this point of view. It is shown that several usual boundary conditions should be avoided, while conditions satisfying the two preceding criteria are pointed out. Finally, the application of these criteria to the design of OBCs for primitive equations is discussed.},
   HAL_ID = {inria-00134856},
+  HAL_VERSION = {v1},
+}
+
+@incollection{debreu:hal-00184033,
+  TITLE = {{A general adaptive multi-resolution approach to ocean modelling: experiments in a primitive equation model of the North Atlantic}},
+  AUTHOR = {Debreu, Laurent and Blayo, Eric and Barnier, Bernard},
+  URL = {https://hal.science/hal-00184033},
+  BOOKTITLE = {{Adaptive Mesh Refinement - Theory and Applications}},
+  EDITOR = {Tomasz Plewa and Timur Linde and V. Gregory Weirs},
+  PUBLISHER = {{Springer}},
+  VOLUME = {41},
+  PAGES = {303-313},
+  YEAR = {2005},
+  DOI = {10.1007/3-540-27039-6\_21},
+  ABSTRACT = {Following the work of [BD99], the present paper presents a general approach to adaptive mesh refinement for ocean models. The numerical procedure is briefly described, as well as a software package which easily allows for the actual implementation of multiresolution within any existing finite difference model. The effectiveness of this approach for ocean modelling, even at a basin-scale, is illustrated in the context of a primitive equation numerical model of the north Atlantic. Several experiments are presented, which demonstrate the potentialities of mesh refinement and emphasize the role of the refinement criterion.},
+  HAL_ID = {hal-00184033},
   HAL_VERSION = {v1},
 }
 

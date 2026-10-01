@@ -8,16 +8,16 @@
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Publications" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://0.0.0.0:4000/w2_publications.html" />
-<meta property="og:url" content="http://0.0.0.0:4000/w2_publications.html" />
+<link rel="canonical" href="http://localhost:4000/w2_publications.html" />
+<meta property="og:url" content="http://localhost:4000/w2_publications.html" />
 <meta property="og:site_name" content="Laurent Debreu" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Publications" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","headline":"Publications","url":"http://0.0.0.0:4000/w2_publications.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","headline":"Publications","url":"http://localhost:4000/w2_publications.html"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Laurent Debreu" /><script>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Laurent Debreu" /><script>
 MathJax = {
   tex: {
     inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
@@ -43,7 +43,7 @@ MathJax = {
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/">Welcome</a><a class="page-link" href="/w0_research.html">Research</a><a class="page-link" href="/w1_projects.html">Ongoing Projects</a><a class="page-link" href="/w2_publications.html">Publications</a></div>
+        <div class="trigger"><a class="page-link" href="/">Welcome</a><a class="page-link" href="/w0_research.html">Research</a><a class="page-link" href="/w1_projects.html">Ongoing Projects</a><a class="page-link" href="/w2_publications.html">Publications</a><a class="page-link" href="/w3_students.html">PhD Students</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -79,6 +79,29 @@ MathJax = {
     
     
     <span><a href="http://hal.inria.fr/hal-05460893">HAL</a></span>
+    
+</div></li>
+<li><div class="text-justify">
+    <span id="ouala:hal-05232101"><span style="text-decoration: none"><b>Ouala, S., Debreu, L., Chapron, B., Collard, F., Gaultier, L., &amp; Fablet, R.</b></span>. <span style="font-variant: normal">“Enhanced Computational Complexity in Continuous-Depth Models: Neural Ordinary Differential Equations With Trainable Numerical Schemes.”</span> <i>IEEE Transactions on Pattern Analysis and Machine Intelligence</i>, <i>48</i>(1), 1045–1051.</span>
+</div>
+
+
+<details style="margin-top: 10px;">
+    <summary style="cursor: pointer; color: #0066cc;"><strong>Abstract</strong></summary>
+    <div style="margin-top: 10px; padding: 10px; background-color: #f5f5f5; border-left: 3px solid #0066cc;">
+        Neural Ordinary Differential Equations (NODEs) serve as continuous-time analogs of residual networks. They provide a system-theoretic perspective on neural network architecture design and offer natural solutions for time series modeling, forecasting, and applications where invertible neural networks are essential. However, these models suffer from slow performance due to heavy numerical solver overhead. For instance, a popular solution for training and inference of NODEs consists in using adaptive step size solvers such as the popular Dormand–Prince 5(4) (DOPRI). These solvers dynamically adjust the Number of Function Evaluations (NFE) as the equation fits the training data and becomes more complex. However, this comes at the cost of an increased number of function evaluations, which reduces computational efficiency. In this work, we propose a novel approach: making the parameters of the numerical integration scheme trainable. By doing so, the numerical scheme dynamically adapts to the dynamics of the NODE, resulting in a model that operates with a fixed NFE. We compare the proposed trainable solvers with state-of-the-art approaches, including DOPRI, for different benchmarks, including classification, density estimation, and dynamical system modeling. Overall, we report a state-of-the-art performance for all benchmarks in terms of accuracy metrics, while enhancing the computational efficiency through trainable fixed-step-size solvers. This work opens up new possibilities for practical and efficient modeling applications with NODEs.
+    </div>
+</details>
+
+
+
+
+<div>
+    
+    <span><a href="http://doi.org/10.1109/TPAMI.2025.3599629">DOI</a></span>
+    
+    
+    <span><a href="http://hal.inria.fr/hal-05232101">HAL</a></span>
     
 </div></li></ol>
 <h3 class="bibliography">2025</h3>
@@ -126,29 +149,6 @@ MathJax = {
     
     
     <span><a href="http://hal.inria.fr/hal-03540480">HAL</a></span>
-    
-</div></li>
-<li><div class="text-justify">
-    <span id="ouala:hal-05232101"><span style="text-decoration: none"><b>Ouala, S., Debreu, L., Chapron, B., Collard, F., Gaultier, L., &amp; Fablet, R.</b></span>. <span style="font-variant: normal">“Enhanced Computational Complexity in Continuous-Depth Models: Neural Ordinary Differential Equations With Trainable Numerical Schemes.”</span> <i>IEEE Transactions on Pattern Analysis and Machine Intelligence</i>, 1–8.</span>
-</div>
-
-
-<details style="margin-top: 10px;">
-    <summary style="cursor: pointer; color: #0066cc;"><strong>Abstract</strong></summary>
-    <div style="margin-top: 10px; padding: 10px; background-color: #f5f5f5; border-left: 3px solid #0066cc;">
-        Neural Ordinary Differential Equations (NODEs) serve as continuous-time analogs of residual networks. They provide a system-theoretic perspective on neural network architecture design and offer natural solutions for time series modeling, forecasting, and applications where invertible neural networks are essential. However, these models suffer from slow performance due to heavy numerical solver overhead. For instance, a popular solution for training and inference of NODEs consists in using adaptive step size solvers such as the popular Dormand–Prince 5(4) (DOPRI). These solvers dynamically adjust the Number of Function Evaluations (NFE) as the equation fits the training data and becomes more complex. However, this comes at the cost of an increased number of function evaluations, which reduces computational efficiency. In this work, we propose a novel approach: making the parameters of the numerical integration scheme trainable. By doing so, the numerical scheme dynamically adapts to the dynamics of the NODE, resulting in a model that operates with a fixed NFE. We compare the proposed trainable solvers with state-of-the-art approaches, including DOPRI, for different benchmarks, including classification, density estimation, and dynamical system modeling. Overall, we report a state-of-the-art performance for all benchmarks in terms of accuracy metrics, while enhancing the computational efficiency through trainable fixed-step-size solvers. This work opens up new possibilities for practical and efficient modeling applications with NODEs.
-    </div>
-</details>
-
-
-
-
-<div>
-    
-    <span><a href="http://doi.org/10.1109/TPAMI.2025.3599629">DOI</a></span>
-    
-    
-    <span><a href="http://hal.inria.fr/hal-05232101">HAL</a></span>
     
 </div></li></ol>
 <h3 class="bibliography">2024</h3>
@@ -579,29 +579,6 @@ MathJax = {
 </div></li></ol>
 <h3 class="bibliography">2015</h3>
 <ol class="bibliography"><li><div class="text-justify">
-    <span id="lemarie:hal-01174132"><span style="text-decoration: none"><b>Lemarié, F., Blayo, E., &amp; Debreu, L.</b></span>. <span style="font-variant: normal">“Analysis of ocean-atmosphere coupling algorithms: consistency and stability.”</span> <i>Procedia Computer Science</i>, <i>51</i>, 2066–2075.</span>
-</div>
-
-
-<details style="margin-top: 10px;">
-    <summary style="cursor: pointer; color: #0066cc;"><strong>Abstract</strong></summary>
-    <div style="margin-top: 10px; padding: 10px; background-color: #f5f5f5; border-left: 3px solid #0066cc;">
-        This paper is focused on the numerical and computational issues associated to ocean-atmosphere coupling. It is shown that usual coupling methods do not provide the solution to the correct problem, but to an approaching one since they are equivalent to performing one single iteration of an iterative coupling method. The stability analysis of these ad-hoc methods is presented, and we motivate and propose the adaptation of a Schwarz domain decomposition method to ocean-atmosphere coupling to obtain a stable and consistent coupling method.
-    </div>
-</details>
-
-
-
-
-<div>
-    
-    <span><a href="http://doi.org/10.1016/j.procs.2015.05.473">DOI</a></span>
-    
-    
-    <span><a href="http://hal.inria.fr/hal-01174132">HAL</a></span>
-    
-</div></li>
-<li><div class="text-justify">
     <span id="lemarie:hal-01065979"><span style="text-decoration: none"><b>Lemarié, F., Debreu, L., Madec, G., Demange, J., Molines, J.-M., &amp; Honnorat, M.</b></span>. <span style="font-variant: normal">“Stability constraints for oceanic numerical models: implications for the formulation of time and space discretizations.”</span> <i>Ocean Modelling</i>, <i>92</i>, 124–148.</span>
 </div>
 
@@ -622,6 +599,29 @@ MathJax = {
     
     
     <span><a href="http://hal.inria.fr/hal-01065979">HAL</a></span>
+    
+</div></li>
+<li><div class="text-justify">
+    <span id="lemarie:hal-01174132"><span style="text-decoration: none"><b>Lemarié, F., Blayo, E., &amp; Debreu, L.</b></span>. <span style="font-variant: normal">“Analysis of ocean-atmosphere coupling algorithms: consistency and stability.”</span> <i>Procedia Computer Science</i>, <i>51</i>, 2066–2075.</span>
+</div>
+
+
+<details style="margin-top: 10px;">
+    <summary style="cursor: pointer; color: #0066cc;"><strong>Abstract</strong></summary>
+    <div style="margin-top: 10px; padding: 10px; background-color: #f5f5f5; border-left: 3px solid #0066cc;">
+        This paper is focused on the numerical and computational issues associated to ocean-atmosphere coupling. It is shown that usual coupling methods do not provide the solution to the correct problem, but to an approaching one since they are equivalent to performing one single iteration of an iterative coupling method. The stability analysis of these ad-hoc methods is presented, and we motivate and propose the adaptation of a Schwarz domain decomposition method to ocean-atmosphere coupling to obtain a stable and consistent coupling method.
+    </div>
+</details>
+
+
+
+
+<div>
+    
+    <span><a href="http://doi.org/10.1016/j.procs.2015.05.473">DOI</a></span>
+    
+    
+    <span><a href="http://hal.inria.fr/hal-01174132">HAL</a></span>
     
 </div></li></ol>
 <h3 class="bibliography">2014</h3>
@@ -1105,6 +1105,85 @@ MathJax = {
     <span><a href="http://hal.inria.fr/inria-00592597">HAL</a></span>
     
 </div></li></ol>
+<h2 class="bibliography">Unpublished</h2>
+<h3 class="bibliography">2026</h3>
+<ol class="bibliography"><li><div class="text-justify">
+    <span id="derrida:hal-05514655"><span style="text-decoration: none"><b>Derrida, G., Debreu, L., Lemarié, F., &amp; Chanut, J.</b></span>. <i>Propagation of internal gravity waves: optimal vertical discretisation and grid design based on numerical error analysis</i>.</span>
+</div>
+
+
+<details style="margin-top: 10px;">
+    <summary style="cursor: pointer; color: #0066cc;"><strong>Abstract</strong></summary>
+    <div style="margin-top: 10px; padding: 10px; background-color: #f5f5f5; border-left: 3px solid #0066cc;">
+        <div><p>Focusing on the dynamics of internal gravity wave, we introduce a general framework for the vertical discretisation of the stratified linearised primitive equations. We derive a discrete formulation that preserves energy conservation and leads to a consistent discrete Sturm-Liouville problem. A \β\-indexed family of discretisations is introduced, and a perturbation analysis provides an explicit expression for the leading-order eigenvalue errors. We show that an appropriate choice of parameter \βsignificantly reduces the leading-order eigenvalue error, and for uniform grids makes it vanish, yielding fourth-order instead of second-order convergence. An explicit optimal vertical grid is also derived for a single eigenmode, and the extension to grids optimised for multiple modes is discussed.</p></div>
+    </div>
+</details>
+
+
+
+<div>
+    <em>working paper or preprint</em>
+</div>
+
+
+<div>
+    
+    
+    <span><a href="http://hal.inria.fr/hal-05514655">HAL</a></span>
+    
+</div></li></ol>
+<h3 class="bibliography">2025</h3>
+<ol class="bibliography"><li><div class="text-justify">
+    <span id="remy:hal-05061001"><span style="text-decoration: none"><b>Remy, J., Brunie, H., Schreiber, M., Siso, S., Porter, A., Ford, R., Debreu, L., Lemarié, F., &amp; Vidard, A.</b></span>. <i>Numerics-driven uplifting, Automatic Parallelization, and Performance Optimizations with Deep Kernel Fusion for Ocean Models on Heterogeneous Architectures</i>.</span>
+</div>
+
+
+<details style="margin-top: 10px;">
+    <summary style="cursor: pointer; color: #0066cc;"><strong>Abstract</strong></summary>
+    <div style="margin-top: 10px; padding: 10px; background-color: #f5f5f5; border-left: 3px solid #0066cc;">
+        Achieving peak performance for ocean models on modern High-Performance Computing (HPC) architectures requires extensive, costly code rewrites that are not only time-consuming and error-prone but also highly architecture-specific and require numerics experts to be proficient in parallel programming models or Domain-Specific Languages (DSLs). In this paper we introduce Poseidon, a source-to-source code optimization tool that employs numerics &amp; HPC co-design. We developed an uplifting approach to a hypergraph for the data flow and to our own Poseidon Intermediate Representation (PosIR) for the computations, which recovers for the first time high-level information and semantics about the computations and memory management that are typically lost during the conversion of numerical algorithms to source code. This representation is then employed for model-driven optimizations. In the backend, we inject source code back into the original code supporting different target HPC architectures, reusing the existing model as the runtime. Our evaluation investigates OpenMP and OpenACC parallel programming models on CPUs and GPUs. We demonstrate Poseidon’s capability of automatic parallelization and optimization of existing Fortran code, with comparisons to state-of-the-art parallelized code with performance improvements of up to ×2.60 and automatically reducing the required memory footprint by up to ×2.29.
+    </div>
+</details>
+
+
+
+<div>
+    <em>working paper or preprint</em>
+</div>
+
+
+<div>
+    
+    
+    <span><a href="http://hal.inria.fr/hal-05061001">HAL</a></span>
+    
+</div></li></ol>
+<h3 class="bibliography">2019</h3>
+<ol class="bibliography"><li><div class="text-justify">
+    <span id="debreu:hal-01968678"><span style="text-decoration: none"><b>Debreu, L., &amp; Kazantsev, E.</b></span>. <i>Optimal control of grids and schemes for the inertial gravity waves equation</i>.</span>
+</div>
+
+
+<details style="margin-top: 10px;">
+    <summary style="cursor: pointer; color: #0066cc;"><strong>Abstract</strong></summary>
+    <div style="margin-top: 10px; padding: 10px; background-color: #f5f5f5; border-left: 3px solid #0066cc;">
+        Variational data assimilation technique is applied to a simple bidi-mensional wave equation that simulates propagation of internal gravity waves in the ocean in order to control grids and numerical schemes. Grid steps of the vertical grid, Brunt-Vaisala frequency and approximation of the horizontal derivative were used as control parameters either separately or in the joint control. Obtained results show that optimized parameters may partially compensate errors committed by numerical scheme due to insufficient grid resolution.
+    </div>
+</details>
+
+
+
+<div>
+    <em>working paper or preprint</em>
+</div>
+
+
+<div>
+    
+    
+    <span><a href="http://hal.inria.fr/hal-01968678">HAL</a></span>
+    
+</div></li></ol>
 <h2 class="bibliography">Conference Articles</h2>
 <h3 class="bibliography">2025</h3>
 <ol class="bibliography"><li><div class="text-justify">
@@ -1171,6 +1250,28 @@ MathJax = {
     
     
     <span><a href="http://hal.inria.fr/hal-03153611">HAL</a></span>
+    
+</div></li></ol>
+<h3 class="bibliography">2019</h3>
+<ol class="bibliography"><li><div class="text-justify">
+    <span id="nazari:hal-05489733"><span style="text-decoration: none"><b>Nazari, F., Lemarié, F., &amp; Debreu, L.</b></span>. <span style="font-variant: normal">“Conservative Compact Coupled Space-Time Constancy-Preserving Schemes for Vertical Transport.”</span> <i>PDEs on the Sphere 2019</i>.</span>
+</div>
+
+
+<details style="margin-top: 10px;">
+    <summary style="cursor: pointer; color: #0066cc;"><strong>Abstract</strong></summary>
+    <div style="margin-top: 10px; padding: 10px; background-color: #f5f5f5; border-left: 3px solid #0066cc;">
+        The state-of-the-art coupled schemes, fail to retain the formal order of accuracy when used for nonlinear transport. This problem is fixed by developing a space-time generalization of the fourth-order semi-implicit conservative compact schemes in this study. The scheme is obtained in flux-form by correcting the successive error terms in Taylor series expansion in time and space. Space-time order of accuracy is successfully maintained for the solution of nonlinear scalar transport. The scheme is coupled in space and time, conservative in flux-form, semi-implicit in time, and compact due to its tri-diagonal matrix. The approach includes variable velocities and non-uniform grids on the adapted 1-D coordinate. For example, vertical grid refinement for oceanic models remains an issue to consider in particular because it requires very robust numerics to properly integrate vertical advective terms in a stable way. Traditionally, centered advection schemes are used in the vertical to avoid excessive numerical mixing. It is shown that the coupled space-time schemes behave very well as expected with the increase of spatial and/or temporal resolutions. With this approach, high-order accuracy is retained for the variable velocity. An important feature of the scheme is that the high-order solution is obtained in one step in contrast to the decoupled schemes where the higher-order solutions are obtained in multiple stages (e.g. RK4). The scheme is very efficient due to the tri-diagonal matrix and stable in the range of Courant number up to 1 which is the domain of this study. Constancy of the scalar is preserved through the agreement of the advection and continuity equations or imposed by the pseudo-density approach. It ensures the consistency of the solution and the order of accuracy. Furthermore, the stability and efficiency of the matrix inversion associated to the scheme is studied. For the application of the schemes for larger Courant numbers, there exist different methods that are being applied for the upcoming studies. A general form of 1D nonlinear advection along with continuity equation is shown for oceanic vertical transport, which is very important in the representation of physical processes in the ocean.
+    </div>
+</details>
+
+
+
+
+<div>
+    
+    
+    <span><a href="http://hal.inria.fr/hal-05489733">HAL</a></span>
     
 </div></li></ol>
 <h3 class="bibliography">2018</h3>
@@ -1310,16 +1411,16 @@ MathJax = {
     
 </div></li>
 <li><div class="text-justify">
-    <span id="lemarie:hal-01406629"><span style="text-decoration: none"><b>Lemarié, F., &amp; Debreu, L.</b></span>. <span style="font-variant: normal">“A compact high-order coupled time and space discretization to represent vertical transport in oceanic models.”</span> <i>Joint Numerical Sea Modelling Group Conference</i>.</span>
+    <span id="lemarie:hal-01406629"><span style="text-decoration: none"><b>Lemarié, F., &amp; Debreu, L.</b></span>. <span style="font-variant: normal">“A compact high-order coupled time and space discretization to represent vertical transport in oceanic models.”</span> <i>Jonsmod 2016 - Joint Numerical Sea Modelling Group Conference</i>.</span>
 </div>
 
 
 <details style="margin-top: 10px;">
     <summary style="cursor: pointer; color: #0066cc;"><strong>Abstract</strong></summary>
     <div style="margin-top: 10px; padding: 10px; background-color: #f5f5f5; border-left: 3px solid #0066cc;">
-        Recent papers by Shchepetkin (2015) and Lemarié et al. (2015) have emphasized that the time-step of an oceanic model with an Eulerian vertical coordinate and an explicit time-stepping scheme is very often restricted by vertical advection in a few hot spots (i.e. most of the grid points are integrated with small Courant numbers except just few spots). The consequence is that the numerics for vertical advection must have good stability properties while being robust to changes in Courant number in terms of accuracy. An other constraint is the strict control of numerical mixing imposed by the highly adiabatic nature of the oceanic interior. The same applies for remapping schemes when ALE coordinates are used. We propose to examine in this talk the possibility of mitigating vertical CFL restriction, while avoiding numerical inaccuracies associated with standard implicit schemes (i.e. large sensitivity of the solution on Courant number, large phase delay, and possibly excess of numerical damping). Several regional oceanic models have been successfully using fourth order compact spatial discretizations for vertical advection. In this talk we present a space-time generalization of compact schemes. In particular, we derive a generic expression for a fourth-order (one-step) coupled time and space compact scheme (see Daru &amp; Tenaud (2004) for a thorough description of coupled time and space schemes). Among other properties, we show that this scheme is non dissipative, unconditionally stable, and has very good accuracy properties especially for Courant numbers smaller than 1 while having a very small computational cost. Furthermore, we show how this scheme can be made monotonic without compromising its stability properties. We emphasize that the scheme can be successfully used in number of different situations: <ul> <li> as an unconditionally stable vertical advection scheme in an oceanic model with quasi-Eulerian vertical coordinate (provided a degradation of time accuracy for large Courant numbers) <li> as a scheme to compute the so-called ”fractional flux” in a flux-form semi-Lagrangian scheme à la Lin &amp; Rood (1996) to provide a stable scheme even for large Courant numbers <li> as a remapping scheme in an ALE framework following Dukowicz &amp; Baumgardner (2000) We illustrate the properties of the scheme and compare it to existing fourth-order accurate in time and space schemes using linear and nonlinear numerical experiments. &lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/details&gt;
+        Recent papers by Shchepetkin (2015) and Lemarié et al. (2015) have emphasized that the time-step of an oceanic model with an Eulerian vertical coordinate and an explicit time-stepping scheme is very often restricted by vertical advection in a few hot spots (i.e. most of the grid points are integrated with small Courant numbers except just few spots). The consequence is that the numerics for vertical advection must have good stability properties while being robust to changes in Courant number in terms of accuracy. An other constraint is the strict control of numerical mixing imposed by the highly adiabatic nature of the oceanic interior. The same applies for remapping schemes when ALE coordinates are used. We propose to examine in this talk the possibility of mitigating vertical CFL restriction, while avoiding numerical inaccuracies associated with standard implicit schemes (i.e. large sensitivity of the solution on Courant number, large phase delay, and possibly excess of numerical damping). Several regional oceanic models have been successfully using fourth order compact spatial discretizations for vertical advection. In this talk we present a space-time generalization of compact schemes. In particular, we derive a generic expression for a fourth-order (one-step) coupled time and space compact scheme (see Daru &amp; Tenaud (2004) for a thorough description of coupled time and space schemes). Among other properties, we show that this scheme is non dissipative, unconditionally stable, and has very good accuracy properties especially for Courant numbers smaller than 1 while having a very small computational cost. Furthermore, we show how this scheme can be made monotonic without compromising its stability properties. We emphasize that the scheme can be successfully used in number of different situations: <ul> <li> as an unconditionally stable vertical advection scheme in an oceanic model with quasi-Eulerian vertical coordinate (provided a degradation of time accuracy for large Courant numbers) </li><li> as a scheme to compute the so-called ”fractional flux” in a flux-form semi-Lagrangian scheme à la Lin &amp; Rood (1996) to provide a stable scheme even for large Courant numbers </li><li> as a remapping scheme in an ALE framework following Dukowicz &amp; Baumgardner (2000) We illustrate the properties of the scheme and compare it to existing fourth-order accurate in time and space schemes using linear and nonlinear numerical experiments. </li></ul>
+    </div>
+</details>
 
 
 
@@ -1343,7 +1444,7 @@ MathJax = {
     
     <span><a href="http://hal.inria.fr/hal-01691260">HAL</a></span>
     
-</div></li>&lt;/ol&gt;
+</div></li></ol>
 <h3 class="bibliography">2015</h3>
 <ol class="bibliography"><li><div class="text-justify">
     <span id="lemarie:hal-01250645"><span style="text-decoration: none"><b>Lemarié, F., &amp; Debreu, L.</b></span>. <span style="font-variant: normal">“Improving vertical advection in oceanic modeling.”</span> <i>Partial Differential Equations on the Sphere Workshop</i>.</span>
@@ -1426,7 +1527,7 @@ MathJax = {
     
 </div></li>
 <li><div class="text-justify">
-    <span id="lemarie:hal-00957238"><span style="text-decoration: none"><b>Lemarié, F., Debreu, L., Madec, G., Honnorat, M., &amp; Molines, J.-M.</b></span>. <span style="font-variant: normal">“Stability constraints for oceanic numerical models: implications for the formulation of space-time discretizations.”</span> <i>2014 AGU Ocean Sciences Meeting</i>.</span>
+    <span id="lemarie:hal-00957238"><span style="text-decoration: none"><b>Lemarié, F., Debreu, L., Madec, G., &amp; Molines, J.-M.</b></span>. <span style="font-variant: normal">“Stability constraints for oceanic numerical models: implications for the formulation of space-time discretizations.”</span> <i>2014 AGU Ocean Sciences Meeting</i>.</span>
 </div>
 
 
@@ -1504,27 +1605,6 @@ MathJax = {
     
 </div></li>
 <li><div class="text-justify">
-    <span id="vidard:hal-00877890"><span style="text-decoration: none"><b>Vidard, A., Debreu, L., &amp; Neveu, E.</b></span>. <span style="font-variant: normal">“Multi resolution variational data assimilation system for the ocean.”</span> <i>EGU 2013 - European Geosciences Union General Assembly 2013</i>.</span>
-</div>
-
-
-<details style="margin-top: 10px;">
-    <summary style="cursor: pointer; color: #0066cc;"><strong>Abstract</strong></summary>
-    <div style="margin-top: 10px; padding: 10px; background-color: #f5f5f5; border-left: 3px solid #0066cc;">
-        The convergence of variational data assimilation algorithm for high dimensional non- linear system is an impor- tant issue. In this presentation we will focus on two multi scale approaches for solving the 4D variational data assimilation problem, the truncated Gauss Newton (TGN) and the Multi scale Gauss Newton (MsGN) algorithms. Both requires the use of operators allowing to project system states from one resolution to another, which could be delicate for ocean applications due to complex boundaries These algorithms are part of recent developments of the NEMOVAR system, which is a state-of-the-art variational data assimilation system for the NEMO European ocean community model. NEMOVAR is used in two major operational centres in its 3D-Fgat configuration. The general NEMOVAR framework and the TGN and MsGN algorithms will be presented, they will be applied to realistic ocean configurations and their relative merits will be compared, and difficulties related to the specificities of the ocean will be discussed
-    </div>
-</details>
-
-
-
-
-<div>
-    
-    
-    <span><a href="http://hal.inria.fr/hal-00877890">HAL</a></span>
-    
-</div></li>
-<li><div class="text-justify">
     <span id="lemarie:hal-00826006"><span style="text-decoration: none"><b>Lemarié, F., Debreu, L., &amp; Marchesiello, P.</b></span>. <span style="font-variant: normal">“Numerical delicacies associated with the use of isoneutral mixing operators in ocean models.”</span> <i>European Geosciences Union General Assembly 2013</i>.</span>
 </div>
 
@@ -1543,6 +1623,27 @@ MathJax = {
     
     
     <span><a href="http://hal.inria.fr/hal-00826006">HAL</a></span>
+    
+</div></li>
+<li><div class="text-justify">
+    <span id="vidard:hal-00877890"><span style="text-decoration: none"><b>Vidard, A., Debreu, L., &amp; Neveu, E.</b></span>. <span style="font-variant: normal">“Multi resolution variational data assimilation system for the ocean.”</span> <i>EGU 2013 - European Geosciences Union General Assembly 2013</i>.</span>
+</div>
+
+
+<details style="margin-top: 10px;">
+    <summary style="cursor: pointer; color: #0066cc;"><strong>Abstract</strong></summary>
+    <div style="margin-top: 10px; padding: 10px; background-color: #f5f5f5; border-left: 3px solid #0066cc;">
+        The convergence of variational data assimilation algorithm for high dimensional non- linear system is an impor- tant issue. In this presentation we will focus on two multi scale approaches for solving the 4D variational data assimilation problem, the truncated Gauss Newton (TGN) and the Multi scale Gauss Newton (MsGN) algorithms. Both requires the use of operators allowing to project system states from one resolution to another, which could be delicate for ocean applications due to complex boundaries These algorithms are part of recent developments of the NEMOVAR system, which is a state-of-the-art variational data assimilation system for the NEMO European ocean community model. NEMOVAR is used in two major operational centres in its 3D-Fgat configuration. The general NEMOVAR framework and the TGN and MsGN algorithms will be presented, they will be applied to realistic ocean configurations and their relative merits will be compared, and difficulties related to the specificities of the ocean will be discussed
+    </div>
+</details>
+
+
+
+
+<div>
+    
+    
+    <span><a href="http://hal.inria.fr/hal-00877890">HAL</a></span>
     
 </div></li></ol>
 <h3 class="bibliography">2012</h3>
@@ -1595,6 +1696,27 @@ MathJax = {
     
     <span><a href="http://hal.inria.fr/hal-00749195">HAL</a></span>
     
+</div></li>
+<li><div class="text-justify">
+    <span id="lemarie:hal-05489832"><span style="text-decoration: none"><b>Lemarié, F., Debreu, L., &amp; Blayo, E.</b></span>. <span style="font-variant: normal">“Optimized Schwarz Methods in the context of ocean-atmosphere coupling.”</span> <i>DD 2011 - 20th International Conference on Domain Decomposition Methods in Science and Engineering</i>.</span>
+</div>
+
+
+<details style="margin-top: 10px;">
+    <summary style="cursor: pointer; color: #0066cc;"><strong>Abstract</strong></summary>
+    <div style="margin-top: 10px; padding: 10px; background-color: #f5f5f5; border-left: 3px solid #0066cc;">
+        Many applications in coastal and operational oceanography require high resolution local models, for which ocean-atmosphere interactions must be properly taken into account (e.g. tropical cyclones, climate studies...). In that case, connecting the two model solutions at the air-sea interface is a very difficult problem, which is presently often addressed in a quite crude and simplified way from a mathematical point of view. In this context we intend to adapt Global-in-Time Schwarz-like domain decomposition methods to this kind of problem in order to address it on an appropriate and consistent way. We first show how the usual ocean-atmosphere coupling methods can be described in the formalism of the Schwarz methods. Then we propose a first real-case study (genesis and propagation of a tropical cyclone) with the WRF (Weather Research and Forecasting) and the ROMS (Regional Ocean Modeling System) numerical models. We introduce some numerical results obtained with a non-optimized method. However when one wants to optimize the convergence speed of the corresponding algorithm by looking for a good approximation of the absorbing boundary conditions we face some problem that have been relatively few studied so far, namely the presence of turbulent boundary layers on both sides of the interface and the strong spatial variability of diffusion coefficients (in the vertical direction mainly). In order to illustrate this point we propose to study an idealized form of the problem: a coupling between two diffusion equations modeling the turbulent mixing in the boundary layers. We consider first the case of coefficients which are discontinuous at the air-sea interface but constant on each subdomain. In this case the optimized transmission conditions are determined analytically. In the more general case with discontinuous and spatially variable coefficients the convergence of the Schwarz algorithm is studied using an ad hoc expansion into eigenfunctions of an associated Sturm-Liouville problem. We finally discuss how to extend those results found on a simplified problem to the full ocean-atmosphere coupling problem.
+    </div>
+</details>
+
+
+
+
+<div>
+    
+    
+    <span><a href="http://hal.inria.fr/hal-05489832">HAL</a></span>
+    
 </div></li></ol>
 <h3 class="bibliography">2010</h3>
 <ol class="bibliography"><li><div class="text-justify">
@@ -1630,6 +1752,27 @@ MathJax = {
     
     
     <span><a href="http://hal.inria.fr/hal-00788216">HAL</a></span>
+    
+</div></li>
+<li><div class="text-justify">
+    <span id="lemarie:hal-05489806"><span style="text-decoration: none"><b>Lemarié, F., Shchepetkin, A. F., Debreu, L., Molemaker, J., &amp; Mcwilliams, J. C.</b></span>. <span style="font-variant: normal">“Minimizing spurious diapycnal mixing induced by horizontal tracer advection.”</span> <i>2010 ROMS User Workshop</i>.</span>
+</div>
+
+
+<details style="margin-top: 10px;">
+    <summary style="cursor: pointer; color: #0066cc;"><strong>Abstract</strong></summary>
+    <div style="margin-top: 10px; padding: 10px; background-color: #f5f5f5; border-left: 3px solid #0066cc;">
+        High-order diffusive advection schemes are now widely used in numerous state-of-the-art ocean models. However, as suggested by (Griffies et al., 2000), the diffusion associated to this type of scheme may be large enough to produce excessive diapycnal mixing. In terrain-following coordinate models like ROMS, a strong horizontal mixing along iso-sigma surfaces can thus lead to spurious diapycnal fluxes of heat and salt (and hence density) when it is applied in regions with sloping isopycnals. This problem has been recently highlighted in regions with steep topographic features (Marchesiello et al., 2009). We are currently attempting to diagnose, as accurately as possible, the damages done to the stratification due to this additional spurious mixing. In parallel, a modified version of the ROMS tracer advection scheme is under consideration in order to restore the adiabatic property of advection. This can be done essentially by rotating the diffusion tensor from the horizontal/vertical directions to the isopycnal/diapycnal directions (Marchesiello et al., 2009). Up to now special care has been given to the design of an accurate discretization of the rotated diffusion as well as to the numerical stability analysis of the ROMS time stepping algorithm when the modified scheme is used.
+    </div>
+</details>
+
+
+
+
+<div>
+    
+    
+    <span><a href="http://hal.inria.fr/hal-05489806">HAL</a></span>
     
 </div></li></ol>
 <h3 class="bibliography">2009</h3>
@@ -1784,20 +1927,6 @@ MathJax = {
     
 </div></li>
 <li><div class="text-justify">
-    <span id="simon:hal-00171710"><span style="text-decoration: none"><b>Simon, E., Debreu, L., &amp; Blayo, E.</b></span>. <span style="font-variant: normal">“Assimilation de données variationnelle pour des modèles multi-grilles.”</span> <i>Colloque National Sur l’Assimilation De Données</i>.</span>
-</div>
-
-
-
-
-
-<div>
-    
-    
-    <span><a href="http://hal.inria.fr/hal-00171710">HAL</a></span>
-    
-</div></li>
-<li><div class="text-justify">
     <span id="simon:hal-00171642"><span style="text-decoration: none"><b>Simon, E., Debreu, L., &amp; Blayo, E.</b></span>. <span style="font-variant: normal">“Assimilation de données variationnelle pour des modèles multi-échelles.”</span> <i>Colloque National Sur l’Assimilation De Données</i>.</span>
 </div>
 
@@ -1809,6 +1938,20 @@ MathJax = {
     
     
     <span><a href="http://hal.inria.fr/hal-00171642">HAL</a></span>
+    
+</div></li>
+<li><div class="text-justify">
+    <span id="simon:hal-00171710"><span style="text-decoration: none"><b>Simon, E., Debreu, L., &amp; Blayo, E.</b></span>. <span style="font-variant: normal">“Assimilation de données variationnelle pour des modèles multi-grilles.”</span> <i>Colloque National Sur l’Assimilation De Données</i>.</span>
+</div>
+
+
+
+
+
+<div>
+    
+    
+    <span><a href="http://hal.inria.fr/hal-00171710">HAL</a></span>
     
 </div></li>
 <li><div class="text-justify">
@@ -1861,59 +2004,6 @@ MathJax = {
     
     
     <span><a href="http://hal.inria.fr/hal-00003948">HAL</a></span>
-    
-</div></li></ol>
-<h2 class="bibliography">Unpublished</h2>
-<h3 class="bibliography">2025</h3>
-<ol class="bibliography"><li><div class="text-justify">
-    <span id="remy:hal-05061001"><span style="text-decoration: none"><b>Remy, J., Brunie, H., Schreiber, M., Siso, S., Porter, A., Ford, R., Debreu, L., &amp; Lemarié, F.</b></span>. <i>Numerics-driven uplifting, Automatic Parallelization, and Performance Optimizations with Deep Kernel Fusion for Ocean Models on Heterogeneous Architectures</i>.</span>
-</div>
-
-
-<details style="margin-top: 10px;">
-    <summary style="cursor: pointer; color: #0066cc;"><strong>Abstract</strong></summary>
-    <div style="margin-top: 10px; padding: 10px; background-color: #f5f5f5; border-left: 3px solid #0066cc;">
-        Achieving peak performance for ocean models on modern High-Performance Computing (HPC) architectures requires extensive, costly code rewrites that are not only time-consuming and errorprone but also highly architecture-specific and require numerics experts to be proficient in parallel programming models or Domain-Specific Languages (DSLs).<p>In this paper we introduce Poseidon, a source-to-source code optimization tool that employs numerics &amp; HPC co-design. We developed an uplifting approach to a hypergraph for the data flow and to our own Poseidon Intermediate Representation (PosIR) for the computations, which recovers for the first time high-level information and semantics about the computations and memory management that are typically lost during the conversion of numerical algorithms to source code. This representation is then employed for model-driven optimizations. In the backend, we inject source code back into the original code supporting different target HPC architectures, reusing the existing model as the runtime.</p><p>Our evaluation investigates OpenMP and OpenACC parallel programming models on CPUs and GPUs. We demonstrate Poseidon’s capability of automatic parallelization and optimization of existing Fortran code, with comparisons to state-of-the-art parallelized code with performance improvements of up to ×2.60 and automatically reducing the required memory footprint by up to ×2.29.</p>
-    </div>
-</details>
-
-
-
-<div>
-    <em>working paper or preprint</em>
-</div>
-
-
-<div>
-    
-    
-    <span><a href="http://hal.inria.fr/hal-05061001">HAL</a></span>
-    
-</div></li></ol>
-<h3 class="bibliography">2019</h3>
-<ol class="bibliography"><li><div class="text-justify">
-    <span id="debreu:hal-01968678"><span style="text-decoration: none"><b>Debreu, L., &amp; Kazantsev, E.</b></span>. <i>Optimal control of grids and schemes for the inertial gravity waves equation</i>.</span>
-</div>
-
-
-<details style="margin-top: 10px;">
-    <summary style="cursor: pointer; color: #0066cc;"><strong>Abstract</strong></summary>
-    <div style="margin-top: 10px; padding: 10px; background-color: #f5f5f5; border-left: 3px solid #0066cc;">
-        Variational data assimilation technique is applied to a simple bidi-mensional wave equation that simulates propagation of internal gravity waves in the ocean in order to control grids and numerical schemes. Grid steps of the vertical grid, Brunt-Vaisala frequency and approximation of the horizontal derivative were used as control parameters either separately or in the joint control. Obtained results show that optimized parameters may partially compensate errors committed by numerical scheme due to insufficient grid resolution.
-    </div>
-</details>
-
-
-
-<div>
-    <em>working paper or preprint</em>
-</div>
-
-
-<div>
-    
-    
-    <span><a href="http://hal.inria.fr/hal-01968678">HAL</a></span>
     
 </div></li></ol>
 <h2 class="bibliography">Miscellaneous</h2>
@@ -2260,7 +2350,6 @@ MathJax = {
     <span><a href="http://hal.inria.fr/hal-00184033">HAL</a></span>
     
 </div></li></ol>
-</li></li></ul></div></details></li></ol>
 
   </div>
 
