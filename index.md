@@ -1,43 +1,27 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: page
-title: Welcome
-
+layout: home
+title: Laurent Debreu
 ---
 
-## Laurent Debreu
+<p class="home-role">Researcher in applied mathematics at <a href="https://www.inria.fr/en">Inria</a> (Center at Université Grenoble Alpes)</p>
 
-[Inria](https://www.inria.fr/en) researcher, [Laboratoire Jean Kuntzmann](https://www-ljk.imag.fr/?lang=en) member, [AIRSEA](https://team.inria.fr/airsea/en) team member
+<p class="home-affiliations">Member of the <a href="https://www-ljk.imag.fr/?lang=en">Laboratoire Jean Kuntzmann</a> and the <a href="https://team.inria.fr/airsea/en/">AIRSEA</a> team.</p>
 
-I am a researcher in applied mathematics at Inria (Grenoble Rhône-Alpes center) and member of the Jean Kuntzmann laboratory. My main fields of application are oceanic and atmospheric flows.
+<p class="home-description">My work focuses primarily on numerical methods for partial differential equations, with applications to oceanic and atmospheric flows. I am also interested in scientific computing, particularly in developing mathematical formulations and numerical algorithms suited to different high-performance computing architectures.</p>
 
+<address class="home-address">
+  <strong>Address</strong><br>
+  Laboratoire Jean Kuntzmann<br>
+  Bâtiment IMAG<br>
+  150 place du Torrent<br>
+  38401 Campus Universitaire de Saint-Martin-d'Hères, France<br>
+  <a href="tel:+33457421725">+33 (0)4 57 42 17 25</a><br>
+  Laurent (dot) Debreu (at) inria.fr
+</address>
 
-**Address:**
-
-> Laboratoire Jean Kuntzmann  
-> Batiment IMAG
-> 150 place du Torrent
-> 38401 Campus Universitaire de Saint Martin d'Hères, France  
-> Phone: (+33) 4 57 42 17 25
-
-<!-- **Responsabilities:**
-
-> * Member of the [AIRSEA](https://team.inria.fr/airsea/en/) Inria team  
-> A joint team between Inria and Laboratoire Jean Kuntzmann  
-> Mathematics and computing applied to oceanic and atmospheric flows
-> * Chair of the [LEFE MANU](https://programmes.insu.cnrs.fr/lefe/cs_actions/manu/) program  
-> Mathematical and Numerical methods for the Ocean and the Atmosphere
-> * Member of the steering committee of the [CROCO](https://www.croco-ocean.org) ocean model -->
-
-
-<!--
-
-## Past responsibilities
-
-> *  Member of the [CSS5](https://www.ird.fr/les-commissions-evaluation-de-lird) IRD scientific committee (2015-2020)   
-> Data science and Models
-
--->
-
+<ul class="home-links" aria-label="Explore the site">
+  <li><a href="{{ '/research.html' | relative_url }}">Research</a></li>
+  <li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
+  <li><a href="{{ '/projects.html' | relative_url }}">Projects</a></li>
+  <li><a href="{{ '/software.html' | relative_url }}">Software</a></li>
+</ul>

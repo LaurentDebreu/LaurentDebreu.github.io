@@ -1,0 +1,8 @@
+- name: Research
+  link: /research.html
+- name: Publications
+  link: /publications.html
+- name: Projects
+  link: /projects.html
+- name: Software
+  link: /software.html

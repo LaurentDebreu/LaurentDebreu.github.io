@@ -1,0 +1,29 @@
+{% assign projects = site.data.contributing_projects | where: "status", include.status %}
+{% if include.group == "leadership" %}
+{% assign projects = projects | where_exp: "project", "project.role != 'Contributor'" %}
+{% else %}
+{% assign projects = projects | where: "role", "Contributor" %}
+{% endif %}
+{% if projects.size > 0 %}
+### {{ include.heading }}
+
+{% for project in projects %}
+#### {{ project.name | escape }}
+
+{% capture project_metadata %}{% if project.period %}{{ project.period | escape }}{% endif %}{% if project.role %}{% if project.period %} · {% endif %}{{ project.role | escape }}{% endif %}{% if project.funding %}{% if project.period or project.role %} · {% endif %}{{ "Funding:" | escape }} {{ project.funding | escape }}{% endif %}{% endcapture %}
+{% assign project_metadata = project_metadata | strip %}
+{% if project_metadata != "" %}
+**{{ project_metadata }}**
+{% endif %}
+
+{% if project.description %}
+{{ project.description | escape }}
+{% endif %}
+
+{% capture project_links %}{% if project.website %}[Project website]({{ project.website | escape }}){% endif %}{% for link in project.links %}{% if project.website or forloop.index > 1 %} · {% endif %}[{{ link.label | escape }}]({{ link.url | escape }}){% endfor %}{% endcapture %}
+{% assign project_links = project_links | strip %}
+{% if project_links != "" %}
+{{ project_links }}
+{% endif %}
+{% endfor %}
+{% endif %}

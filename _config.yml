@@ -54,7 +54,7 @@ scholar:
   group_order: descending
 
   source: ./_bibliography
-  bibliography: debreu_references.bib
+  bibliography: "*.bib"
   bibliography_template: bib
 
   replace_strings: true

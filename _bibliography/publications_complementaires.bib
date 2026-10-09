@@ -1,0 +1,50 @@
+% Publications not yet indexed in HAL can be added to this file.
+% Keep debreu_references.bib reserved for the automatically generated HAL export.
+
+
+@article{Bhatt2026,
+title = {Time-parallel incremental 4D-Var for two-dimensional rotating shallow water system},
+journal = {Journal of Computational Physics},
+volume = {564},
+pages = {115164},
+year = {2026},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2026.115164},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999126005164},
+author = {Rishabh Bhatt and Laurent Debreu and Arthur Vidard},
+keywords = {Data assimilation, Parareal method, Inexact conjugate gradient, High performance computing, Numerical weather prediction, Inverse problem},
+abstract = {Incremental four-dimensional variational data assimilation (4D-Var) relies on repeated serial integrations of tangent-linear and adjoint models within its inner loop to minimize a cost function. While classical domain decomposition offers some spatial parallelism, it faces scalability issues as model resolution and complexity increase, motivating the need for effective time-parallel strategies. This study presents a practical approach for implementing a time-parallel incremental 4D-Var based on the Parareal algorithm applied to a two-dimensional rotating shallow water system. A Krylov-enhanced Parareal variant is introduced to improve convergence for relatively more hyperbolic problems and is coupled with an inexact conjugate gradient (CG) method that adaptively adjusts Parareal precision during minimization. Numerical experiments show that the proposed implementation attains the same minimization accuracy as standard CG while achieving a theoretical time-parallel speedup of about 6.8 when communication and implementation-specific overheads are neglected. In addition, the adaptive Parareal tolerance reduces the total Parareal iterations by roughly half relative to when standard CG is used with a fixed Parareal tolerance. Further inexact CG experiments under realistic observational settings demonstrate measurable wall-clock speedups and indicate that communication overhead and sequential adjoint integrations remain important limitations on achievable parallel efficiency. Diagnostics based on geostrophic balance confirm the dynamical consistency of the retrieved initial state, demonstrating the approach's feasibility for moderately sized PDE-constrained optimization problems.}
+}
+
+
+@Article{Remy2026,
+  author   = {Julien R\'emy and Hugo Brunie and Martin Schreiber and Sergi Siso and Andrew R. Porter and Rupert W. Ford and Laurent Debreu and Florian Lemari\'e and Arthur Vidard},
+  title    = {Numerics-driven uplifting, automatic parallelization, and performance optimizations with deep kernel fusion for ocean models on heterogeneous architectures},
+  journal  = {The International Journal of High Performance Computing Applications},
+  year     = {2026},
+  volume   = {0},
+  number   = {0},
+  pages    = {10943420261456347},
+  doi      = {10.1177/10943420261456347},
+  eprint   = {https://doi.org/10.1177/10943420261456347},
+  url      = { 
+    
+        https://doi.org/10.1177/10943420261456347
+    
+    
+
+},
+  abstract = {Achieving peak performance for ocean models on modern high-performance computing (HPC) architectures requires extensive, costly code rewrites that are not only time-consuming and error-prone but also highly architecture-specific and require numerics experts to be proficient in parallel programming models or domain-specific languages (DSLs). In this paper we introduce Poseidon, a source-to-source code optimization tool that employs numerics \& HPC co-design. We developed an uplifting approach to a hypergraph for the data flow and to our own Poseidon Intermediate Representation (PosIR) for the computations, which recovers for the first time high-level information and semantics about the computations and memory management that are typically lost during the conversion of numerical algorithms to source code. This representation is then employed for model-driven optimizations. In the backend, we inject source code back into the original code supporting different target HPC architectures, reusing the existing model as the runtime. Our evaluation investigates OpenMP and OpenACC parallel programming models on CPUs and GPUs. We demonstrate Poseidon's capability of automatic parallelization and optimization of existing Fortran code, with comparisons to state-of-the-art parallelized code with performance improvements of up to $\times$ 2.60 and automatically reducing the required memory footprint by up to $\times$ 2.29.},
+}
+
+
+@Article{Nasser2026,
+  author  = {Antoine Nasser and Nicolas Jourdain and Pierre Mathiot and Lohenn Fiol and Gurvan Madec and Laurent Debreu},
+  title   = {\href{https://essopenarchive.org/doi/abs/10.22541/essoar.176677323.32970185/v2}{Porous Cavities and Smooth Boundaries: Brinkman Volume Penalization for Ice-Shelf-Ocean Interactions in Earth System Models}},
+  journal = {Journal of Advances in Modeling Earth Systems, In press},
+  year    = {2026},
+  url     = {https://essopenarchive.org/doi/abs/10.22541/essoar.176677323.32970185/v2},
+}
+
+
+

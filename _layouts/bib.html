@@ -1,29 +1,32 @@
 ---
 ---
-<div class="text-justify">
-    {{reference}}
-</div>
+<article class="publication">
+  <div class="publication-citation">
+    {{ reference }}
+  </div>
 
-{% if entry.abstract %}
-<details style="margin-top: 10px;">
-    <summary style="cursor: pointer; color: #0066cc;"><strong>Abstract</strong></summary>
-    <div style="margin-top: 10px; padding: 10px; background-color: #f5f5f5; border-left: 3px solid #0066cc;">
-        {{ entry.abstract }}
-    </div>
-</details>
-{% endif %}
+  {% if entry.note %}
+    <p class="publication-note"><em>{{ entry.note }}</em></p>
+  {% endif %}
 
-{% if entry.note %}
-<div>
-    <em>{{ entry.note }}</em>
-</div>
-{% endif %}
+  {% if entry.doi or entry.hal_id or entry.url %}
+    <ul class="publication-links" aria-label="Publication links">
+      {% if entry.doi %}
+        <li><a href="{{ entry.doi | prepend: 'https://doi.org/' | escape }}">DOI</a></li>
+      {% endif %}
+      {% if entry.hal_id %}
+        <li><a href="{{ entry.hal_id | prepend: 'https://hal.science/' | escape }}">HAL</a></li>
+      {% endif %}
+      {% if entry.url %}
+        <li><a href="{{ entry.url | escape }}">Article</a></li>
+      {% endif %}
+    </ul>
+  {% endif %}
 
-<div>
-    {% if entry.doi %}
-    <span><a href="{{ entry.doi | prepend: 'http://doi.org/' }}">DOI</a></span>
-    {% endif %}
-    {% if entry.hal_id %}
-    <span><a href="{{ entry.hal_id | prepend: 'http://hal.inria.fr/' }}">HAL</a></span>
-    {% endif %}
-</div>
+  {% if entry.abstract %}
+    <details class="publication-abstract">
+      <summary>Abstract</summary>
+      <div>{{ entry.abstract }}</div>
+    </details>
+  {% endif %}
+</article>

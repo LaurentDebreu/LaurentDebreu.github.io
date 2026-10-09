@@ -1,0 +1,94 @@
+- status: current
+  role: Principal investigator
+  name: "MEDIATION"
+  period: "2022–2028"
+  funding: "ANR / French Priority Research Program on Ocean & Climate"
+  description: >-
+    Studies the effects of climate and socio-economic change on the ocean,
+    biogeochemical cycles, and marine ecosystems, with applications to the
+    coasts of metropolitan France.
+
+    MEDIATION's work spanning applied mathematics and computer science focuses
+    on uncertainty modeling and propagation through model chains; the
+    development of intermediate-complexity models; high-performance computing;
+    and artificial intelligence.
+  website: "http://www.mediation-ocean.org"
+  links:
+    - label: "Project proposal"
+      url: "https://drive.google.com/file/d/1U4Ft7-KqfFE8m3UX5AUWiq6Ze3UQMMNM/view?usp=sharing"
+- status: current
+  role: Contributor
+  name: "MOTIONS: Multiscale Oceanic simulations based on mesh refinement strategies with local adaptation of dynamics and physics"
+  period: "2023–2027"
+  funding: "ANR"
+  website: "https://anr.fr/en/funded-projects-and-impact/funded-projects/project/funded/project/b2d9d3668f92a3b9fbbf7866072501ef-55b1d10b73/?tx_anrprojects_funded%5Bcontroller%5D=Funded&cHash=656cf55ab85a75da953d85d1355b7aca"
+- status: current
+  role: Contributor
+  name: "DARE: Digital Autonomy with RISC-V in Europe"
+  period: "2025-2028"
+  funding: "Horizon Europe"
+  description: "[Test / optimization of RISC-V architecture for numerical ocean models.]"
+  website: "https://dare-riscv.eu/"
+- status: current
+  role: Contributor
+  name: "CLIMATHS"
+  period: "2025-2030"
+  funding: "PEPR Maths-Vives"
+  description: "[Fundamental advances in modeling key processes to reduce the impacts of climate change]"
+  website: "https://www.maths-vives.fr/projet/climaths/"
+- status: past
+  role: "Work-Package leader"
+  name: "MelodY"
+  period: "2019–2023"
+  funding: "ANR"
+  description: "Machine-learning methods for learning geophysically sound representations of geophysical flows, with attention to preserving physical properties. Principal investigator: Ronan Fablet (IMT)."
+- status: past
+  role: "Work-Package leader"
+  name: "ADOM"
+  period: "2018–2022"
+  funding: "ANR"
+  description: "Asynchronous domain decomposition methods and parallel-in-time algorithms, with applications to variational data assimilation. Principal investigator: F. Magoules (Centrale-Supélec)."
+- status: past
+  role: Principal investigator
+  name: "CROCO"
+  period: "2018–2020"
+  funding: "SHOM"
+  description: "Development of numerical schemes for the CROCO ocean model."
+- status: past
+  role: Principal investigator
+  name: "AGRIF"
+  period: "2018–2020"
+  funding: "European Copernicus programme"
+  description: "Improved integration of AGRIF into the NEMO ocean model and optimization of its parallel performance."
+- status: past
+  role: "Work-Package leader"
+  name: "HEAT — Highly Efficient Atmospheric Modeling"
+  period: "2015–2019"
+  funding: "ANR"
+  description: "Discontinuous Galerkin methods and mimetic discretization methods. Principal investigator: T. Dubos (École Polytechnique)."
+- status: past
+  role: Principal investigator
+  name: "COMODO"
+  period: "2011–2015"
+  funding: "ANR"
+  description: "A project on three-dimensional numerical ocean modeling, bringing together French research teams in applied mathematics and oceanography."
+  links:
+    - label: "Project proposal"
+      url: "https://drive.google.com/file/d/1iHg_QUD3hqU4GsQyCTojxzihgFuJQEBo/view?usp=sharing"
+- status: past
+  role: Principal investigator
+  name: "Numerical methods for MARS3D"
+  period: "2011–2013"
+  funding: "IFREMER"
+  description: "Time-stepping algorithms for the IFREMER MARS3D model."
+- status: past
+  role: "Work-Package leader"
+  name: "MSDAG — Multiscale Data Assimilation in Geophysics"
+  period: "2009–2011"
+  funding: "ANR"
+  description: "Local mesh refinement and variational data assimilation, with a focus on multigrid methods for optimization problems. Principal investigator: M. Bocquet (Inria/Clime, CEREA)."
+- status: past
+  role: Contributor
+  name: "IMMERSE: Improving Models for Marine Environment Services"
+  period: "2018-2023"
+  funding: "H2020"

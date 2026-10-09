@@ -32,6 +32,11 @@ pkill -f jekyll
 ./update_publications.sh
 ```
 
+Les publications absentes de HAL peuvent être ajoutées manuellement dans
+`_bibliography/publications_complementaires.bib`. Le site charge tous les
+fichiers `.bib` de `_bibliography`; ne pas modifier `debreu_references.bib`,
+qui est régénéré par le script.
+
 ### 4. Publier les modifications
 ```bash
 git add -A

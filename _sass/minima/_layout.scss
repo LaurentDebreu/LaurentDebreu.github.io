@@ -216,7 +216,7 @@
 
 .post-header {
   /*background-color: rgb(137, 168, 197);*/
- background-image: url("grenoble.jpg");
+ /*background-image: url("grenoble.jpg");*/
  background-size: 800px 240px;
   padding: 70px 0;
   text-align: center;
@@ -236,7 +236,7 @@
   @include relative-font-size(2.625);
   letter-spacing: -1px;
   line-height: 1;
-  color: white;
+  color: rgb(19, 135, 115);
   font-weight: bold;
 
   @include media-query($on-laptop) {
